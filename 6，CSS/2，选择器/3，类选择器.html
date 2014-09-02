@@ -1,0 +1,25 @@
+<!-- 类(class)选择器
+类选择器可以为 同一类(class) 的 HTML 元素指定特定的样式。
+-->
+<html>
+<head>
+<style type="text/css">
+/* 类选择器以 "." 来定义，下面的类选择器，所有拥有 center 类的 HTML 元素均为居中。  */
+.centered {
+	text-align: center;
+}
+
+/* 和 id 一样，class 也可被用作派生选择器，下面的类选择器：类名为 centered 的元素内部的 div元素会居右。  */
+.centered div {
+	text-align: right;
+}
+</style>
+</head>
+<body>
+	<h1 class="centered">This heading will be center-aligned</h1>
+	<p class="centered">This paragraph will be center-aligned.</p>
+	<div class="centered">
+		<div>This div will be right-aligned.</div>
+	</div>
+</body>
+</html>

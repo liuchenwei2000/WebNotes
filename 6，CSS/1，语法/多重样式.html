@@ -1,0 +1,18 @@
+<!-- 多重样式：如果某些属性在不同的样式表中被同样的选择器定义，那么属性值将从更具体的样式表中被继承过来。 -->
+<html>
+<head>
+<style type="text/css">
+/* 内部样式表拥有针对 h3 选择器的三个属性 */
+h3 {
+	color: red;
+	text-align: left;
+	font-size: 8pt;
+}
+</style>
+</head>
+<body>
+    <!-- 内联样式表拥有针对 h3 选择器的两个属性，那么 color 属性会从内部样式表继承过来 --> 
+	<h3 style="text-align: right; font-size: 20pt;">内部样式表：红色、靠右、20磅</h3>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!-- id选择器
+id 选择器可以为标有特定 id 的 HTML 元素指定特定的样式。
+-->
+<html>
+<head>
+<style type="text/css">
+/* id 选择器以 "#" 来定义，下面的 id 选择器，定义 id 为 red 的元素的颜色为红色  */
+#red {
+	color: red;
+}
+
+#green {
+	color: green;
+}
+
+/* 在现代布局中，id 选择器常常用于建立派生选择器。下面的样式只会应用于出现在 id 是 div1 的元素内的段落 */
+#div1 p {
+	color: blue;
+}
+
+/* 即使被标注为#div1 的元素只能在文档中出现一次，但这个 id 选择器作为派生选择器可以被使用很多次 */
+#div1 div {
+	color: orange;
+}
+</style>
+</head>
+<body>
+	<p id="red">这个段落是红色。</p>
+	<p id="green">这个段落是绿色。</p>
+	<div id="div1">
+		这个段落是黑色。
+		<p>这个段落是蓝色。</p>
+		<div>这个段落是橙色。</div>
+	</div>
+</body>
+</html>

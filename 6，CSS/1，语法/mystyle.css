@@ -1,0 +1,28 @@
+/*
+外部样式表文件不能包含任何的 html 标签，并且应该以 .css 扩展名进行保存。
+*/
+body {
+	background-color: pink;
+}
+
+h1 {
+	color: green;
+	/* 不要在属性值与单位之间留有空格。 */
+	border: 1pt solid black;
+}
+
+p {
+	color: red;
+	background-color: #EFE7D6;
+	border: 1pt solid black;
+}
+
+div {
+	color: #FFFFFF;
+	background-color: #000000;
+}
+
+span {
+	color: #000000;
+	background-color: #FFFFFF;
+}
