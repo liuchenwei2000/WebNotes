@@ -1,0 +1,24 @@
+<!-- datalist 元素规定输入域的选项列表。
+请与 input 元素配合使用该元素，来定义 input 可能的值。
+
+list 属性规定输入域的 datalist。
+list 属性适用于以下类型的 <input> 标签：text, search, url, tel, email, date pickers, number, range 以及 color。
+-->
+<!DOCTYPE HTML>
+<html>
+	<body>
+		<form action="http://www.w3school.com.cn/example/html5/demo_form.asp" method="get">
+			Webpage:
+			<!-- 如需把 datalist 绑定到输入域，请用输入域的 list 属性引用 datalist 的 id -->
+			<input type="url" list="url_list" name="link" />
+			<datalist id="url_list">
+			    <!-- option 元素永远都要设置 value 属性 -->
+				<option label="W3School" value="http://www.w3school.com.cn" />
+				<option label="Google" value="http://www.google.com" />
+				<option label="Microsoft" value="http://www.microsoft.com" />
+			</datalist>
+			<input type="submit" />
+		</form>
+	</body>
+
+</html>

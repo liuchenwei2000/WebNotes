@@ -1,0 +1,51 @@
+<!-- 通过 JavaScript，可以定义并创建自己的对象。
+创建新对象有两种不同的方法：
+1，创建直接的实例。
+2，使用对象构造器。
+
+JavaScript 是面向对象的语言，但 JavaScript 不使用类。
+在 JavaScript 中，不会创建类，也不会通过类来创建对象。
+JavaScript 基于 prototype，而不是基于类的。
+ -->
+<!DOCTYPE html>
+<html>
+	<body>
+		<script>
+		    /*
+			1，创建直接的实例
+			下面创建了对象的一个新实例，并向其添加了四个属性。
+			*/
+			var man = new Object();
+			man.firstname = "Bill";
+			man.lastname = "Gates";
+			man.age = 56;
+			man.eyecolor = "blue";
+			document.write(man.firstname + " is " + man.age + " years old.</br>");
+			/*
+			也可以使用下面的语法：
+			*/
+			man = {
+				firstname: "Paul",
+				lastname: "Allen",
+				age: 61,
+				eyecolor: "brown"
+			}
+			document.write(man.firstname + " is " + man.age + " years old.</br>");
+			
+			/*
+			2，使用对象构造器
+			下面的函数是一个对象构造器。
+			*/
+			function person(firstname, lastname, age, eyecolor) {
+				this.firstname = firstname;
+				this.lastname = lastname;
+				this.age = age;
+				this.eyecolor = eyecolor;
+			}
+			// 一旦您了对象构造器，就可以使用 new 创建新的对象实例
+			var myFather = new person("Bruce", "Lee", 47, "black");
+			document.write(myFather.firstname + " is " + myFather.age + " years old.");
+		</script>
+	</body>
+
+</html>

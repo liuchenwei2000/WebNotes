@@ -1,0 +1,52 @@
+<!-- 使用 DOM 控制视频
+<video> 元素同样拥有方法、属性和事件。详见 video的方法、属性以及事件.PNG。
+其中方法用于播放、暂停以及加载等；属性（比如时长、音量等）可以被读取或设置；DOM 事件能够发出通知，比如<video> 元素开始播放、已暂停，已停止，等等
+-->
+<!DOCTYPE html>
+<html>
+	<body>
+	    <div style="text-align:center;">
+			<button onclick="playPause()">
+				播放/暂停
+			</button>
+			<button onclick="makeBig()">
+				大
+			</button>
+			<button onclick="makeNormal()">
+				中
+			</button>
+			<button onclick="makeSmall()">
+				小
+			</button>
+			<br />
+			<video id="video1" width="420" style="margin-top:15px;">
+				<source src="../videos/movie.mp4" type="video/mp4" />
+				Your browser does not support HTML5 video.
+			</video>
+		</div>
+		<script>
+			var myVideo = document.getElementById("video1");
+
+			function playPause() {
+				if (myVideo.paused){// paused 属性判断是否暂停
+    				myVideo.play();// play()方法播放视频
+				} else {
+				    myVideo.pause();// pause()方法暂停视频
+				}
+			}
+
+			function makeBig() {
+				myVideo.width = 560;// width 属性设置视频宽度
+			}
+
+			function makeSmall() {
+				myVideo.width = 320;
+			}
+
+			function makeNormal() {
+				myVideo.width = 420;
+			}
+		</script>
+	</body>
+
+</html>

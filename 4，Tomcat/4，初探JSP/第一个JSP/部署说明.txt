@@ -1,0 +1,2 @@
+1，将 hello 文件夹拷贝到 %TOMCAT_HOME%\webapps\ 下。
+2，启动 tomcat 后使用 http://localhost/hello/helloworld.jsp 进行访问。

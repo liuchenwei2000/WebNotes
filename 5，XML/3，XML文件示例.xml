@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- 上面一行是前导区，前导区必须放在第一行 -->
+<!-- XML文件都由前导区和数据区两部分组成 -->
+<!-- 
+前导区规定了XML页面的一些属性，包括：
+version：表示使用的XML版本，现在是1.0；
+encoding：页面中使用的字符编码，如果有中文，则一定要指编码；
+standalone：此XML文件是否是独立运行，如果需要进行显示可以使用CSS或XSL控制。
+这三个属性都必须按照固定的顺序编写，即version、encoding、standalone。
+-->
+<!--
+数据区必须有一个根元素，一个根元素下可以存放多个子元素，但每个子元素必须完结，每一个标记都是区分大小写的。
+-->
+<!-- 下面是数据区 -->
+<addresslist><!-- 根元素开始 -->
+    <linkman>
+	    <name>赵匡胤</name>
+		<id>0001</id>
+		<email>zhaoky@163.com</email>
+		<tel>01046372801</tel>
+	</linkman>
+</addresslist><!-- 元素完结 -->

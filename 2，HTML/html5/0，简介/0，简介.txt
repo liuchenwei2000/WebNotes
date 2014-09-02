@@ -1,0 +1,14 @@
+HTML5 是 HTML 下一个主要的修订版本，现在仍处于发展阶段。目标是取代1999年所制定的HTML 4.01和XHTML 1.0标准，以期能在互联网应用迅速发展的时候，使网络标准达到符合当代的网络需求。
+
+广义论及HTML5时，实际指的是包括 HTML、CSS 和 JavaScript 在内的一套技术组合。它希望能够减少浏览器对于需要插件的丰富性网络应用服务（plug-in-based rich internet application，RIA)，如Adobe Flash、Microsoft Silverlight，与Oracle JavaFX的需求，并且提供更多能有效增强网络应用的标准集。
+
+具体来说，HTML5 添加了许多新的语法特征，其中包括<video>, <audio>,和<canvas>元素，同时集成了SVG内容。这些元素是为了更容易的在网页中添加和处理多媒体和图片内容而添加的。其它新的元素包括<section>, <article>, <header>, 和<nav>,是为了丰富文档的数据内容。新的属性的添加也是为了同样的目的。同时也有一些属性和元素被移除掉了。一些元素，像<a>, 和<menu>被修改，重新定义或标准化了。同时APIs和DOM已经成为HTML5中的基础部分了。HTML5 还定义了处理非法文档的具体细节，使得所有浏览器和客户端程序能够一致地处理语法错误。
+
+HTML5 将成为 HTML、XHTML 以及 HTML DOM 的新标准。HTML5 仍处于完善之中。然而，大部分现代浏览器已经具备了某些 HTML5 支持。
+
+W3C 与 WHATWG 为 HTML5 建立的一些规则：
+1，新特性应该基于 HTML、CSS、DOM 以及 JavaScript。
+2，减少对外部插件的需求（比如 Flash）。
+3，更优秀的错误处理。
+4，更多取代脚本的标记。
+5，HTML5 应该独立于设备。

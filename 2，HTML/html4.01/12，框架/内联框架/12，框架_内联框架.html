@@ -1,0 +1,22 @@
+<!-- 内联框架标签 <iframe> 用于在网页内显示网页。 -->
+<html>
+	<!-- 
+	src 属性指向隔离页面的位置 
+	height 和 width 属性用于规定 iframe 的高度和宽度，属性值的默认单位是像素，但也可以用百分比来设定
+	-->
+	<iframe src="content.html" height="300" width="300">
+	</iframe>
+	
+	<!-- frameborder 属性规定是否显示 iframe 周围的边框，设置属性值为 "0" 可以移除边框 -->
+	<iframe src="content.html" frameborder="0">
+	</iframe>
+	
+	<!-- iframe 可用作链接的目标（target），链接的 target 属性必须引用 iframe 的 name 属性 -->
+	<iframe src="content.html" name="iframe_a" height="500" width="400">
+	</iframe>
+	
+	<a href="http://www.baidu.cn" target="iframe_a">
+		百度
+	</a>
+
+</html>

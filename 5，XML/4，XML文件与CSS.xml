@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="GB2312" standalone="no"?>
+<!-- 因为要使用CSS，所以XML不能单独运行，standalone 属性的值是 no -->
+<?xml-stylesheet type="text/css" href="attrlb.css"?>
+<!-- 通过 xml-stylesheet 元素引入CSS样式表，type属性表示显示类型，href属性表示使用哪个css文件 -->
+<addresslist>
+    <linkman>
+	    <name>赵匡胤</name>
+		<id>0001</id>
+		<email>zhaoky@163.com</email>
+		<tel>01046372801</tel>
+	</linkman>
+</addresslist>

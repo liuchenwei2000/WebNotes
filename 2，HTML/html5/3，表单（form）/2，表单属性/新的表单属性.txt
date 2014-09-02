@@ -1,0 +1,18 @@
+HTML5 的新的表单属性，如下：
+
+新的 form 属性：
+autocomplete
+novalidate
+
+新的 input 属性：
+autocomplete
+autofocus
+form
+form overrides (formaction, formenctype, formmethod, formnovalidate, formtarget)
+height 和 width
+list
+min, max 和 step
+multiple
+pattern (regexp)
+placeholder
+required

@@ -1,0 +1,30 @@
+<!-- JavaScript 数组 -->
+<!DOCTYPE html>
+<html>
+	<body>
+		<script>
+		// 数组下标是基于零的，所以第一个项目是 [0]，第二个是 [1]，以此类推。
+		/*
+		创建数组的第一种方式
+		*/
+		var cars = new Array();
+		cars[0] = "Audi";
+		cars[1] = "BMW";
+		cars[2] = "Benz";
+		document.write("<h4>" + cars + "</h4>");
+		
+		/*
+		创建数组的第二种方式
+		*/
+		var cars= new Array("Audi", "BMW", "Volvo");
+		document.write("<h4>" + cars + "</h4>");
+		
+		/*
+		创建数组的第三种方式
+		*/
+		var cars= ["Audi", "BMW", "Volvo"];
+		document.write("<h4>" + cars + "</h4>");
+		</script>
+	</body>
+
+</html>

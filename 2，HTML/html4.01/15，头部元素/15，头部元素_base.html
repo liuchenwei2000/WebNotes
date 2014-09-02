@@ -1,0 +1,36 @@
+<!-- <base> 标签为页面上的所有链接规定默认地址或默认目标（target）
+使用 <base> 标签可以使用指定的基本 URL 来解析所有的相对 URL。
+这其中包括 <a>、<img>、<link>、<form> 标签中的 URL。
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+	    <!-- href 属性规定页面中所有相对链接的基准 URL。 -->
+		<base href="http://www.w3school.com.cn/i/" />
+		<!-- target 属性规定在何处打开页面中所有的链接。 -->
+		<base target="_blank" />
+	</head>
+	<body>
+	    <!-- 这个图片的相对路径会自动拼接 base href 指向的地址 -->
+		<img src="eg_smile.gif" />
+		<br />
+		<p>
+			请注意，我们已经为图像规定了一个相对地址。由于我们已经在 head 部分规定了一个基准 URL，浏览器将在如下地址寻找图片：
+		</p>
+		<p>
+			"http://www.w3school.com.cn/i/eg_smile.gif"
+		</p>
+		<br />
+		<br />
+		<p>
+			<a href="http://www.w3school.com.cn">
+				W3School
+			</a>
+		</p>
+		<p>
+			请注意，链接会在新窗口中打开，即使链接中没有 target="_blank" 属性。这是因为 base 元素的 target 属性已经被设置为
+			"_blank" 了。
+		</p>
+	</body>
+
+</html>

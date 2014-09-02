@@ -1,0 +1,36 @@
+<!-- 数组(Array)对象
+Array 对象用于在单个的变量中存储多个值。
+-->
+<!DOCTYPE html>
+<html>
+	<body>
+		<script>
+			/*
+			创建数组有三种方式
+			*/
+			var mycars = new Array(); // 第一种
+			mycars[0] = "Saab";
+			mycars[1] = "Volvo";
+			mycars[2] = "BMW";
+
+			var sex = new Array(2); // 第二种，限定了数组容量
+			sex[0] = "Male";
+			sex[1] = "Female";
+
+			var fruits = new Array("apple", "banana"); // 第三种
+			var signals = new Array( - 1, 0, 1); // 整数数组
+			
+			/*
+			访问数组：通过数组名及索引号码，可以访问某个特定的元素
+			*/
+			document.write(mycars[0] + "</br>");
+			
+			/*
+			修改已有数组中的值：如需修改已有数组中的值，只要向指定索引号赋予一个新值即可
+			*/
+			fruits[1] = "orange";
+			document.write(fruits[1]);
+		</script>
+	</body>
+
+</html>

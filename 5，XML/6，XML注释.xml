@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- 这种注释风格实际上是html的，但是xml也可以使用 -->
+<authors>
+    <author>
+	    <![CDATA[
+		    XML中提供CDATA标记来标识文件数据，当XML解析器处理到CDATA标记时，它不会解析该段数据中的任何符号或标记，只是将元数据原封不动地传递给应用程序。
+		]]>
+	    <name>赵匡胤</name>
+	</author>
+</authors>

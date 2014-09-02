@@ -1,0 +1,30 @@
+<!-- 调用带参数的函数
+在调用函数时，可以向其传递值，这些值被称为参数。 -->   
+<!DOCTYPE html>
+<html>
+	<body>
+	    <script>
+		    /* 
+			当声明函数时，请把参数作为变量来声明，参数可以在函数中使用。
+			*/
+			function myFunction(name, job) {
+				alert("Welcome " + name + ", the " + job);
+			}
+		</script>
+		<p>
+			点击这个按钮，来调用带参数的函数。
+		</p>
+		<!-- 
+		可以发送任意多的参数，由逗号 (,) 分隔。
+		变量和参数必须以一致的顺序出现。第一个变量就是第一个被传递的参数的给定的值，以此类推。 
+		-->
+		<button onclick="myFunction('Bill Gates','CEO')">
+			点击这里
+		</button>
+		<button onclick="myFunction('Harry Potter','Wizard')">
+		    点击这里
+		</button>
+		
+	</body>
+
+</html>

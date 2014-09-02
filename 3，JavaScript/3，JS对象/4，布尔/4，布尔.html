@@ -1,0 +1,45 @@
+<!-- 布尔(Boolean)对象
+Boolean 对象用于将非逻辑值转换为逻辑值（true 或者 false）。
+-->
+<!DOCTYPE html>
+<html>
+	<body>
+		<script>
+		    /* 
+			Boolean 对象表示两个值："true" 或 "false"。
+			可以将 Boolean 对象理解为一个产生逻辑值的对象包装器。 
+			*/
+		    /* 
+			创建 Boolean 对象 
+			如果逻辑对象无初始值或者其值为 0、-0、null、""、false、undefined 或者 NaN，那么对象的值为 false。
+			否则，其值为 true（即使当自变量为字符串 "false" 时）！
+			*/
+			// 下面这些 Boolean 对象值都是 false
+			var myBoolean = Boolean(false);
+			var myBoolean = new Boolean();
+			document.write("new Boolean() 是逻辑的 " + myBoolean + "<br />");
+			var myBoolean = new Boolean(0);
+			document.write("0 是逻辑的 " + myBoolean + "<br />");
+			var myBoolean = new Boolean(null);
+			document.write("null 是逻辑的 " + myBoolean + "<br />");
+			var myBoolean = new Boolean("");
+			document.write("空串 是逻辑的 " + myBoolean + "<br />");
+			var myBoolean = new Boolean(false);
+			document.write("false 是逻辑的 " + myBoolean + "<br />");
+			var myBoolean = new Boolean(NaN);
+			document.write("NaN 是逻辑的 " + myBoolean + "<br />");
+			// 下面这些 Boolean 对象值都是 true
+			var myBoolean = new Boolean(1);
+			document.write("1 是逻辑的 " + myBoolean + "<br />");
+			var myBoolean = new Boolean(true);
+			document.write("true 是逻辑的 " + myBoolean + "<br />");
+			var myBoolean = new Boolean("true");
+			document.write('"true" 是逻辑的 ' + myBoolean + '<br />');
+			var myBoolean = new Boolean("false");
+			document.write('"false" 是逻辑的 ' + myBoolean + '<br />');
+			var myBoolean = new Boolean("Bill Gates");
+			document.write('"Bill Gates" 是逻辑的 ' + myBoolean + '<br />');
+		</script>
+	</body>
+
+</html>

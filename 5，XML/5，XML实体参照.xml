@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="GB2312"?>
+<!-- XML语法中存在某些特殊含义的符号，为了显示它们，需要使用实体参照 -->
+<authors>
+    <author>
+	    <!-- &amp; 表示 & -->
+	    <name>赵匡胤&amp;赵广义</name>
+		<books>
+		    <!-- &lt; 表示 < ， &gt; 表示 > -->
+		    <book>&lt;&lt;Java开发实战&gt;&gt;</book>
+			<!-- &quot; 表示 "，&apos; 表示 '  -->
+			<book>&quot;Oracle&apos;s开发&quot;</book>
+		</books>
+	</author>
+</authors>

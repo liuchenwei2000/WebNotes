@@ -1,0 +1,81 @@
+<!-- switch 语句用于基于不同的条件来执行不同的动作。 -->
+<!DOCTYPE html>
+<html>
+	<body>
+		<p>
+			点击下面的按钮来显示今天是周几：
+		</p>
+		<button onclick="myFunction()">
+			点击这里
+		</button>
+		<p id="demo">
+		</p>
+		<script>
+		    /*
+			使用 switch 语句来选择要执行的多个代码块之一。语法如下：
+			switch (n) {
+				case 1:
+					执行代码块1
+					break;
+				case 2:
+					执行代码块2
+					break;
+				default:
+					n 与 case1和 case2 不同时执行的代码。
+				}
+			*/
+			function myFunction() {
+				var x;
+				var d = new Date().getDay();
+				switch (d) {
+				case 0:
+					x = "Sunday";
+					break;//  break 会使代码跳出 switch 语句。如果没有 break，代码执行就会继续进入下一个 case。
+				case 1:
+					x = "Monday";
+					break;
+				case 2:
+					x = "Tuesday";
+					break;
+				case 3:
+					x = "Wednesday";
+					break;
+				case 4:
+					x = "Thursday";
+					break;
+				case 5:
+					x = "Friday";
+					break;
+				case 6:
+					x = "Saturday";
+					break;
+				}
+				document.getElementById("demo").innerHTML = x;
+			}
+			
+			/*
+			JavaScript 和 Java 中的 switch 语句有两点不同：
+			1，在 JavaScript 中，switch 语句可以用于字符串，即 switch 后面的参数可以是字符串类型。
+			2，在 JavaScript 中，case 语句可以使用不是常量的值，即 case 后面的参数可以是变量。
+			*/
+			var BLUE = "blue", RED = "red", GREEN = "green";
+				
+            function myFunction() {
+				switch (sColor) {// sColor 是个字符串
+				case BLUE:// BLUE 不是一个常量，而是变量
+					alert("Blue");
+					break;
+				case RED:
+					alert("Red");
+					break;
+				case GREEN:
+					alert("Green");
+					break;
+				default:
+					alert("Other");
+				}
+			}
+		</script>
+	</body>
+
+</html>

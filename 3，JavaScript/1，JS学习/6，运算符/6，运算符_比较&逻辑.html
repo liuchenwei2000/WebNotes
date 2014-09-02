@@ -1,0 +1,37 @@
+<!-- JavaScript 比较和逻辑运算符 -->
+<!DOCTYPE html>
+<html>
+	<body>
+		<script>
+		/*
+		比较运算符在逻辑语句中使用，以测定变量或值是否相等。
+		*/
+		var x = 5;
+		document.write(x + "==5 ? " + (x == 5) + "</br>");
+		document.write(x + "=='5' ? " + (x == '5') + "</br>");
+		document.write(x + "==6 ? " + (x == 6) + "</br>");
+		document.write(x + ">6 ? " + (x > 6) + "</br>");
+		
+		var age = 15;
+		if (age < 18) 
+		{
+		document.write("Too young!" + "</br>");
+		}
+		
+		/*
+		逻辑运算符用于测定变量或值之间的逻辑。
+		*/
+		if((x > 0) && (age < 18))
+		{
+		document.write("(x > 0) && (age < 18)" + "</br>");
+		}
+		
+		/*
+		三元运算符：variablename = (condition) ? value1 : value2 
+		*/
+		var message =  age < 18 ? "Forbidden" : "Hello";
+		document.write(message);
+		</script>
+	</body>
+
+</html>

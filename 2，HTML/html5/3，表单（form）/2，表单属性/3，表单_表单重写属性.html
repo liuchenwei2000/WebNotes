@@ -1,0 +1,31 @@
+<!-- 表单重写属性（form override attributes）允许重写 form 元素的某些属性设定。
+表单重写属性有：
+formaction - 重写表单的 action 属性
+formenctype - 重写表单的 enctype 属性
+formmethod - 重写表单的 method 属性
+formnovalidate - 重写表单的 novalidate 属性
+formtarget - 重写表单的 target 属性
+注释：表单重写属性适用于以下类型的 <input> 标签：submit 和 image。
+-->
+<!DOCTYPE HTML>
+<html>
+	<body>
+		<form action="http://www.w3school.com.cn/example/html5/demo_form.asp" method="get" id="user_form">
+			E-mail:
+			<input type="email" name="userid" />
+			<br />
+			<input type="submit" value="Submit" />
+			<br />
+			<!-- formaction 属性覆盖 form 元素的 action 属性 -->
+			<input type="submit" formaction="http://www.w3school.com.cn/example/html5/demo_admin.asp" value="Submit as admin"
+			/>
+			<br />
+			<!-- formnovalidate 属性覆盖 form 元素的 novalidate 属性。
+			如果使用该属性，则提交表单时按钮不会执行验证过程。 -->
+			<input type="submit" formnovalidate="true" value="Submit without validation"
+			/>
+			<br />
+		</form>
+	</body>
+
+</html>

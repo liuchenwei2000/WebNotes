@@ -1,0 +1,28 @@
+<!-- 也可以把脚本保存到外部文件中，外部文件通常包含被多个网页使用的代码。外部 JavaScript 文件的文件扩展名是 .js。 -->
+<!DOCTYPE html>
+<html>
+	<head>
+	    <!-- src 属性中设置外部 .js 文件。
+		在 <head> 或 <body> 中引用脚本文件都是可以的。 -->
+		<script type="text/javascript" src="myscript.js">
+		</script>
+	</head>
+	<body>
+		<h1>
+			My Web Page
+		</h1>
+		<p id="demo">
+			A Paragraph.
+		</p>
+		<button type="button" onClick="myFunction()">
+			点击这里
+		</button>
+		<p>
+			<b>
+				注释：
+			</b>
+			myFunction 保存在名为 "myscript.js" 的外部文件中。
+		</p>
+	</body>
+
+</html>

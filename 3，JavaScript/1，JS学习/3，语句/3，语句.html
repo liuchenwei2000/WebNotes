@@ -1,0 +1,39 @@
+<!-- JavaScript 是脚本语言。
+浏览器会在读取代码时，逐行地执行脚本代码。而对于传统编程来说，会在执行前对所有代码进行编译。
+JavaScript 语句向浏览器发出命令，语句的作用是告诉浏览器该做什么。
+JavaScript 对大小写是敏感的。
+-->
+<!DOCTYPE html>
+<html>
+	<body>
+		<h1>
+			My Web Page
+		</h1>
+		<p id="demo">
+			A Paragraph.
+		</p>
+		<div id="myDIV">
+			A DIV.
+		</div>
+		<script>
+		    /*
+			下面是两条 JavaScript 语句，浏览器会按照编写顺序来执行每条语句。
+			分号用于分隔 JavaScript 语句，通常在每条可执行的语句结尾添加分号。
+			也可能看到不带有分号的案例。在 JavaScript 中，用分号来结束语句是可选的。
+			*/
+			document.getElementById("demo").innerHTML = "Hello World";
+			document.getElementById("myDIV").innerHTML = "How are you?";
+			/*
+			JavaScript 代码块
+			JavaScript 语句通过代码块的形式进行组合。块由左花括号开始，由右花括号结束。
+			块的作用是使语句序列一起执行。JavaScript 函数是将语句组合在块中的典型例子。
+			*/
+			function myFunction()
+			{
+			document.getElementById("demo").innerHTML="Hello World";
+			document.getElementById("myDIV").innerHTML="How are you?";
+			}
+		</script>
+	</body>
+
+</html>

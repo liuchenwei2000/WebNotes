@@ -1,0 +1,26 @@
+<!-- 函数是由事件驱动的或者当它被调用时执行的可重复使用的代码块。 -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+		    /*
+			函数就是包裹在花括号中的代码块，前面使用了关键词 function:
+			function functionname()
+			{
+			这里是要执行的代码
+			}
+			当调用该函数时，会执行函数内的代码。
+			可以在某事件发生时直接调用函数（比如当点击按钮时），并且可由 JavaScript 在任何位置进行调用。
+			*/
+			function myFunction() {
+				alert("Hello World!");
+			}
+		</script>
+	</head>
+	<body>
+		<button onClick="myFunction()">
+			点击这里
+		</button>
+	</body>
+
+</html>

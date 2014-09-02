@@ -1,0 +1,27 @@
+<!-- 遍历数组 -->
+<!DOCTYPE html>
+<html>
+	<body>
+		<script>
+			/*
+			遍历数组有两种方式
+			*/
+			var mycars = new Array();
+			mycars[0] = "Saab";
+			mycars[1] = "Volvo";
+			mycars[2] = "BMW";
+			
+			// 第一种方式，length 属性返回数组长度
+			for (i = 0; i < mycars.length; i++) {
+				document.write(mycars[i] + "<br />");
+			}
+			
+			// 第二种方式，for-in循环
+			var x;
+			for (x in mycars) {
+				document.write(mycars[x] + "<br />")
+			}
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!-- <map> 标签定义一个客户端图像映射，图像映射（image-map）指带有可点击区域的一幅图像。 -->
+<html>
+	<body>
+		<p>
+			请点击选择搜索引擎!
+		</p>
+		<!-- <img>中的 usemap 属性可引用 <map> 中的 id 或 name 属性（取决于浏览器） -->
+		<img src="../images/imgmap.png" border="0" usemap="#semap" />
+		<map name="semap" id="semap">
+		    <!-- area 元素永远嵌套在 map 元素内部，area 元素可定义图像映射中的区域。 -->
+			<!-- 
+			shape 属性与 coords 属性配合，可以规定区域的尺寸、形状和位置。
+			shape 属性用于定义图像映射中对鼠标敏感的区域的形状：
+			圆形（circ 或 circle）
+			矩形（rect 或 rectangle） 
+			多边形（poly 或 polygon）
+			-->
+			<!--
+			coords 属性规定区域的 x 和 y 坐标，图像左上角的坐标是 "0,0"。
+			圆形：shape="circle"，coords="x,y,r"，这里的 x 和 y 定义了圆心的位置，r 是以像素为单位的圆形半径。
+			矩形：shape="rectangle"，coords="x1,y1,x2,y2"，第一个坐标是矩形的一个角的顶点坐标，另一对坐标是对角的顶点坐标。
+			多边形：shape="polygon"，coords="x1,y1,x2,y2,x3,y3,..."，每一对 "x,y" 坐标都定义了多边形的一个顶点，定义三角形至少需要三组坐标；多边形则需要更多数量的顶点。多边形会自动封闭，因此在列表的结尾不需要重复第一个坐标来闭合整个区域。
+			-->
+			<area shape="circle" coords="79,94,54" href="http://www.baidu.com" target="_blank" alt="百度" />
+			<area shape="rect" coords="190,47,294,141" href="http://www.google.com.hk" target="_blank" alt="谷歌" />
+		</map>
+		<p>
+			<b>
+				注释：
+			</b>
+			img 元素中的 "usemap" 属性引用 map 元素中的 "id" 或 "name" 属性（根据浏览器），所以我们同时向 map 元素添加了 "id" 和 "name" 属性。
+		</p>
+	</body>
+
+</html>

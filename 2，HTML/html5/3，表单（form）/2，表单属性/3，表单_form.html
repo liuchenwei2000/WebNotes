@@ -1,0 +1,20 @@
+<!-- form 属性规定输入域所属的一个或多个表单。
+form 属性适用于所有 <input> 标签的类型。
+-->
+<!DOCTYPE HTML>
+<html>
+	<body>
+		<form action="http://www.w3school.com.cn/example/html5/demo_form.asp" method="get" id="form1">
+			First name:
+			<input type="text" name="fname" />
+			<input type="submit" />
+		</form>
+		<p>
+			下面的输入域在 form 元素之外，但仍然是表单的一部分。
+		</p>
+		Last name:
+		<!-- form 属性必须引用所属表单的 id，如需引用一个以上的表单，请使用空格分隔的列表。 -->
+		<input type="text" name="lname" form="form1" />
+	</body>
+
+</html>

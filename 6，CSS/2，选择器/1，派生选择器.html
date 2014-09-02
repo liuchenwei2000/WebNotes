@@ -1,0 +1,30 @@
+<!-- 派生选择器（上下文选择器）
+派生选择器允许根据文档的上下文关系来确定某个标签的样式。通过合理地使用派生选择器，可以使 HTML 代码变得更加整洁。
+-->
+<html>
+<head>
+<style type="text/css">
+/* 所有的 h1 元素都是红色22号字 */
+h1 {
+	color: red;
+	font-size: 26;
+}
+/* 下面这个派生选择器，可以让 h1 元素中 strong元素 为蓝色  */
+/* 只有 h1 元素中 strong元素的样式为蓝色，无需为 strong 元素定义特别的 class 或 id，代码更加简洁。 */
+h1 strong {
+	color: blue;
+}
+</style>
+</head>
+<body>
+	<h1>
+		<strong>this is strong h1</strong>
+	</h1>
+	<h1>
+		this is h1
+	</h1>
+	<strong>
+		this is strong
+	</strong>
+</body>
+</html>

@@ -1,0 +1,15 @@
+div.book {
+	color: red;
+	background-color: lightgray;
+}
+
+div.chapter {
+	color: black;
+	background-color: pink;
+	border: 1pt solid black;
+}
+
+span {
+	font-weight: bold;
+	color: #ff9955;
+}

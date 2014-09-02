@@ -1,0 +1,29 @@
+<!-- 带有返回值的函数 -->   
+<!DOCTYPE html>
+<html>
+	<body>
+	    <p id="demo">
+			what
+		</p>
+	    <script>
+		    /* 
+			希望函数将值返回调用它的地方，通过使用 return 语句就可以实现。
+			在使用 return 语句时，函数会停止执行，并返回指定的值。
+			整个 JavaScript 并不会停止执行，仅仅是函数。JavaScript 将继续执行代码，从调用函数的地方。
+			*/
+			function myFunction(x, y) {
+				return x + y;
+			}
+			// 使用函数的返回值
+			document.getElementById("demo").innerHTML = myFunction(3, 4);
+			
+			// 在仅仅希望退出函数时 ，也可使用 return 语句。返回值是可选的。
+			function test(a, b) {
+			    if(b == 0)
+				    return;
+				document.write(a/b);
+			}
+		</script>
+	</body>
+
+</html>
