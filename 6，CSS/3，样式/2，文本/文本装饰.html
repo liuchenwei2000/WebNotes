@@ -1,0 +1,50 @@
+<!-- 文本装饰 -->
+<html>
+<head>
+<style type="text/css">
+
+/*
+text-decoration 属性提供了文本装饰的功能，它有 5 个值：
+none 关闭原本应用到一个元素上的所有装饰；
+underline 对元素加下划线；
+overline 在文本的顶端画一个上划线；
+line-through 在文本中间画一个贯穿线；
+blink 会让文本闪烁。
+
+text-decoration 的值会替换而不是累积起来。
+*/
+h1 {
+	text-decoration: overline
+}
+
+h2 {
+	text-decoration: line-through
+}
+
+h3 {
+	text-decoration: underline
+}
+
+h4 {
+	text-decoration: blink
+}
+
+/* 去掉超链接的下划线 */
+a {
+	text-decoration: none
+}
+</style>
+</head>
+
+<body>
+	<h1>这是标题 1</h1>
+	<h2>这是标题 2</h2>
+	<h3>这是标题 3</h3>
+	<h4>这是标题 4</h4>
+	<p>
+		<a href="http://www.baidu.com">这是一个链接</a>
+	</p>
+</body>
+
+</html>
+

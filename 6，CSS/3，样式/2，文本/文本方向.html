@@ -1,0 +1,24 @@
+<!-- 水平对齐 -->
+<html>
+<head>
+<style type="text/css">
+/*
+direction 属性影响块级元素中文本的书写方向、表中列布局的方向、内容水平填充其元素框的方向、以及两端对齐元素中最后一行的位置。
+它有两个值：ltr 和 rtl。大多数情况下，默认值是 ltr，显示从左到右的文本。如果显示从右到左的文本，应使用值 rtl。
+*/
+div.one {
+	direction: rtl
+}
+
+div.two {
+	direction: ltr
+}
+</style>
+</head>
+<body>
+
+	<div class="one">direction Right-to-left.text Some.</div>
+	<div class="two">Some text. Left-to-right direction.</div>
+
+</body>
+</html>

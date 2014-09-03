@@ -1,0 +1,26 @@
+<!-- 单词间隔 -->
+<html>
+<head>
+<style type="text/css">
+
+/* 
+word-spacing 属性可以改变字（单词）之间的标准间隔。其默认值 normal 与设置值为 0 是一样的。
+word-spacing 属性接受一个正长度值或负长度值。
+如果提供一个正长度值，那么字之间的间隔就会增加。为 word-spacing 设置一个负值，会把它拉近 。
+*/
+p.spread {
+	word-spacing: 30px;
+}
+
+p.tight {
+	word-spacing: -0.5em;
+}
+</style>
+</head>
+
+<body>
+	<p class="spread">This is some text. This is some text.</p>
+	<p class="tight">This is some text. This is some text.</p>
+</body>
+
+</html>

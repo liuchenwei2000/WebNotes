@@ -1,0 +1,26 @@
+<!-- 处理空白符 -->
+<html>
+<head>
+<style type="text/css">
+
+/*
+white-space 属性可以影响浏览器处理字之间和文本行之间的空白符的方式。
+给定以下标记，它在 Web 浏览器中显示时，各个字之间只会显示一个空格，同时忽略元素中的换行。
+*/
+p {
+	white-space: normal;
+}
+</style>
+</head>
+
+<body>
+
+	<p>This       paragraph    has        many       spaces
+	          in it.</p>
+
+	<p>注释：当 white-space 属性设置为 normal 时，会合并所有的空白符，并忽略换行符。</p>
+
+</body>
+
+</html>
+

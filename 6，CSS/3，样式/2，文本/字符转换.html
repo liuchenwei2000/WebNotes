@@ -1,0 +1,36 @@
+<!-- 字符转换 -->
+<html>
+<head>
+<style type="text/css">
+
+/* 
+text-transform 属性处理文本的大小写。这个属性有 4 个值：none、uppercase、lowercase、capitalize。
+默认值 none 对文本不做任何改动，将使用源文档中的原有大小写；uppercase 和 lowercase 将文本转换为全大写和全小写字符。
+capitalize 只对每个单词的首字母大写。
+*/
+h1 {
+	text-transform: uppercase
+}
+
+p.uppercase {
+	text-transform: uppercase
+}
+
+p.lowercase {
+	text-transform: lowercase
+}
+
+p.capitalize {
+	text-transform: capitalize
+}
+</style>
+</head>
+
+<body>
+	<h1>This Is An H1 Element</h1>
+	<p class="uppercase">This is some text in a paragraph.</p>
+	<p class="lowercase">This is some text in a paragraph.</p>
+	<p class="capitalize">This is some text in a paragraph.</p>
+</body>
+
+</html>
