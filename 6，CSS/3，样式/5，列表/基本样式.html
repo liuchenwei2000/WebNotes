@@ -1,0 +1,83 @@
+<!-- 基本列表样式 -->
+<html>
+<head>
+<style type="text/css">
+/* 
+列表类型
+
+要影响列表的样式，最简单（同时支持最充分）的办法就是改变其标志类型。
+要修改用于列表项的标志类型，可以使用属性 list-style-type，下面把无序列表中的列表项标志设置为方块
+*/
+ul.square {
+	list-style-type: square ;
+}
+
+/*
+列表项图像
+
+有时常规的标志是不够的，还可能想对各标志使用一个图像，可以利用 list-style-image 属性
+*/
+ul.image {
+	list-style-image: url(images/eg_arrow.gif) ;
+}
+
+/*
+列表项位置
+
+list-style-position 属性规定列表中列表项目标记的位置
+*/
+ol.inside {
+	list-style-type: decimal ;
+	list-style-position: inside ;
+}
+
+ol.outside {
+	list-style-type: decimal ;
+	list-style-position: outside ;
+}
+
+/*
+简写列表样式
+
+为简单起见，可以将以上 3个列表样式属性合并为一个方便的属性：list-style，如下：
+list-style 的值可以按任何顺序列出，而且这些值都可以忽略。只要提供了一个值，其它的就会填入其默认值。
+*/
+ul.style {
+	list-style: url(images/eg_arrow.gif) square inside ;
+}
+</style>
+</head>
+
+<body>
+	<ul class="square">
+		<li>方块</li>
+		<li>茶</li>
+		<li>可口可乐</li>
+	</ul>
+
+	<ul class="image">
+		<li>图片</li>
+		<li>茶</li>
+		<li>可口可乐</li>
+	</ul>
+
+	<ol class="inside">
+		<li>inside</li>
+		<li>茶</li>
+		<li>可口可乐</li>
+	</ol>
+
+	<ol class="outside">
+		<li>outside</li>
+		<li>茶</li>
+		<li>可口可乐</li>
+	</ol>
+
+
+	<ul class="style">
+		<li>简写样式</li>
+		<li>茶</li>
+		<li>可口可乐</li>
+	</ul>
+</body>
+</html>

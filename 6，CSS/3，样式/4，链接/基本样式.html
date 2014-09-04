@@ -1,0 +1,52 @@
+<!-- 基本链接样式 -->
+<html>
+<head>
+<style type="text/css">
+/* 
+能够设置链接样式的 CSS 属性有很多种（例如 color, font-family, background 等等）。
+
+链接的特殊性在于能够根据它们所处的状态来设置它们的样式。
+
+链接的四种状态：
+a:link - 普通的、未被访问的链接
+a:visited - 用户已访问的链接
+a:hover - 鼠标指针位于链接的上方
+a:active - 链接被点击的时刻
+*/
+
+/* 未被访问的链接 */
+a:link {
+	color: red;
+}
+
+/* 已被访问的链接 */
+a:visited {
+	color: purple;
+}
+
+/*
+当为链接的不同状态设置样式时，请按照以下次序规则：
+a:hover 必须位于 a:link 和 a:visited 之后
+a:active 必须位于 a:hover 之后
+*/
+
+/* 鼠标指针移动到链接上 */
+a:hover {
+	color: orange;
+}
+/* 正在被点击的链接 */
+a:active {
+	color: green;
+}
+</style>
+</head>
+
+<body>
+	<p>
+		<b><a href="http://www.baidu.com" target="_blank">这是一个链接</a></b>
+	</p>
+	<p>
+		未被访问的链接 红色；<br> 已被访问的链接 紫色；<br> 鼠标移动到链接 橙色；<br> 正被点击的链接 绿色。
+	</p>
+</body>
+</html>
