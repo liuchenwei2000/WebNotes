@@ -1,0 +1,50 @@
+<!-- 表格标题 -->
+<html>
+<head>
+<style type="text/css">
+
+table {
+	width: 50%;
+	height: 100px;
+}
+
+/* 
+使用 caption 属性规定表格标题的放置方式。
+*/
+caption.top {
+	caption-side: top;
+}
+
+caption.bottom {
+	caption-side: bottom;
+}
+</style>
+</head>
+<body>
+
+	<table border="1">
+		<caption class="top">This is a caption</caption>
+		<tr>
+			<td>Adams</td>
+			<td>John</td>
+		</tr>
+		<tr>
+			<td>Bush</td>
+			<td>George</td>
+		</tr>
+	</table>
+
+	<table border="1">
+		<caption class="bottom">This is a caption</caption>
+		<tr>
+			<td>Adams</td>
+			<td>John</td>
+		</tr>
+		<tr>
+			<td>Bush</td>
+			<td>George</td>
+		</tr>
+	</table>
+
+</body>
+</html>
