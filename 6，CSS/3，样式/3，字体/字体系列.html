@@ -1,0 +1,44 @@
+<!-- 字体系列  -->
+<!-- 
+在 CSS 中，有两种不同类型的字体系列名称：
+通用字体系列 - 拥有相似外观的字体系统组合（比如 "Serif" 或 "Monospace"）
+特定字体系列 - 具体的字体系列（比如 "Times" 或 "Courier"）
+
+除了各种特定的字体系列外，CSS 定义了 5 种通用字体系列：
+Serif 字体、Sans-serif 字体、Monospace 字体、Cursive 字体、Fantasy 字体。
+-->
+<html>
+<head>
+<style type="text/css">
+/* 使用 font-family 属性 定义文本的字体系列。 */
+
+/* 
+1，使用通用字体系列
+如果希望文档使用一种 sans-serif 字体，但是并不关心具体是哪一种字体，以下就是一个合适的声明。
+因为有继承，这种字体选择还将应用到 body 元素中包含的所有元素，除非有一种更特定的选择器将其覆盖。
+*/
+body {
+	font-family: sans-serif;
+}
+
+/* 
+2，指定字体系列
+除了使用通用的字体系列，还可以通过 font-family 属性设置更具体的字体。
+如果用户代理上没有安装 Georgia 字体，就只能使用用户代理的默认字体来显示 h1 元素。
+*/
+h1 {
+    /* 只有当字体名中有一个或多个空格（比如 New York），或者如果字体名包括 # 或 $ 之类的符号，才需要加引号  */
+	font-family: "Courier New";
+}
+</style>
+</head>
+<body>
+
+	<h1>This is heading 1</h1>
+
+	<p>This is a paragraph.</p>
+
+	<p>This is a paragraph.</p>
+
+</body>
+</html>

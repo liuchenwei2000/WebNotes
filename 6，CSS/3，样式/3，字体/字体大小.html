@@ -1,0 +1,42 @@
+<!-- 字体大小  -->
+<html>
+<head>
+<style type="text/css">
+/* 
+使用  font-size 属性设置文本的大小。font-size 值可以是绝对或相对值。
+
+绝对值：
+将文本设置为指定的大小，不允许用户在所有浏览器中改变文本大小（不利于可用性），绝对大小在确定了输出的物理尺寸时很有用。
+
+相对值：
+相对于周围的元素来设置大小，允许用户在浏览器改变文本大小。
+*/
+body {
+	font-size: 100%;
+}
+/* 使用像素来设置字体大小，通过像素设置文本大小，可以对文本大小进行完全控制 */
+h1 {
+	font-size: 40px;
+}
+
+/* 
+使用 em 来设置字体大小，W3C 推荐使用 em 尺寸单位。
+1em 等于当前的字体尺寸。如果一个元素的 font-size 为 16 像素，那么对于该元素，1em 就等于 16 像素。
+在设置字体大小时，em 的值会相对于父元素的字体大小改变。 
+*/
+h2 {
+	font-size: 1.5em;
+}
+
+p {
+	font-size: 0.8em;
+}
+</style>
+</head>
+
+<body>
+	<h1>This is heading 1</h1>
+	<h2>This is heading 2</h2>
+	<p>This is a paragraph.</p>
+</body>
+</html>
