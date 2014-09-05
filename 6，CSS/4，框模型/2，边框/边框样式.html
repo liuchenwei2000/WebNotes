@@ -1,0 +1,94 @@
+<!-- 边框样式 -->
+<html>
+<head>
+<style type="text/css">
+/* 
+样式是边框最重要的一个方面，这不是因为样式控制着边框的显示，而是因为如果没有样式将根本没有边框。
+CSS 的 border-style 属性定义了 10 个不同的非 inherit 样式，包括 none。
+*/
+p.none {
+	/* 无边框 */
+	border-style: none;
+}
+
+p.dotted {
+	/* 点状边框 */
+	border-style: dotted;
+}
+
+p.dashed {
+	/* 虚线边框 */
+	border-style: dashed;
+}
+
+p.solid {
+	/* 实线边框 */
+	border-style: solid;
+}
+
+p.double {
+	/* 双线边框，双线的宽度等于 border-width 的值 */
+	border-style: double;
+}
+
+p.groove {
+	/* 3D 凹槽边框，其效果取决于 border-color 的值 */
+	border-style: groove;
+}
+
+p.ridge {
+	/* 3D 垄状边框，其效果取决于 border-color 的值  */
+	border-style: ridge;
+}
+
+p.inset {
+	/* 3D inset 边框，其效果取决于 border-color 的值  */
+	border-style: inset;
+}
+
+p.outset {
+	/* 3D outset 边框，其效果取决于 border-color 的值  */
+	border-style: outset;
+}
+
+/* 按 top-right-bottom-left 的顺序，为每个边设置不同样式 */
+p.aside {
+	border-style: dotted solid dashed double;
+}
+
+/* 按 单边边框样式属性，为每个边设置不同样式 */
+p.aside2 {
+	border-top-style: dotted;
+	border-right-style: solid;
+	border-bottom-style: dashed;
+	border-left-style: double;
+}
+</style>
+</head>
+
+<body>
+
+	<p class="none">A none border</p>
+	
+	<p class="dotted">A dotted border</p>
+
+	<p class="dashed">A dashed border</p>
+
+	<p class="solid">A solid border</p>
+
+	<p class="double">A double border</p>
+
+	<p class="groove">A groove border</p>
+
+	<p class="ridge">A ridge border</p>
+
+	<p class="inset">An inset border</p>
+
+	<p class="outset">An outset border</p>
+	
+	<p class="aside">四边边框单独设置， top-right-bottom-left 顺序</p>
+	
+	<p class="aside2">四边边框单独设置</p>
+</body>
+
+</html>

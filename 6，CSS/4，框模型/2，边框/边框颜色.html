@@ -1,0 +1,57 @@
+<!-- 边框颜色 -->
+<html>
+<head>
+<style type="text/css">
+/* 
+可以通过 border-color 属性为边框指定颜色。
+*/
+p.one {
+	border-style: solid;
+	border-color: #0000ff;
+}
+
+/* 按 top-right-bottom-left 的顺序设置元素的各边颜色 */
+p.two {
+	border-style: solid;
+	border-color: #ff0000 #00ff00 #0000ff rgb(250, 0, 255);
+}
+
+/* 按 单边边框颜色属性，为每个边设置不同颜色 */
+p.three {
+	border-style: solid;
+	border-top-color: red;
+	border-right-color: black;
+	border-bottom-color: green;
+	border-left-color: orange;
+}
+
+/* 
+如果边框没有样式，就没有宽度。不过有些情况下可能希望创建一个不可见的边框。
+颜色值 transparent。这个值用于创建有宽度的不可见边框。
+*/
+p.four {
+	border-style: solid;
+	border-width: 15px;
+	border-color: transparent;
+}
+</style>
+
+</head>
+
+<body>
+
+	<p class="one">One-colored border!</p>
+
+	<p class="two">Two-colored border!</p>
+
+	<p class="three">Three-colored border!</p>
+
+	<p class="four">Four-colored border!</p>
+
+	<p>
+		<b>注释：</b>"border-width" 属性如果单独使用的话是不会起作用的。请首先使用 "border-style"
+		属性来设置边框。
+	</p>
+
+</body>
+</html>
