@@ -1,0 +1,37 @@
+<!-- 多类选择器
+在 HTML 中，一个 class 值中可能包含一个词列表，各个词之间用空格分隔，各个词的顺序无关紧要。
+如果希望将一个特定的规则同时标记各个词，则可以使用多类选择器。
+-->
+<html>
+<head>
+<style type="text/css">
+.important {
+	font-weight: bold;
+}
+
+.warning {
+	font-style: italic;
+}
+
+/* 
+通过把两个类选择器链接在一起，仅可以选择同时包含这些类名的元素（类名的顺序不限）。
+*/
+.important.warning {
+	background: silver;
+}
+</style>
+</head>
+
+<body>
+	<p class="important">This paragraph is very important.</p>
+
+	<p class="warning">This is a warning.</p>
+
+	<p class="important warning">This paragraph is a very important warning.</p>
+
+	<p class="important urgent warning">This paragraph is a very important urgent warning.</p>
+
+	<p>This is a paragraph.</p>
+
+</body>
+</html>
