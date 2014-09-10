@@ -24,3 +24,8 @@ body {
 	font-size: 35px;
 	display: block;
 }
+
+/* 属性选择器一样可以用在XML中 */
+planet[moons] {
+	color: red;
+}

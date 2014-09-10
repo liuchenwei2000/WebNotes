@@ -1,0 +1,34 @@
+<!-- 特定属性选择类型
+这种属性选择器最常见的用途还是匹配语言值。
+-->
+<html>
+<head>
+<style type="text/css">
+
+/* 
+下面的属性和值选择器为 lang="en-..." 的所有元素设置样式，适用于由连字符(-)分隔的属性值。 
+另外还有：
+[attribute~=value]	用于选取属性值中包含指定词汇的元素。
+[attribute|=value]	用于选取带有以指定值开头的属性值的元素，该值必须是整个单词。
+[attribute^=value]	匹配属性值以指定值开头的每个元素。
+[attribute$=value]	匹配属性值以指定值结尾的每个元素。
+[attribute*=value]	匹配属性值中包含指定值的每个元素。
+ */
+[lang|=en] {
+	color: orange;
+}
+</style>
+</head>
+<body>
+
+	<h1>可以应用样式：</h1>
+	<p lang="en">Hello!</p>
+	<p lang="en-us">Hi!</p>
+	<hr />
+
+	<h1>无法应用样式：</h1>
+	<p lang="us">Hi!</p>
+	<p lang="zh">Hao!</p>
+
+</body>
+</html>

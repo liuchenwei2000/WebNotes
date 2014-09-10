@@ -5,4 +5,8 @@
 	<from>John</from>
 	<heading>Reminder</heading>
 	<body>Don't forget the meeting!</body>
+
+	<planet>Venus</planet>
+	<planet moons="1">Earth</planet>
+	<planet moons="2">Mars</planet>
 </note>

@@ -1,0 +1,23 @@
+<!-- 子元素选择器（child selectors）
+与后代选择器相比，子元素选择器只能选择作为某元素子元素的元素。
+-->
+<html>
+<head>
+<style type="text/css">
+
+/* 子选择器使用了大于号（子结合符），子结合符两边可以有空白符，这是可选的。 */
+h1 > strong {
+	color: red;
+}
+</style>
+</head>
+
+<body>
+	<h1>
+		This is <strong>very</strong> <strong>very</strong> important.
+	</h1>
+	<h1>
+		This is <em>really <strong>very</strong></em> important.
+	</h1>
+</body>
+</html>
