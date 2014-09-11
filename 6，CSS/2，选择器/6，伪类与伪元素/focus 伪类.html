@@ -1,0 +1,27 @@
+<!-- fucos 伪类 -->
+<html>
+<head>
+<style type="text/css">
+
+/* 
+first-child 伪类在元素获得焦点时向元素添加特殊的样式。
+*/
+input:focus {
+	background-color: yellow;
+}
+</style>
+</head>
+
+<body>
+	<form action="form_action.asp" method="get">
+		First name: <input type="text" name="fname" /><br /> Last name: <input
+			type="text" name="lname" /><br /> <input type="submit"
+			value="Submit" />
+	</form>
+
+	<p>
+		<b>注释：</b>如果已规定 !DOCTYPE，那么 Internet Explorer 8 （以及更高版本）支持 :focus 伪类。
+	</p>
+
+</body>
+</html>

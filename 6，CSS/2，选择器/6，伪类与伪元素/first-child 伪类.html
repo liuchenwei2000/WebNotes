@@ -1,0 +1,41 @@
+<!-- first-child 伪类 -->
+<html>
+<head>
+<style type="text/css">
+
+/* 
+first-child 伪类来选择元素的第一个实例。
+*/
+p:first-child {
+    /* 第一个 p 元素将会设为粗体 */
+	font-weight: bold;
+}
+
+li:first-child {
+    /* 第一个 li 元素将会设为大写 */
+	text-transform: uppercase;
+}
+</style>
+</head>
+
+<body>
+	<div>
+	    <!-- 这里是第一个 p 元素实例 -->
+		<p>These are the necessary steps:</p>
+		<ul>
+		    <!-- 这里是第一个 li 元素实例 -->
+			<li>Intert Key</li>
+			<li>Turn key <strong>clockwise</strong></li>
+			<li>Push accelerator</li>
+		</ul>
+		<p>
+			Do <em>not</em> push the brake at the same time as the accelerator.
+		</p>
+	</div>
+
+	<p>
+		<b>注释：</b>必须声明 DOCTYPE，这样 :first-child 才能在 IE 中生效。
+	</p>
+</body>
+
+</html>

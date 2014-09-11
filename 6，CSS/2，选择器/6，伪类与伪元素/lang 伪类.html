@@ -1,0 +1,22 @@
+<!-- lang 伪类 -->
+<html>
+<head>
+<style type="text/css">
+
+/* 
+lang 伪类可以不同的语言定义特殊的规则。
+下例为带有值为 "no" 的 lang 属性的 q 元素定义引号的类型
+*/
+q:lang(no) {
+	quotes: "*" "~"
+}
+</style>
+
+</head>
+
+<body>
+	<p>
+		文字<q lang="no">段落中的引用的文字</q>文字
+	</p>
+</body>
+</html>
