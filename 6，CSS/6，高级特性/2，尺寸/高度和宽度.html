@@ -1,0 +1,39 @@
+<!-- 设置元素的高度和宽度  -->
+<html>
+<head>
+<style type="text/css">
+
+/* 使用 height 属性设置高度 */
+img.normal {
+	/* 默认。浏览器计算出实际的高度。 */
+	height: auto;
+}
+
+img.big {
+	/* 使用 px、cm 等单位定义高度。 */
+	height: 30px;
+}
+
+img.small {
+	/* 基于包含它的块级对象的百分比高度。 */
+	height: 30%;
+}
+
+/* 使用 width 属性设置宽度，width 属性取值与 height 一致 */
+img.wide {
+	width: 50px;
+}
+</style>
+</head>
+<body>
+
+	<img class="normal" src="images/eg_smile.gif" />
+	<br />
+	<img class="big" src="images/eg_smile.gif" />
+	<br />
+	<img class="small" src="images/eg_smile.gif" />
+	<br />
+	<img class="wide" src="images/eg_smile.gif" />
+
+</body>
+</html>
