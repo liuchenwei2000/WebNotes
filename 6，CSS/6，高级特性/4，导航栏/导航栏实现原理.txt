@@ -1,0 +1,24 @@
+
+拥有易用的导航栏对于任何网站都很重要。通过 CSS 能够把乏味的 HTML 菜单转换为漂亮的导航栏。
+
+
+导航栏 = 链接列表
+
+导航栏需要标准的 HTML 作为基础。导航栏基本上是一个链接列表，因此使用 <ul> 和 <li> 元素是非常合适的：
+
+<ul>
+<li><a href="default.asp">Home</a></li>
+<li><a href="news.asp">News</a></li>
+<li><a href="contact.asp">Contact</a></li>
+<li><a href="about.asp">About</a></li>
+</ul>
+
+从列表中去掉圆点和外边距：
+ul
+{
+list-style-type:none;
+margin:0;
+padding:0;
+}
+
+以上例子中的代码是用在垂直、水平导航栏中的标准代码。
