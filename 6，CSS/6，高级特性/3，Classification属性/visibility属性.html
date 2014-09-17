@@ -1,0 +1,24 @@
+<!-- visibility 属性规定元素是否可见。
+即使不可见的元素也会占据页面上的空间。请使用 "display" 属性来创建不占据页面空间的不可见元素。
+-->
+<html>
+<head>
+<style type="text/css">
+
+h1.visible {
+	visibility: visible;
+}
+
+h1.invisible {
+    /* hidden 表示不可见 */
+	visibility: hidden;
+}
+</style>
+</head>
+
+<body>
+	<h1 class="visible">这是可见的标题</h1>
+	<h1 class="invisible">这是不可见的标题</h1>
+</body>
+
+</html>
