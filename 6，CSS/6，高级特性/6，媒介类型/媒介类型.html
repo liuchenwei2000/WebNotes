@@ -1,0 +1,57 @@
+<!-- 
+媒介类型(Media Types)允许定义以何种媒介来提交文档。文档可以被显示在显示器、纸媒介或者听觉浏览器等等。
+
+某些 CSS 属性仅仅被设计为针对某些媒介。比方说 "voice-family" 属性被设计为针对听觉用户终端。
+其他的属性可被用于不同的媒介。例如，"font-size" 属性可被用于显示器以及印刷媒介，但是也许会带有不同的值。
+显示器上面的显示的文档通常会需要比纸媒介文档更大的字号，同时，在显示器上，sans-serif 字体更易阅读，而在纸媒介上，serif 字体更易阅读。
+-->
+<html>
+<head>
+<style type="text/css">
+
+/* 
+@media 规则有能力在相同的样式表中，使用不同的样式规则来针对不同的媒介。
+
+常用规则列表：
+all	用于所有的媒介设备。
+aural	用于语音和音频合成器。
+braille	用于盲人用点字法触觉回馈设备。
+handheld	用于小的手持的设备。
+print	用于打印机。
+projection	用于方案展示，比如幻灯片。
+screen	用于电脑显示器。
+tv	用于电视机类型的设备。
+*/
+@media screen {
+	p.test {
+		font-family: verdana, sans-serif;
+		font-weight: bold;
+	}
+}
+
+@media print {
+	p.test {
+		font-family: times, serif;
+		font-weight: lighter;
+	}
+}
+
+@media screen , print {
+	p.test {
+		font-size: 12px;
+	}
+}
+</style>
+
+</head>
+
+<body>
+	<p class="test">Now we are engaged in a great civil war, testing
+		whether that nation, or any nation so conceived and so dedicated, can
+		long endure. We are met on a great battle-field of that war. We have
+		come to dedicate a portion of that field, as a final resting place for
+		those who here gave their lives that that nation might live. It is
+		altogether fitting and proper that we should do this.</p>
+</body>
+
+</html>

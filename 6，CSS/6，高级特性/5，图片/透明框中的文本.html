@@ -1,0 +1,46 @@
+<!-- 透明框中的文本  -->
+<html>
+<head>
+<style type="text/css">
+
+/* 
+首先，创建一个 div 元素 (class="background")，它有固定的高度和宽度、背景图像，以及边框。
+然后在第一个 div 内创建稍小的 div (class="transbox")，它有固定的宽度、背景色和边框，并且它是透明的。
+在透明 div 内部，在 p 元素中加入了一些文本。
+*/
+div.background {
+	width: 400px;
+	height: 266px;
+	background: url('images/tulip_peach_blossom.jpg') no-repeat;
+	border: 1px solid black;
+}
+
+div.transbox {
+	width: 338px;
+	height: 204px;
+	margin: 30px;
+	background-color: #ffffff;
+	border: 1px solid black;
+	/* 透明的div */
+	opacity: 0.6;
+}
+
+div.transbox p {
+	margin: 30px 40px;
+}
+</style>
+</head>
+
+<body>
+
+	<div class="background">
+		<div class="transbox">
+			<p>This is some text that is placed in the transparent box. This
+				is some text that is placed in the transparent box. This is some
+				text that is placed in the transparent box. This is some text that
+				is placed in the transparent box.</p>
+		</div>
+	</div>
+
+</body>
+</html>
