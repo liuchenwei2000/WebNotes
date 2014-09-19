@@ -1,0 +1,40 @@
+<!-- 设置背景图片位置 -->
+<html>
+<head>
+<style type="text/css">
+
+/* 
+background-origin 属性规定背景图片的定位区域。
+背景图片可以放置于 content-box、padding-box 或 border-box 区域。
+*/
+div {
+	border: 1px solid black;
+	padding: 35px;
+	background-image: url('images/bg_flower.gif');
+	background-repeat: no-repeat;
+	background-position: left;
+}
+
+#div1 {
+	background-origin: border-box;
+}
+
+#div2 {
+	background-origin: content-box;
+}
+</style>
+</head>
+<body>
+
+	<p>background-origin:border-box:</p>
+	<div id="div1">
+		这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。
+	</div>
+
+	<p>background-origin:content-box:</p>
+	<div id="div2">
+		这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。这是文本。
+	</div>
+
+</body>
+</html>
