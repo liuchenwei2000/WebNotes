@@ -1,0 +1,30 @@
+<!-- 多项改变 -->
+<html>
+<head>
+<style type="text/css">
+
+div {
+	width: 100px;
+	height: 100px;
+	background: yellow;
+	/* 如需向多个样式添加过渡效果，可以添加多个属性，由逗号隔开。 */
+	transition: width 2s, height 2s, transform 2s;/* 向宽度、高度和转换添加过渡效果。 */
+}
+
+div:hover {
+	width: 200px;
+	height: 200px;
+	transform: rotate(180deg);
+}
+</style>
+</head>
+<body>
+
+	<div>请把鼠标指针放到黄色的 div 元素上，来查看过渡效果。</div>
+
+	<p>
+		<b>注释：</b>本例在 Internet Explorer 中无效。
+	</p>
+
+</body>
+</html>
