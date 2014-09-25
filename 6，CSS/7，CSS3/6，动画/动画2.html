@@ -1,0 +1,35 @@
+<!-- 动画2 -->
+<html>
+<head>
+<style type="text/css">
+
+div
+{
+width:100px;
+height:100px;
+background:red;
+animation:myfirst 4s;
+}
+
+/*
+动画是使元素从一种样式逐渐变化为另一种样式的效果，可以改变任意多的样式任意多的次数。
+请用百分比来规定变化发生的时间，或用关键词 "from" 和 "to"，等同于 0% 和 100%。0% 是动画的开始，100% 是动画的完成。
+为了得到最佳的浏览器支持，应该始终定义 0% 和 100% 选择器。
+*/
+@keyframes myfirst
+{
+0%   {background:red;}
+25%  {background:yellow;}
+50%  {background:blue;}
+100% {background:green;}
+}
+</style>
+</head>
+<body>
+
+<div></div>
+
+<p><b>注释：</b>当动画完成时，会变回初始的样式。</p>
+
+</body>
+</html>
