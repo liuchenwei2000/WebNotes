@@ -1,0 +1,51 @@
+<!-- resize属性 -->
+<html>
+<head>
+<style type="text/css">
+
+/* resize 属性规定是否可由用户调整元素尺寸。 */
+div.none {
+	border: 2px solid;
+	padding: 10px 40px;
+	width: 300px;
+	resize: none;/* 用户无法调整元素的尺寸。 */
+	overflow: auto;
+}
+
+div.v {
+	border: 2px solid;
+	padding: 10px 40px;
+	width: 300px;
+	resize: vertical;/* 用户可调整元素的高度。 */
+	overflow: auto;
+}
+
+div.h {
+	border: 2px solid;
+	padding: 10px 40px;
+	width: 300px;
+	resize: horizontal;/* 用户可调整元素的宽度。 */
+	overflow: auto;
+}
+
+div.both {
+	border: 2px solid;
+	padding: 10px 40px;
+	width: 300px;
+	resize: both;/* 用户可调整元素的高度和宽度。 */
+	overflow: auto;
+}
+</style>
+</head>
+<body>
+
+	<div class="none">本div不可调整大小。</div>
+	
+	<div class="v">本div可调整高度。</div>
+	
+	<div class="h">本div可调整宽度。</div>
+	
+	<div class="both">本div可调整高度和宽度。</div>
+
+</body>
+</html>
