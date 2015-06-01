@@ -1,0 +1,36 @@
+body {
+	background-color: #2b3e2a;
+}
+
+h1 {
+	display: inline;
+	color: red;
+}
+
+ul {
+	float: right;
+	width: 40%;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+li {
+	float: left;
+}
+
+a {
+	float: left;
+	text-decoration: none;
+	color: white;
+	background-color: purple;
+}
+
+a:hover {
+	background-color: #ff3300;
+}
+
+img {
+	width: 80;
+	height: 80;
+}
