@@ -7,28 +7,32 @@
         <form>
             <!-- 多数情况下被用到的表单标签是输入标签（<input>）。输入类型是由类型属性（type）定义的。大多数经常被用到的输入类型如下： -->
             用户：
-            <!-- 文本域，文本域的缺省宽度是20个字符 -->
-            <input type="text" name="user">
-            <br />
+            <!-- 
+                               文本域，文本域的缺省宽度是20个字符
+            value属性：用于指定默认值。
+            disabled属性：用于指定输入字段不可用。 
+            -->
+            <input type="text" name="user" value="admin" disabled="disabled">
+            <br>
             密码：
             <!-- 密码框 -->
             <input type="password" name="password">
-            <br />
-            <!-- 单选按钮（Radio Buttons），checked 属性表示默认选中 -->
+            <br>
+            <!-- 单选按钮（Radio Buttons），同一个name属性的按钮是一组，checked 属性表示默认选中 -->
             <input type="radio" name="sex" value="male" checked="checked" />
             Male
             <input type="radio" name="sex" value="female" />
             Female
-            <br />
+            <br>
             <!-- 复选框（Check Boxes） -->
             <input type="checkbox" name="bike" checked="checked" />
             I have a bike
             <input type="checkbox" name="car" />
             I have a car
-            <br />
+            <br>
             <!-- 按钮（Button） -->
             <input type="button" value="Click me!">
-            <br />
+            <br>
             部门：
             <!-- <select> 标签定义下拉列表 -->
             <select name="dept">
@@ -44,13 +48,13 @@
                     财务部
                 </option>
             </select>
-            <br />
+            <br>
             说明：
             <!-- <textarea> 标签定义大文本输入框，rows、cols 属性表示行、列数 -->
             <textarea name="note" cols="30" rows="3">
                 这是大文本
             </textarea>
-            <br />
+            <br>
             <!-- <fieldset> 标签定义带标题的框 -->
             <fieldset>
                 <!-- <legend> 标签为 fieldset 元素定义标题 -->
@@ -62,7 +66,7 @@
                 体重：
                 <input type="text" />
             </fieldset>
-            <br />
+            <br>
             <input type="radio" name="align" id="left" />
             <!-- <label> 标签为 input 元素定义标注。 
             label 元素不会向用户呈现任何特殊效果。不过，它为鼠标用户改进了可用性。如果您在 label 元素内点击文本，就会触发此控件。就是说，当用户选择该标签时，浏览器就会自动将焦点转到和标签相关的表单控件上。
@@ -76,7 +80,7 @@
                 Right
             </label>
         </form>
-        <br />
+        <br>
         <select>
             <!-- <optgroup> 标签定义选项组。
             optgroup 元素用于组合选项。当您使用一个长的选项列表时，对相关的选项进行组合会使处理更加容易。
@@ -98,6 +102,13 @@
                 </option>
             </optgroup>
         </select>
+        <br>
+        <!-- 颜色选择器 -->
+       	颜色<input type="color"><br>
+       	<!-- 上传文件控件 -->
+		文件<input type="file"><br>
+		<!-- 日历控件 -->
+		日期<input type="date"><br>
     </body>
 
 </html>
