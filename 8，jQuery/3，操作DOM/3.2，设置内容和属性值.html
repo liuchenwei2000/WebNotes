@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="../jquery-1.11.3.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		/*
+		设置内容还是这几个函数，只不过使用带参数的版本：
+		text()：设置或返回所选元素的文本内容；
+		html()：设置或返回所选元素的内容（包括 HTML 标记）；
+		val()：设置或返回表单字段的值；
+		attr()：设置或返回属性值。
+		 */
+		$("#button1").click(function() {
+			$("#p1").text("我是自己蹦出来的");
+		});
+		
+		$("#button2").click(function() {
+			$("#p2").html("<em>我也是自己蹦出来的</em>");
+		});
+		
+		$("#button3").click(function() {
+			$("#name").val("张三");
+		});
+		
+		$("#button4").click(function() {
+			$("#baidu").attr("href", "http://www.baidu.com");
+			// 也可以一次性设置多个属性值
+			$("#baidu").attr({
+				"href" : "http://www.baidu.com",
+				"title" : "百度"
+			});
+		});
+		
+		/*
+		text()、html()、val() 以及 attr() 的回调函数
+		回调函数由两个参数：被选元素列表中当前元素的下标，以及原始（旧的）值，然后以函数新值返回希望使用的字符串。
+		*/
+		$("#button5").click(function(){
+			 $("#p3").text(function(i,origText){
+			     return "Old text: " + origText + " New text: Hello world! (index: " + i + ")"; 
+			 });
+		});
+
+		$("#button6").click(function(){
+			  $("#p4").html(function(i,origText){
+			      return "Old html: " + origText + " New html: Hello <b>world!</b> (index: " + i + ")"; 
+			 });
+		});
+		
+		$("#button7").click(function(){
+			  $("#jquery").attr("href", function(i,origValue){
+			    return origValue + "/download";
+			 });
+		});
+	});
+</script>
+</head>
+
+<body>
+	<p id="p1">这是段落。</p>
+	<p id="p2">这是另一个段落。</p>
+	<p>
+		姓 名: <input type="text" id="name" value="请输入">
+	</p>
+	<button id="button1">设置文本</button>
+	<button id="button2">设置 HTML</button>
+	<button id="button3">设置值</button>
+
+	<p>
+		<a href="#" id="baidu">百度</a>
+	</p>
+	<button id="button4">设置 href 值</button>
+	
+	<p id="p3">测试 text() 的回调函数</p>
+	<button id="button5">获取旧文本并返回新文本</button>
+	<p id="p4">测试 html() 的回调函数</p>
+	<button id="button6">获取旧 html 并返回新 html</button>
+	
+	<p>
+		<a href="http://jquery.com/" id="jquery">jQuery</a>
+	</p>
+	<button id="button7">获取旧 href 并返回新 href</button>
+</body>
+</html>

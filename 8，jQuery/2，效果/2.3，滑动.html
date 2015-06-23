@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- 
+通过 jQuery，可以在元素上创建滑动效果，包括以下滑动方法：
+$(selector).slideDown(speed,callback);
+$(selector).slideUp(speed,callback);
+$(selector).slideToggle(speed,callback);
+
+可选的 speed 参数规定效果的时长。它可以取以下值："slow"、"fast" 或毫秒。
+可选的 callback 参数是滑动完成后所执行的函数名称。
+-->
+<script type="text/javascript" src="../jquery-1.11.3.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".flip1").click(function() {
+			$(".panel1").slideDown("slow");
+		});
+
+		$(".flip2").click(function() {
+			$(".panel1").slideUp("slow");
+		});
+
+		$(".flip3").click(function() {
+			$(".panel3").slideToggle("slow");
+		});
+	});
+</script>
+
+<style type="text/css">
+.panel1, .panel3, flip1, flip2, flip3  {
+	margin: 0px;
+	padding: 5px;
+	text-align: center;
+	background: #e5eecc;
+	border: solid 1px #c3c3c3;
+}
+
+.panel1, .panel3 {
+	height: 120px;
+	display: none;
+}
+</style>
+</head>
+
+<body>
+
+	<div class="panel1">
+		<p>你看到我啦，你看到我啦</p>
+		<p>你看到我啦，你看到我啦，你看到我啦，你看到我啦，你看到我啦，你看到我啦。</p>
+	</div>
+
+	<p class="flip1">slideDown</p>
+	<p class="flip2">slideUp</p>
+
+	<div class="panel3">
+		<p>你看到我啦，你看到我啦</p>
+		<p>你看到我啦，你看到我啦，你看到我啦，你看到我啦，你看到我啦，你看到我啦。</p>
+	</div>
+
+	<p class="flip3">slideToggle</p>
+</body>
+</html>

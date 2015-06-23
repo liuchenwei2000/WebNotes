@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- 
+jQuery 库位于一个 JS 文件中，其中包含了所有的 jQuery 函数。
+共有两个版本的 jQuery 可供下载：一份是压缩过的（供产品使用），另一份是未压缩的（供调试或阅读）。
+这两个版本都可从 jQuery.com 下载。可以通过下面的方式把 jQuery 添加到网页中： 
+-->
+<script type="text/javascript" src="../jquery-1.11.3.js"></script>
+
+<!-- 如果不愿意在自己的计算机上存放 jQuery 库，也可以从 Google 或 Microsoft 加载 CDN jQuery 核心文件。 -->
+<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+<!-- <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.11.3.min.js"></script> -->
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("button").click(function() {
+			$("p").hide();
+		});
+	});
+</script>
+</head>
+
+<body>
+	<h2>This is a heading</h2>
+	<p>This is a paragraph.</p>
+	<p>This is another paragraph.</p>
+	<button type="button">Click me</button>
+</body>
+</html>

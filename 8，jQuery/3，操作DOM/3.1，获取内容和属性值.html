@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- 
+jQuery 中非常重要的部分，就是操作 DOM 的能力。jQuery 提供一系列与 DOM 相关的方法，使得访问和操作元素和属性变得很容易。
+DOM 定义了访问 HTML 和 XML 文档的标准：W3C 文档对象模型独立于平台和语言，允许程序和脚本动态访问和更新文档的内容、结构以及样式。
+-->
+<script type="text/javascript" src="../jquery-1.11.3.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		/*
+		获得内容 - text()、html() 以及 val()
+		text()：设置或返回所选元素的文本内容；
+		html()：设置或返回所选元素的内容（包括 HTML 标记）；
+		val()：设置或返回表单字段的值；
+		attr()：设置或返回属性值。
+		*/
+		$("#button1").click(function() {
+			alert($("#p1").text());
+		});
+		$("#button2").click(function() {
+			alert($("#p1").html());
+		});
+		$("#button3").click(function() {
+			alert($("#name").val());
+		});
+		$("#button4").click(function() {
+			alert($("#baidu").attr("href"));
+		});
+	});
+</script>
+</head>
+
+<body>
+	<p id="p1">
+		这是段落中的<b>粗体</b>文本。
+	</p>
+	<p>
+		姓名：<input type="text" id="name" value="请输入">
+	</p>
+	<button id="button1">显示文本</button>
+	<button id="button2">显示 HTML</button>
+	<button id="button3">显示值</button>
+
+	<p>
+		<a href="http://www.baidu.com" id="baidu">百度</a>
+	</p>
+	<button id="button4">显示 href 值</button>
+</body>
+</html>
