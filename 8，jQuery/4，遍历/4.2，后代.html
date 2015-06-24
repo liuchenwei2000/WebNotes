@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- 
+后代是子、孙、曾孙等等。
+通过 jQuery，能够向下遍历 DOM 树，以查找元素的后代。包括以下方法：
+
+children()：返回被选元素的所有直接子元素。
+find()：返回被选元素的后代元素，一路向下直到最后一个后代。
+-->
+<script type="text/javascript" src="../jquery-1.11.3.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#div1").children().css({
+			"color" : "red",
+			"border" : "2px solid red"
+		});
+		// 也可以使用可选参数来过滤对子元素的搜索：返回id为 "c1"的所有<p>元素，并且它们是<div>的直接子元素。
+		$("#div2").children("p#c1").css({
+			"color" : "green",
+			"border" : "2px solid green"
+		});
+
+		$("#div3").find("span").css({
+			"color" : "blue",
+			"border" : "2px solid blue"
+		});
+		// 返回 <div> 的所有后代
+		$("#div4").find("*").css({
+			"color" : "pink",
+			"border" : "2px solid pink"
+		});
+	});
+</script>
+<style>
+.descendants * {
+	display: block;
+	border: 2px solid lightgrey;
+	color: lightgrey;
+	padding: 5px;
+	margin: 15px;
+}
+</style>
+</head>
+
+<body>
+	<div id="div1" class="descendants" style="width: 500px;">
+		div (当前元素)
+		<p>
+			p (子) <span>span (孙)</span>
+		</p>
+		<p>
+			p (子) <span>span (孙)</span>
+		</p>
+	</div>
+
+	<div id="div2" class="descendants" style="width: 500px;">
+		div (当前元素)
+		<p id="c1">
+			p (子) <span>span (孙)</span>
+		</p>
+		<p id="c2">
+			p (子) <span>span (孙)</span>
+		</p>
+	</div>
+
+	<div id="div3" class="descendants" style="width: 500px;">
+		div (当前元素)
+		<p>
+			p (子) <span>span (孙)</span>
+		</p>
+		<p>
+			p (child) <span>span (孙)</span>
+		</p>
+	</div>
+
+	<div id="div4" class="descendants" style="width: 500px;">
+		div (当前元素)
+		<p>
+			p (child) <span>span (孙)</span>
+		</p>
+	</div>
+</body>
+</html>

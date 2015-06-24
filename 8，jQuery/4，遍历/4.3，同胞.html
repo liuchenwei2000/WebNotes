@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- 
+同胞拥有相同的父元素。
+通过 jQuery，能够在 DOM 树中遍历元素的同胞元素。包括以下方法：
+
+siblings()：返回被选元素的所有同胞元素。
+next()：返回被选元素的下一个同胞元素。
+nextAll()：返回被选元素的所有跟随的同胞元素。
+nextUntil()：返回介于被选元素和给定参数之间的所有跟随的同胞元素。
+prev()：返回被选元素的上一个同胞元素。
+prevAll()：返回被选元素的所有前面的同胞元素。
+prevUntil()：返回介于被选元素和给定参数之间的所有前面的同胞元素。
+-->
+<script type="text/javascript" src="../jquery-1.11.3.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#h_1").siblings().css({
+			"color" : "red",
+			"border" : "2px solid red"
+		});
+		// 也可以使用可选参数来过滤对同胞元素的搜索：返回属于 <h2> 的同胞元素的所有 <p> 元素。
+		$("#h_2").siblings("p").css({
+			"color" : "green",
+			"border" : "2px solid green"
+		});
+
+		$("#h_3").next().css({
+			"color" : "blue",
+			"border" : "2px solid blue"
+		});
+
+		$("#h_4").nextAll().css({
+			"color" : "pink",
+			"border" : "2px solid pink"
+		});
+
+		$("#h_5").nextUntil("h6").css({
+			"color" : "orange",
+			"border" : "2px solid orange"
+		});
+	});
+</script>
+<style>
+.siblings * {
+	display: block;
+	border: 2px solid lightgrey;
+	color: lightgrey;
+	padding: 5px;
+	margin: 15px;
+}
+</style>
+</head>
+
+<body class="siblings">
+	<div>
+		div (父)
+		<p>p</p>
+		<h2 id="h_1">h2</h2>
+		<h3>h3</h3>
+		<p>p</p>
+	</div>
+
+	<div>
+		div (父)
+		<p>p</p>
+		<h2 id="h_2">h2</h2>
+		<h3>h3</h3>
+		<p>p</p>
+	</div>
+
+	<div>
+		div (父)
+		<p>p</p>
+		<h2 id="h_3">h2</h2>
+		<h3>h3</h3>
+		<p>p</p>
+	</div>
+
+	<div>
+		div (父)
+		<p>p</p>
+		<h2 id="h_4">h2</h2>
+		<h3>h3</h3>
+		<p>p</p>
+	</div>
+
+	<div>
+		div (父)
+		<p>p</p>
+		<span>span</span>
+		<h2 id="h_5">h2</h2>
+		<h3>h3</h3>
+		<h4>h4</h4>
+		<h5>h5</h5>
+		<h6>h6</h6>
+		<p>p</p>
+	</div>
+</body>
+</html>

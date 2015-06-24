@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="../jquery-1.11.3.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		/*
+		css() 方法设置或返回被选元素的一个或多个样式属性。
+		*/
+		$("#button1").click(function() {
+			// 将返回首个匹配元素的 background-color 值
+			alert("Background color = " + $("p").css("background-color"));
+		});
+		
+		$("#button2").click(function() {
+			// 设置指定的 CSS 属性
+			$("p").css("background-color","pink");
+		});
+	
+		$("#button3").click(function() {
+			// 设置指定的 CSS 属性
+			$("p").css({"background-color":"orange","font-size":"200%"});
+		});
+	});
+</script>
+</head>
+
+<body>
+	<h2>这是标题</h2>
+	<p style="background-color: #ff0000">这是一个段落。</p>
+	<button id="button1">返回 p 元素的背景色</button>
+	<button id="button2">设置 p 元素的背景色</button>
+	<button id="button3">设置 p 元素的多个属性值</button>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="../jquery-1.11.3.js"></script>
+<script type="text/javascript">
+	$(document).ready(
+			function() {
+				/*
+				jQuery 提供多个处理尺寸的重要方法：
+				
+				width()：设置或返回元素的宽度（不包括内边距、边框或外边距）。
+				height()：设置或返回元素的高度（不包括内边距、边框或外边距）。
+				innerWidth()：返回元素的宽度（包括内边距）。
+				innerHeight()：返回元素的高度（包括内边距）。
+				outerWidth()：返回元素的宽度（包括内边距和边框）。
+				outerHeight()：返回元素的高度（包括内边距和边框）。
+				outerWidth(true)：返回元素的宽度（包括内边距、边框和外边距）。
+				outerHeight(true)：返回元素的高度（包括内边距、边框和外边距）。
+				 */
+				$("#button1").click(
+						function() {
+							var txt = "";
+							txt += "Width of div: " + $("#div1").width()
+									+ "<br>";
+							txt += "Height of div: " + $("#div1").height()
+									+ "<br>";
+							txt += "Inner width of div: "
+									+ $("#div1").innerWidth() + "<br>";
+							txt += "Inner height of div: "
+									+ $("#div1").innerHeight() + "<br>";
+							txt += "Outer width of div: "
+									+ $("#div1").outerWidth() + "<br>";
+							txt += "Outer height of div: "
+									+ $("#div1").outerHeight() + "<br>";
+							txt += "Outer width (+margin): "
+									+ $("#div1").outerWidth(true) + "<br>";
+							txt += "Outer height (+margin): "
+									+ $("#div1").outerHeight(true);
+							$("#div1").html(txt);
+						});
+
+				$("#button2").click(function() {
+					$("#div1").width(500).height(400);
+				});
+
+				$("#button3").click(function() {
+					var txt = "";
+					txt += "Document width/height: " + $(document).width();
+					txt += "x" + $(document).height() + "\n";
+					txt += "Window width/height: " + $(window).width();
+					txt += "x" + $(window).height();
+					alert(txt);
+				});
+			});
+</script>
+</head>
+
+<body>
+	<div id="div1"
+		style="height: 200px; width: 300px; padding: 10px; margin: 3px; border: 1px solid blue; background-color: lightblue;"></div>
+	<br>
+	<button id="button1">显示 div 的尺寸</button>
+	<button id="button2">设置 div 的尺寸 500*400</button>
+	<button id="button3">文档（HTML 文档）和窗口（浏览器视口）的宽度和高度</button>
+</body>
+</html>
