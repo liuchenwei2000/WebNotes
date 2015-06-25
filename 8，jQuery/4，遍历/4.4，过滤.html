@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- 
+过滤方法可以缩小搜索元素的范围
+
+三个最基本的过滤方法是：first(), last() 和 eq()，允许基于其在一组元素中的位置来选择一个特定的元素。
+其他过滤方法，比如 filter() 和 not() 允许选取匹配或不匹配某项指定标准的元素。
+-->
+<script type="text/javascript" src="../jquery-1.11.3.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		// first() 方法返回被选元素的首个元素
+		$("p").first().css("color", "pink");
+		// last() 方法返回被选元素的最后一个元素
+		$("p").last().css("color", "green");
+		// eq() 方法返回被选元素中带有指定索引号的元素。索引号从 0 开始，因此首个元素的索引号是 0 而不是 1。
+		$("p").eq(2).css("color", "blue");
+		// filter() 方法允许规定一个标准，不匹配这个标准的元素会被从集合中删除，匹配的元素会被返回。
+		$("p").filter(".important").css("font-weight", "bold");
+		// not() 方法与 filter() 相反，返回不匹配标准的所有元素。
+		$("p").not(".important").css("font-style", "italic");
+	});
+</script>
+</head>
+
+<body>
+
+	<h1>欢迎来到我的主页</h1>
+	<div>
+		<p>这是页面中的第一个段落。</p>
+	</div>
+
+	<div>
+		<p>这是页面中的第二个段落。</p>
+		<p>这是页面中的第三个段落。</p>
+	</div>
+
+	<p>这是页面中的第四个段落。</p>
+	
+	<p class="important">这是页面中的第五个段落。</p>
+	<p class="important">这是页面中的第六个段落。</p>
+	<p>这是页面中的第七个段落。</p>
+	<p>这是页面中的第八个段落。</p>
+	<p>这是页面中的第久个段落。</p>
+</body>
+</html>

@@ -23,7 +23,7 @@ public class AjaxServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
 		try {
-			TimeUnit.SECONDS.sleep(5);
+			TimeUnit.SECONDS.sleep(1);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
@@ -35,5 +35,14 @@ public class AjaxServlet extends HttpServlet {
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
+		try {
+			TimeUnit.SECONDS.sleep(1);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		PrintWriter writer = resp.getWriter();
+		writer.println("this is a text from server for Ajax testing.");
+		writer.println("Your name is " + req.);
+		writer.flush();
 	}
 }

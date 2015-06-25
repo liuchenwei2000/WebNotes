@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- 
+get() 和 post() 方法用于通过 HTTP GET 或 POST 请求从服务器请求数据。
+
+$.get() 方法通过 HTTP GET 请求从服务器上请求数据，语法如下：
+$.get(URL,callback);
+
+必需的 URL 参数规定希望请求的 URL。
+可选的 callback 参数是请求成功后所执行的函数名。
+
+$.post() 方法通过 HTTP POST 请求从服务器上请求数据，语法如下：
+$.post(URL,data,callback);
+
+必需的 URL 参数规定希望请求的 URL。
+可选的 data 参数规定连同请求发送的数据。
+可选的 callback 参数是请求成功后所执行的函数名。
+-->
+<script type="text/javascript" src="../jquery-1.11.3.js"></script>
+<script>
+	$(document).ready(function() {
+		
+		$("#change").click(function() {
+			// /ajax/change.do 实际上是个 servlet
+			$.get("/ajax/change.do", function(data, status) {
+				$("#div1").html("数据：<br>" + data + " 。<br>状态：<br>" + status);
+			});
+		});
+		
+		$("#submit").click(function() {
+			$.post("/ajax/change.do", 
+			{
+				name : $("#name").val(),
+				age : $("#age").val()
+			}, 
+			function(data, status) {
+				$("#div2").html("数据：<br>" + data + " 。 <br>状态：<br>" + status);
+			});
+		});
+	});
+</script>
+</head>
+<body>
+	<div id="div1">this is show info</div>
+	<button id="change">change it</button>
+	<br>
+	<br>
+	Name
+	<input type="text" name="name" id="name" />
+	<br>
+	Age
+	<input type="text" name="age" id="age" />
+	<button id="submit">Submit</button>
+	<br>
+	<br>
+	<div id="div2">this is show info</div>
+</body>
+</html>
