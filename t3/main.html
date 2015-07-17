@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<script type="text/javascript" src="./jquery-1.11.3.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		
+		var winHeight =$(window).height();
+		$("#header").css({
+			height:winHeight*0.08,
+		});
+		$("#main").css({
+			height:winHeight*0.75,
+		});
+		$("#footer").css({
+			height:winHeight*0.12,
+		});
+		
+		$(".icon").mouseenter(function() {
+			$(this).animate({
+				width : '+=40px',
+				height : '+=30px'
+			});
+		});
+
+		$(".icon").mouseleave(function() {
+			$(this).animate({
+				width : '-=40px',
+				height : '-=30px'
+			});
+		});
+	});
+</script>
+<title>日常管理系统</title>
+</head>
+<body>
+	<div id="header">
+		<img alt="logo" src="images/logo.png" id="logo"> <img
+			alt="login" src="images/login_logo.png" id="login_logo">
+	</div>
+
+	<div id="main">
+		<iframe id="mainframe" name="mainframe"></iframe>
+	</div>
+
+	<a href="http://www.qq.com/" target="mainframe"><img src="images/1_big.png" class="icon"
+		id="icon1"></a>
+	<a href="http://www.163.com" target="mainframe"><img src="images/2_big.png" class="icon"
+		id="icon2"></a>
+	<a href="http://www.hupu.com" target="mainframe"><img src="images/3_big.png" class="icon"
+		id="icon3"></a>
+	<a href="http://192.168.1.11:8080/ZHGL/skins/zhgl/dojoDesktopLR.jsp?name=兵员管理&id=00000000134&loginFlag=null" target="mainframe"><img src="images/4_big.png" class="icon"
+		id="icon4"></a>
+
+	<div id="footer">
+		<div id="toolbar">
+			<img alt="banner_l" src="images/banner_l.png">
+			<div id="banner_c"></div>
+			<img alt="banner_r" src="images/banner_r.png">
+		</div>
+	</div>
+</body>
+
+</html>
