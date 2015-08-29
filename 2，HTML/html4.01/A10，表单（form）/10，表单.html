@@ -102,7 +102,24 @@
                 </option>
             </optgroup>
         </select>
-        <br>
+		<br>
+		<div>
+		<!-- 使用 multiple 属性实现多选列表 -->
+		<select name="dept" multiple="multiple" width="50%">
+                <option value="黄金">
+                    黄金
+                </option>
+                <option value="白银">
+                    白银
+                </option>
+                <option value="青铜" selected="selected">
+                    青铜
+                </option>
+				<option value="钢铁">
+                    钢铁
+                </option>
+        </select>
+		</div>
         <!-- 颜色选择器 -->
        	颜色<input type="color"><br>
        	<!-- 上传文件控件 -->
