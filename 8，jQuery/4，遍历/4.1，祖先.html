@@ -2,12 +2,12 @@
 <html>
 <head>
 <!-- 
-×æÏÈÊÇ¸¸¡¢×æ¸¸»òÔø×æ¸¸µÈµÈ¡£
-Í¨¹ı jQuery£¬ÄÜ¹»ÏòÉÏ±éÀú DOM Ê÷£¬ÒÔ²éÕÒÔªËØµÄ×æÏÈ¡£°üÀ¨ÒÔÏÂ·½·¨£º
+ç¥–å…ˆæ˜¯çˆ¶ã€ç¥–çˆ¶æˆ–æ›¾ç¥–çˆ¶ç­‰ç­‰ã€‚
+é€šè¿‡ jQueryï¼Œèƒ½å¤Ÿå‘ä¸Šéå† DOM æ ‘ï¼Œä»¥æŸ¥æ‰¾å…ƒç´ çš„ç¥–å…ˆã€‚åŒ…æ‹¬ä»¥ä¸‹æ–¹æ³•ï¼š
 
-parent()£º·µ»Ø±»Ñ¡ÔªËØµÄÖ±½Ó¸¸ÔªËØ¡£
-parents()£º·µ»Ø±»Ñ¡ÔªËØµÄËùÓĞ×æÏÈÔªËØ£¬ËüÒ»Â·ÏòÉÏÖ±µ½ÎÄµµµÄ¸ùÔªËØ (<html>)¡£
-parentsUntil()£º·µ»Ø½éÓÚ±»Ñ¡ÔªËØºÍ¸ø¶¨ÔªËØÖ®¼äµÄËùÓĞ×æÏÈÔªËØ¡£
+parent()ï¼šè¿”å›è¢«é€‰å…ƒç´ çš„ç›´æ¥çˆ¶å…ƒç´ ã€‚
+parents()ï¼šè¿”å›è¢«é€‰å…ƒç´ çš„æ‰€æœ‰ç¥–å…ˆå…ƒç´ ï¼Œå®ƒä¸€è·¯å‘ä¸Šç›´åˆ°æ–‡æ¡£çš„æ ¹å…ƒç´  (<html>)ã€‚
+parentsUntil()ï¼šè¿”å›ä»‹äºè¢«é€‰å…ƒç´ å’Œç»™å®šå…ƒç´ ä¹‹é—´çš„æ‰€æœ‰ç¥–å…ˆå…ƒç´ ã€‚
 -->
 <script type="text/javascript" src="../jquery-1.11.3.js"></script>
 <script type="text/javascript">
@@ -22,7 +22,7 @@ parentsUntil()£º·µ»Ø½éÓÚ±»Ñ¡ÔªËØºÍ¸ø¶¨ÔªËØÖ®¼äµÄËùÓĞ×æÏÈÔªËØ¡£
 			"border" : "2px solid green"
 		});
 
-		// ·µ»Ø½éÓÚ <span> Óë <div> ÔªËØÖ®¼äµÄËùÓĞ×æÏÈÔªËØ
+		// è¿”å›ä»‹äº <span> ä¸ <div> å…ƒç´ ä¹‹é—´çš„æ‰€æœ‰ç¥–å…ˆå…ƒç´ 
 		$(".parentsUntil").parentsUntil("div").css({
 			"color" : "blue",
 			"border" : "2px solid blue"
@@ -43,36 +43,36 @@ parentsUntil()£º·µ»Ø½éÓÚ±»Ñ¡ÔªËØºÍ¸ø¶¨ÔªËØÖ®¼äµÄËùÓĞ×æÏÈÔªËØ¡£
 <body>
 	<div class="ancestors">
 		<div style="width: 500px;">
-			div (Ôø×æ¸¸)
+			div (æ›¾ç¥–çˆ¶)
 			<ul>
-				ul (×æ¸¸)
-				<li>li (Ö±½Ó¸¸) <span class="parent">span</span>
+				ul (ç¥–çˆ¶)
+				<li>li (ç›´æ¥çˆ¶) <span class="parent">span</span>
 				</li>
 			</ul>
 		</div>
 
 		<div style="width: 500px;">
-			div (×æ¸¸)
+			div (ç¥–çˆ¶)
 			<p>
-				p (Ö±½Ó¸¸) <span class="parent">span</span>
+				p (ç›´æ¥çˆ¶) <span class="parent">span</span>
 			</p>
 		</div>
 	</div>
 
 	<div style="width: 500px;">
-		div (Ôø×æ¸¸)
+		div (æ›¾ç¥–çˆ¶)
 		<ul>
-			ul (×æ¸¸)
-			<li>li (Ö±½Ó¸¸) <span class="parents">span</span>
+			ul (ç¥–çˆ¶)
+			<li>li (ç›´æ¥çˆ¶) <span class="parents">span</span>
 			</li>
 		</ul>
 	</div>
 
 	<div style="width: 500px;">
-		div (Ôø×æ¸¸)
+		div (æ›¾ç¥–çˆ¶)
 		<ul>
-			ul (×æ¸¸)
-			<li>li (Ö±½Ó¸¸) <span class="parentsUntil">span</span>
+			ul (ç¥–çˆ¶)
+			<li>li (ç›´æ¥çˆ¶) <span class="parentsUntil">span</span>
 			</li>
 		</ul>
 	</div>

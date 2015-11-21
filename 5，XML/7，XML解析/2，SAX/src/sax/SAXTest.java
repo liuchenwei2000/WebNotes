@@ -13,11 +13,11 @@ import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
 /**
- * SAX½âÎöXMLÊ¾Àı
+ * SAXè§£æXMLç¤ºä¾‹
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2014Äê1ÔÂ24ÈÕ
+ * åˆ›å»ºæ—¥æœŸï¼š2014å¹´1æœˆ24æ—¥
  */
 public class SAXTest {
 
@@ -27,11 +27,11 @@ public class SAXTest {
 	public static void main(String[] args) {
 		String xmlFilePath = "files/demo.xml";
 		try {
-			// 1£¬½¨Á¢ SAXParserFactory
+			// 1ï¼Œå»ºç«‹ SAXParserFactory
 			SAXParserFactory factory = SAXParserFactory.newInstance();
-			// 2£¬¹¹Ôì½âÎöÆ÷ SAXParser
+			// 2ï¼Œæ„é€ è§£æå™¨ SAXParser
 			SAXParser parser = factory.newSAXParser();
-			// 3£¬Ê¹ÓÃ DefaultHandler ½âÎöXML
+			// 3ï¼Œä½¿ç”¨ DefaultHandler è§£æXML
 			parser.parse(new File(xmlFilePath), new MySAX());
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -47,7 +47,7 @@ public class SAXTest {
 
 		@Override
 		public void endDocument() throws SAXException {
-			System.out.println("\n ÎÄµµ¶ÁÈ¡½áÊø");
+			System.out.println("\n æ–‡æ¡£è¯»å–ç»“æŸ");
 		}
 
 		@Override

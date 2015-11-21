@@ -1,12 +1,12 @@
-<!-- ÈçĞèÔÚµØÍ¼ÖĞÏÔÊ¾½á¹û£¬ĞèÒª·ÃÎÊ¿ÉÊ¹ÓÃ¾­Î³¶ÈµÄµØÍ¼·şÎñ£¬±ÈÈç¹È¸èµØÍ¼»ò°Ù¶ÈµØÍ¼ -->
+<!-- å¦‚éœ€åœ¨åœ°å›¾ä¸­æ˜¾ç¤ºç»“æœï¼Œéœ€è¦è®¿é—®å¯ä½¿ç”¨ç»çº¬åº¦çš„åœ°å›¾æœåŠ¡ï¼Œæ¯”å¦‚è°·æ­Œåœ°å›¾æˆ–ç™¾åº¦åœ°å›¾ -->
 <!DOCTYPE html>
 <html>
 	<body>
 		<p id="demo">
-			µã»÷Õâ¸ö°´Å¥£¬»ñµÃÄúµÄÎ»ÖÃ£º
+			ç‚¹å‡»è¿™ä¸ªæŒ‰é’®ï¼Œè·å¾—æ‚¨çš„ä½ç½®ï¼š
 		</p>
 		<button onclick="getLocation()">
-			ÊÔÒ»ÏÂ
+			è¯•ä¸€ä¸‹
 		</button>
 		<div id="mapholder">
 		</div>
@@ -22,7 +22,7 @@
 
 			function showPosition(position) {
 				var latlon = position.coords.latitude + "," + position.coords.longitude;
-				// Ê¹ÓÃ·µ»ØµÄ¾­Î³¶ÈÊı¾İÔÚ¹È¸èµØÍ¼ÖĞÏÔÊ¾Î»ÖÃ£¨Ê¹ÓÃ¾²Ì¬Í¼Ïñ£©
+				// ä½¿ç”¨è¿”å›çš„ç»çº¬åº¦æ•°æ®åœ¨è°·æ­Œåœ°å›¾ä¸­æ˜¾ç¤ºä½ç½®ï¼ˆä½¿ç”¨é™æ€å›¾åƒï¼‰
 				var img_url = "http://maps.googleapis.com/maps/api/staticmap?center=" + latlon + "&zoom=14&size=400x300&sensor=false";
 				document.getElementById("mapholder").innerHTML = "<img src='" + img_url + "' />";
 			}

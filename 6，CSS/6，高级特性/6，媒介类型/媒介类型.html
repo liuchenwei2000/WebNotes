@@ -1,26 +1,26 @@
 <!-- 
-ý������(Media Types)���������Ժ���ý�����ύ�ĵ����ĵ����Ա���ʾ����ʾ����ֽý���������������ȵȡ�
+媒介类型(Media Types)允许定义以何种媒介来提交文档。文档可以被显示在显示器、纸媒介或者听觉浏览器等等。
 
-ĳЩ CSS ���Խ��������Ϊ���ĳЩý�顣�ȷ�˵ "voice-family" ���Ա����Ϊ��������û��նˡ�
-���������Կɱ����ڲ�ͬ��ý�顣���磬"font-size" ���Կɱ�������ʾ���Լ�ӡˢý�飬����Ҳ������в�ͬ��ֵ��
-��ʾ���������ʾ���ĵ�ͨ������Ҫ��ֽý���ĵ�������ֺţ�ͬʱ������ʾ���ϣ�sans-serif ��������Ķ�������ֽý���ϣ�serif ��������Ķ���
+某些 CSS 属性仅仅被设计为针对某些媒介。比方说 "voice-family" 属性被设计为针对听觉用户终端。
+其他的属性可被用于不同的媒介。例如，"font-size" 属性可被用于显示器以及印刷媒介，但是也许会带有不同的值。
+显示器上面的显示的文档通常会需要比纸媒介文档更大的字号，同时，在显示器上，sans-serif 字体更易阅读，而在纸媒介上，serif 字体更易阅读。
 -->
 <html>
 <head>
 <style type="text/css">
 
 /* 
-@media ��������������ͬ����ʽ���У�ʹ�ò�ͬ����ʽ��������Բ�ͬ��ý�顣
+@media 规则有能力在相同的样式表中，使用不同的样式规则来针对不同的媒介。
 
-���ù����б���
-all	�������е�ý���豸��
-aural	������������Ƶ�ϳ�����
-braille	����ä���õ��ַ����������豸��
-handheld	����С���ֳֵ��豸��
-print	���ڴ�ӡ����
-projection	���ڷ���չʾ������õ�Ƭ��
-screen	���ڵ�����ʾ����
-tv	���ڵ��ӻ����͵��豸��
+常用规则列表：
+all	用于所有的媒介设备。
+aural	用于语音和音频合成器。
+braille	用于盲人用点字法触觉回馈设备。
+handheld	用于小的手持的设备。
+print	用于打印机。
+projection	用于方案展示，比如幻灯片。
+screen	用于电脑显示器。
+tv	用于电视机类型的设备。
 */
 @media screen {
 	p.test {

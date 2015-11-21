@@ -2,16 +2,16 @@
 <html>
 <head>
 <!-- 
-Í¬°ûÓµÓÐÏàÍ¬µÄ¸¸ÔªËØ¡£
-Í¨¹ý jQuery£¬ÄÜ¹»ÔÚ DOM Ê÷ÖÐ±éÀúÔªËØµÄÍ¬°ûÔªËØ¡£°üÀ¨ÒÔÏÂ·½·¨£º
+åŒèƒžæ‹¥æœ‰ç›¸åŒçš„çˆ¶å…ƒç´ ã€‚
+é€šè¿‡ jQueryï¼Œèƒ½å¤Ÿåœ¨ DOM æ ‘ä¸­éåŽ†å…ƒç´ çš„åŒèƒžå…ƒç´ ã€‚åŒ…æ‹¬ä»¥ä¸‹æ–¹æ³•ï¼š
 
-siblings()£º·µ»Ø±»Ñ¡ÔªËØµÄËùÓÐÍ¬°ûÔªËØ¡£
-next()£º·µ»Ø±»Ñ¡ÔªËØµÄÏÂÒ»¸öÍ¬°ûÔªËØ¡£
-nextAll()£º·µ»Ø±»Ñ¡ÔªËØµÄËùÓÐ¸úËæµÄÍ¬°ûÔªËØ¡£
-nextUntil()£º·µ»Ø½éÓÚ±»Ñ¡ÔªËØºÍ¸ø¶¨²ÎÊýÖ®¼äµÄËùÓÐ¸úËæµÄÍ¬°ûÔªËØ¡£
-prev()£º·µ»Ø±»Ñ¡ÔªËØµÄÉÏÒ»¸öÍ¬°ûÔªËØ¡£
-prevAll()£º·µ»Ø±»Ñ¡ÔªËØµÄËùÓÐÇ°ÃæµÄÍ¬°ûÔªËØ¡£
-prevUntil()£º·µ»Ø½éÓÚ±»Ñ¡ÔªËØºÍ¸ø¶¨²ÎÊýÖ®¼äµÄËùÓÐÇ°ÃæµÄÍ¬°ûÔªËØ¡£
+siblings()ï¼šè¿”å›žè¢«é€‰å…ƒç´ çš„æ‰€æœ‰åŒèƒžå…ƒç´ ã€‚
+next()ï¼šè¿”å›žè¢«é€‰å…ƒç´ çš„ä¸‹ä¸€ä¸ªåŒèƒžå…ƒç´ ã€‚
+nextAll()ï¼šè¿”å›žè¢«é€‰å…ƒç´ çš„æ‰€æœ‰è·Ÿéšçš„åŒèƒžå…ƒç´ ã€‚
+nextUntil()ï¼šè¿”å›žä»‹äºŽè¢«é€‰å…ƒç´ å’Œç»™å®šå‚æ•°ä¹‹é—´çš„æ‰€æœ‰è·Ÿéšçš„åŒèƒžå…ƒç´ ã€‚
+prev()ï¼šè¿”å›žè¢«é€‰å…ƒç´ çš„ä¸Šä¸€ä¸ªåŒèƒžå…ƒç´ ã€‚
+prevAll()ï¼šè¿”å›žè¢«é€‰å…ƒç´ çš„æ‰€æœ‰å‰é¢çš„åŒèƒžå…ƒç´ ã€‚
+prevUntil()ï¼šè¿”å›žä»‹äºŽè¢«é€‰å…ƒç´ å’Œç»™å®šå‚æ•°ä¹‹é—´çš„æ‰€æœ‰å‰é¢çš„åŒèƒžå…ƒç´ ã€‚
 -->
 <script type="text/javascript" src="../jquery-1.11.3.js"></script>
 <script type="text/javascript">
@@ -20,7 +20,7 @@ prevUntil()£º·µ»Ø½éÓÚ±»Ñ¡ÔªËØºÍ¸ø¶¨²ÎÊýÖ®¼äµÄËùÓÐÇ°ÃæµÄÍ¬°ûÔªËØ¡£
 			"color" : "red",
 			"border" : "2px solid red"
 		});
-		// Ò²¿ÉÒÔÊ¹ÓÃ¿ÉÑ¡²ÎÊýÀ´¹ýÂË¶ÔÍ¬°ûÔªËØµÄËÑË÷£º·µ»ØÊôÓÚ <h2> µÄÍ¬°ûÔªËØµÄËùÓÐ <p> ÔªËØ¡£
+		// ä¹Ÿå¯ä»¥ä½¿ç”¨å¯é€‰å‚æ•°æ¥è¿‡æ»¤å¯¹åŒèƒžå…ƒç´ çš„æœç´¢ï¼šè¿”å›žå±žäºŽ <h2> çš„åŒèƒžå…ƒç´ çš„æ‰€æœ‰ <p> å…ƒç´ ã€‚
 		$("#h_2").siblings("p").css({
 			"color" : "green",
 			"border" : "2px solid green"
@@ -55,7 +55,7 @@ prevUntil()£º·µ»Ø½éÓÚ±»Ñ¡ÔªËØºÍ¸ø¶¨²ÎÊýÖ®¼äµÄËùÓÐÇ°ÃæµÄÍ¬°ûÔªËØ¡£
 
 <body class="siblings">
 	<div>
-		div (¸¸)
+		div (çˆ¶)
 		<p>p</p>
 		<h2 id="h_1">h2</h2>
 		<h3>h3</h3>
@@ -63,7 +63,7 @@ prevUntil()£º·µ»Ø½éÓÚ±»Ñ¡ÔªËØºÍ¸ø¶¨²ÎÊýÖ®¼äµÄËùÓÐÇ°ÃæµÄÍ¬°ûÔªËØ¡£
 	</div>
 
 	<div>
-		div (¸¸)
+		div (çˆ¶)
 		<p>p</p>
 		<h2 id="h_2">h2</h2>
 		<h3>h3</h3>
@@ -71,7 +71,7 @@ prevUntil()£º·µ»Ø½éÓÚ±»Ñ¡ÔªËØºÍ¸ø¶¨²ÎÊýÖ®¼äµÄËùÓÐÇ°ÃæµÄÍ¬°ûÔªËØ¡£
 	</div>
 
 	<div>
-		div (¸¸)
+		div (çˆ¶)
 		<p>p</p>
 		<h2 id="h_3">h2</h2>
 		<h3>h3</h3>
@@ -79,7 +79,7 @@ prevUntil()£º·µ»Ø½éÓÚ±»Ñ¡ÔªËØºÍ¸ø¶¨²ÎÊýÖ®¼äµÄËùÓÐÇ°ÃæµÄÍ¬°ûÔªËØ¡£
 	</div>
 
 	<div>
-		div (¸¸)
+		div (çˆ¶)
 		<p>p</p>
 		<h2 id="h_4">h2</h2>
 		<h3>h3</h3>
@@ -87,7 +87,7 @@ prevUntil()£º·µ»Ø½éÓÚ±»Ñ¡ÔªËØºÍ¸ø¶¨²ÎÊýÖ®¼äµÄËùÓÐÇ°ÃæµÄÍ¬°ûÔªËØ¡£
 	</div>
 
 	<div>
-		div (¸¸)
+		div (çˆ¶)
 		<p>p</p>
 		<span>span</span>
 		<h2 id="h_5">h2</h2>

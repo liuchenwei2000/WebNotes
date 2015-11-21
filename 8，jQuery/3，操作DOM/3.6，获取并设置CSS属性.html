@@ -5,20 +5,20 @@
 <script type="text/javascript">
 	$(document).ready(function() {
 		/*
-		css() ·½·¨ÉèÖÃ»ò·µ»Ø±»Ñ¡ÔªËØµÄÒ»¸ö»ò¶à¸öÑùÊ½ÊôĞÔ¡£
+		css() æ–¹æ³•è®¾ç½®æˆ–è¿”å›è¢«é€‰å…ƒç´ çš„ä¸€ä¸ªæˆ–å¤šä¸ªæ ·å¼å±æ€§ã€‚
 		*/
 		$("#button1").click(function() {
-			// ½«·µ»ØÊ×¸öÆ¥ÅäÔªËØµÄ background-color Öµ
+			// å°†è¿”å›é¦–ä¸ªåŒ¹é…å…ƒç´ çš„ background-color å€¼
 			alert("Background color = " + $("p").css("background-color"));
 		});
 		
 		$("#button2").click(function() {
-			// ÉèÖÃÖ¸¶¨µÄ CSS ÊôĞÔ
+			// è®¾ç½®æŒ‡å®šçš„ CSS å±æ€§
 			$("p").css("background-color","pink");
 		});
 	
 		$("#button3").click(function() {
-			// ÉèÖÃÖ¸¶¨µÄ CSS ÊôĞÔ
+			// è®¾ç½®æŒ‡å®šçš„ CSS å±æ€§
 			$("p").css({"background-color":"orange","font-size":"200%"});
 		});
 	});
@@ -26,10 +26,10 @@
 </head>
 
 <body>
-	<h2>ÕâÊÇ±êÌâ</h2>
-	<p style="background-color: #ff0000">ÕâÊÇÒ»¸ö¶ÎÂä¡£</p>
-	<button id="button1">·µ»Ø p ÔªËØµÄ±³¾°É«</button>
-	<button id="button2">ÉèÖÃ p ÔªËØµÄ±³¾°É«</button>
-	<button id="button3">ÉèÖÃ p ÔªËØµÄ¶à¸öÊôĞÔÖµ</button>
+	<h2>è¿™æ˜¯æ ‡é¢˜</h2>
+	<p style="background-color: #ff0000">è¿™æ˜¯ä¸€ä¸ªæ®µè½ã€‚</p>
+	<button id="button1">è¿”å› p å…ƒç´ çš„èƒŒæ™¯è‰²</button>
+	<button id="button2">è®¾ç½® p å…ƒç´ çš„èƒŒæ™¯è‰²</button>
+	<button id="button3">è®¾ç½® p å…ƒç´ çš„å¤šä¸ªå±æ€§å€¼</button>
 </body>
 </html>

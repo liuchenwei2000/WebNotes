@@ -1,10 +1,10 @@
-<!-- �߿���� -->
+<!-- 边框宽度 -->
 <html>
 <head>
 <style type="text/css">
 /* 
-����ͨ�� border-width ����Ϊ�߿�ָ�����ȡ�Ϊ�߿�ָ�����������ַ�����
-����ָ������ֵ������ 2px �� 0.1em������ʹ�� 3 ���ؼ���֮һ�����Ƿֱ��� thin ��medium��Ĭ��ֵ�� �� thick��
+可以通过 border-width 属性为边框指定宽度。为边框指定宽度有两种方法：
+可以指定长度值，比如 2px 或 0.1em；或者使用 3 个关键字之一，它们分别是 thin 、medium（默认值） 和 thick。
 */
 p.one {
 	border-style: solid;
@@ -16,13 +16,13 @@ p.two {
 	border-width: thick;
 }
 
-/* �� top-right-bottom-left ��˳������Ԫ�صĸ��߱߿� */
+/* 按 top-right-bottom-left 的顺序设置元素的各边边框 */
 p.three {
 	border-style: solid;
 	border-width: 5px 10px 1px medium;
 }
 
-/* �� ���߱߿�������ԣ�Ϊÿ�������ò�ͬ���� */
+/* 按 单边边框宽度属性，为每个边设置不同宽度 */
 p.four {
 	border-style: solid;
 	border-top-width: 15px;
@@ -32,8 +32,8 @@ p.four {
 }
 
 /* 
-����߿���ʽΪ none�����߿���������ڣ���ô�߿�Ͳ������п��ȣ���˱߿�����Զ�����Ϊ 0��������ԭ�ȶ������ʲô��
-��ס��һ��ǳ���Ҫ����ʵ�ϣ����������߿���ʽ��һ�������Ĵ��� 
+如果边框样式为 none，即边框根本不存在，那么边框就不可能有宽度，因此边框宽度自动设置为 0，而不论原先定义的是什么。
+记住这一点非常重要。事实上，忘记声明边框样式是一个常犯的错误。 
 */
 p.five {
 	border-style: none;
@@ -50,8 +50,8 @@ p.five {
 	<p class="five">Some text</p>
 
 	<p>
-		<b>ע�ͣ�</b>"border-width" �����������ʹ�õĻ��ǲ��������õġ�������ʹ�� "border-style"
-		���������ñ߿�
+		<b>注释：</b>"border-width" 属性如果单独使用的话是不会起作用的。请首先使用 "border-style"
+		属性来设置边框。
 	</p>
 </body>
 

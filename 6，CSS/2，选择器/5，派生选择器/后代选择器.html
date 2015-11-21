@@ -1,27 +1,27 @@
-<!-- ���ѡ������descendant selector��
-���ѡ��������ѡ��ĳԪ�صĺ���������������ĵ��������Ĺ�ϵ��ȷ��ĳ����ǩ����ʽ��
-ͨ��������ʹ�ú��ѡ����������ʹ HTML �����ø������ࡣ
-���ѡ�����Ĺ��ܼ���ǿ��������������ʹ HTML �в�����ʵ�ֵ������Ϊ���ܡ�
+<!-- 后代选择器（descendant selector）
+后代选择器可以选择某元素的后代。它允许根据文档的上下文关系来确定某个标签的样式。
+通过合理地使用后代选择器，可以使 HTML 代码变得更加整洁。
+后代选择器的功能极其强大。有了它，可以使 HTML 中不可能实现的任务成为可能。
 -->
 <html>
 <head>
 <style type="text/css">
 
-/* ���е� h1 Ԫ�ض��Ǻ�ɫ22���� */
+/* 所有的 h1 元素都是红色22号字 */
 h1 {
 	color: red;
 	font-size: 26;
 }
 
-/* ����������ѡ������������ h1 Ԫ���� strongԪ�� Ϊ��ɫ  */
-/* ֻ�� h1 Ԫ���� strongԪ�ص���ʽΪ��ɫ������Ϊ strong Ԫ�ض����ر�� class �� id��������Ӽ�ࡣ */
+/* 下面这个后代选择器，可以让 h1 元素中 strong元素 为蓝色  */
+/* 只有 h1 元素中 strong元素的样式为蓝色，无需为 strong 元素定义特别的 class 或 id，代码更加简洁。 */
 h1 strong {
 	color: blue;
 }
 
 /*
-�йغ��ѡ������һ���ױ����ӵķ��棬������Ԫ��֮��Ĳ�μ�����������޵ġ�
-���磬���д�� ul em������﷨�ͻ�ѡ��� ul Ԫ�ؼ̳е����� em Ԫ�أ������� em ��Ƕ�ײ�ζ��
+有关后代选择器有一个易被忽视的方面，即两个元素之间的层次间隔可以是无限的。
+例如，如果写作 ul em，这个语法就会选择从 ul 元素继承的所有 em 元素，而不论 em 的嵌套层次多深。
 */
 ul em {
 	color: red;
@@ -31,11 +31,11 @@ ul em {
 </head>
 <body>
 	<h1>
-		<strong>��ɫ26����</strong>
+		<strong>蓝色26号字</strong>
 	</h1>
-	<h1>��ɫ26����</h1>
+	<h1>红色26号字</h1>
 
-	<strong> �������� </strong>
+	<strong> 正常字体 </strong>
 
 	<ul>
 		<li>List item 1

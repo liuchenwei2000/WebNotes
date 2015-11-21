@@ -2,15 +2,15 @@
 <html>
 <head>
 <!-- 
-ͨ�� jQuery ����ѡȡ��query�� HTML Ԫ�أ���������ִ�в�����actions����
+通过 jQuery 可以选取（query） HTML 元素，并对它们执行操作（actions）。
 
-�����﷨�ǣ�$(selector).action()
-���У�$ ���Ŷ��� jQuery��ѡ������selector����ʾѡȡ HTML Ԫ�أ�jQuery ��  action() ִ�ж�Ԫ�صĲ�����
+基础语法是：$(selector).action()
+其中：$ 符号定义 jQuery，选择器（selector）表示选取 HTML 元素，jQuery 的  action() 执行对元素的操作。
 -->
 <script type="text/javascript" src="../jquery-1.11.3.js"></script>
 <script type="text/javascript">
-	// �ĵ��������� $(document).ready(function);
-	// ����Ϊ�˷�ֹ�ĵ�����ȫ���أ�������֮ǰ���� jQuery ���롣������ĵ�û����ȫ����֮ǰ�����к�������������ʧ�ܡ�
+	// 文档就绪函数 $(document).ready(function);
+	// 这是为了防止文档在完全加载（就绪）之前运行 jQuery 代码。如果在文档没有完全加载之前就运行函数，操作可能失败。
 	$(document).ready(function() {
 		$("button").click(function() {
 			$("p").hide();

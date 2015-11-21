@@ -1,15 +1,15 @@
-<!-- HTML5 Geolocation£¨µØÀí¶¨Î»£©ÓÃÓÚ¶¨Î»ÓÃ»§µÄÎ»ÖÃ¡£
-HTML5 Geolocation API ÓÃÓÚ»ñµÃÓÃ»§µÄµØÀíÎ»ÖÃ¡£
-¼øÓÚ¸ÃÌØĞÔ¿ÉÄÜÇÖ·¸ÓÃ»§µÄÒşË½£¬³ı·ÇÓÃ»§Í¬Òâ£¬·ñÔòÓÃ»§Î»ÖÃĞÅÏ¢ÊÇ²»¿ÉÓÃµÄ¡£
+<!-- HTML5 Geolocationï¼ˆåœ°ç†å®šä½ï¼‰ç”¨äºå®šä½ç”¨æˆ·çš„ä½ç½®ã€‚
+HTML5 Geolocation API ç”¨äºè·å¾—ç”¨æˆ·çš„åœ°ç†ä½ç½®ã€‚
+é‰´äºè¯¥ç‰¹æ€§å¯èƒ½ä¾µçŠ¯ç”¨æˆ·çš„éšç§ï¼Œé™¤éç”¨æˆ·åŒæ„ï¼Œå¦åˆ™ç”¨æˆ·ä½ç½®ä¿¡æ¯æ˜¯ä¸å¯ç”¨çš„ã€‚
 -->
 <!DOCTYPE html>
 <html>
 	<body>
 		<p id="demo">
-			µã»÷Õâ¸ö°´Å¥£¬»ñµÃÄúµÄÎ»ÖÃ£º
+			ç‚¹å‡»è¿™ä¸ªæŒ‰é’®ï¼Œè·å¾—æ‚¨çš„ä½ç½®ï¼š
 		</p>
 		<button onclick="getLocation()">
-			ÊÔÒ»ÏÂ
+			è¯•ä¸€ä¸‹
 		</button>
 		<div id="mapholder">
 		</div>
@@ -18,11 +18,11 @@ HTML5 Geolocation API ÓÃÓÚ»ñµÃÓÃ»§µÄµØÀíÎ»ÖÃ¡£
 		<script>
 			var x = document.getElementById("demo");
 			function getLocation() {
-				if (navigator.geolocation) {// ¼ì²âÊÇ·ñÖ§³ÖµØÀí¶¨Î»
-				    // Ê¹ÓÃ getCurrentPosition() ·½·¨À´»ñµÃÓÃ»§µÄÎ»ÖÃ¡£
-					// Èç¹ûgetCurrentPosition()ÔËĞĞ³É¹¦£¬ÔòÏò²ÎÊıshowPositionÖĞ¹æ¶¨µÄº¯Êı·µ»ØÒ»¸öcoordinates¶ÔÏó
-					// showPosition() º¯Êı»ñµÃ²¢ÏÔÊ¾¾­¶ÈºÍÎ³¶È
-					// getCurrentPosition() ·½·¨µÄµÚ¶ş¸ö²ÎÊıÓÃÓÚ´¦Àí´íÎó¡£Ëü¹æ¶¨µ±»ñÈ¡ÓÃ»§Î»ÖÃÊ§°ÜÊ±ÔËĞĞµÄº¯Êı
+				if (navigator.geolocation) {// æ£€æµ‹æ˜¯å¦æ”¯æŒåœ°ç†å®šä½
+				    // ä½¿ç”¨ getCurrentPosition() æ–¹æ³•æ¥è·å¾—ç”¨æˆ·çš„ä½ç½®ã€‚
+					// å¦‚æœgetCurrentPosition()è¿è¡ŒæˆåŠŸï¼Œåˆ™å‘å‚æ•°showPositionä¸­è§„å®šçš„å‡½æ•°è¿”å›ä¸€ä¸ªcoordinateså¯¹è±¡
+					// showPosition() å‡½æ•°è·å¾—å¹¶æ˜¾ç¤ºç»åº¦å’Œçº¬åº¦
+					// getCurrentPosition() æ–¹æ³•çš„ç¬¬äºŒä¸ªå‚æ•°ç”¨äºå¤„ç†é”™è¯¯ã€‚å®ƒè§„å®šå½“è·å–ç”¨æˆ·ä½ç½®å¤±è´¥æ—¶è¿è¡Œçš„å‡½æ•°
 					navigator.geolocation.getCurrentPosition(showPosition, showError);
 				} else {
 					x.innerHTML = "Geolocation is not supported by this browser.";

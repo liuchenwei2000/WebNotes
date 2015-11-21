@@ -2,11 +2,11 @@
 <html>
 <head>
 <!-- 
-ºó´úÊÇ×Ó¡¢Ëï¡¢ÔøËïµÈµÈ¡£
-Í¨¹ı jQuery£¬ÄÜ¹»ÏòÏÂ±éÀú DOM Ê÷£¬ÒÔ²éÕÒÔªËØµÄºó´ú¡£°üÀ¨ÒÔÏÂ·½·¨£º
+åä»£æ˜¯å­ã€å­™ã€æ›¾å­™ç­‰ç­‰ã€‚
+é€šè¿‡ jQueryï¼Œèƒ½å¤Ÿå‘ä¸‹éå† DOM æ ‘ï¼Œä»¥æŸ¥æ‰¾å…ƒç´ çš„åä»£ã€‚åŒ…æ‹¬ä»¥ä¸‹æ–¹æ³•ï¼š
 
-children()£º·µ»Ø±»Ñ¡ÔªËØµÄËùÓĞÖ±½Ó×ÓÔªËØ¡£
-find()£º·µ»Ø±»Ñ¡ÔªËØµÄºó´úÔªËØ£¬Ò»Â·ÏòÏÂÖ±µ½×îºóÒ»¸öºó´ú¡£
+children()ï¼šè¿”å›è¢«é€‰å…ƒç´ çš„æ‰€æœ‰ç›´æ¥å­å…ƒç´ ã€‚
+find()ï¼šè¿”å›è¢«é€‰å…ƒç´ çš„åä»£å…ƒç´ ï¼Œä¸€è·¯å‘ä¸‹ç›´åˆ°æœ€åä¸€ä¸ªåä»£ã€‚
 -->
 <script type="text/javascript" src="../jquery-1.11.3.js"></script>
 <script type="text/javascript">
@@ -15,7 +15,7 @@ find()£º·µ»Ø±»Ñ¡ÔªËØµÄºó´úÔªËØ£¬Ò»Â·ÏòÏÂÖ±µ½×îºóÒ»¸öºó´ú¡£
 			"color" : "red",
 			"border" : "2px solid red"
 		});
-		// Ò²¿ÉÒÔÊ¹ÓÃ¿ÉÑ¡²ÎÊıÀ´¹ıÂË¶Ô×ÓÔªËØµÄËÑË÷£º·µ»ØidÎª "c1"µÄËùÓĞ<p>ÔªËØ£¬²¢ÇÒËüÃÇÊÇ<div>µÄÖ±½Ó×ÓÔªËØ¡£
+		// ä¹Ÿå¯ä»¥ä½¿ç”¨å¯é€‰å‚æ•°æ¥è¿‡æ»¤å¯¹å­å…ƒç´ çš„æœç´¢ï¼šè¿”å›idä¸º "c1"çš„æ‰€æœ‰<p>å…ƒç´ ï¼Œå¹¶ä¸”å®ƒä»¬æ˜¯<div>çš„ç›´æ¥å­å…ƒç´ ã€‚
 		$("#div2").children("p#c1").css({
 			"color" : "green",
 			"border" : "2px solid green"
@@ -25,7 +25,7 @@ find()£º·µ»Ø±»Ñ¡ÔªËØµÄºó´úÔªËØ£¬Ò»Â·ÏòÏÂÖ±µ½×îºóÒ»¸öºó´ú¡£
 			"color" : "blue",
 			"border" : "2px solid blue"
 		});
-		// ·µ»Ø <div> µÄËùÓĞºó´ú
+		// è¿”å› <div> çš„æ‰€æœ‰åä»£
 		$("#div4").find("*").css({
 			"color" : "pink",
 			"border" : "2px solid pink"
@@ -45,39 +45,39 @@ find()£º·µ»Ø±»Ñ¡ÔªËØµÄºó´úÔªËØ£¬Ò»Â·ÏòÏÂÖ±µ½×îºóÒ»¸öºó´ú¡£
 
 <body>
 	<div id="div1" class="descendants" style="width: 500px;">
-		div (µ±Ç°ÔªËØ)
+		div (å½“å‰å…ƒç´ )
 		<p>
-			p (×Ó) <span>span (Ëï)</span>
+			p (å­) <span>span (å­™)</span>
 		</p>
 		<p>
-			p (×Ó) <span>span (Ëï)</span>
+			p (å­) <span>span (å­™)</span>
 		</p>
 	</div>
 
 	<div id="div2" class="descendants" style="width: 500px;">
-		div (µ±Ç°ÔªËØ)
+		div (å½“å‰å…ƒç´ )
 		<p id="c1">
-			p (×Ó) <span>span (Ëï)</span>
+			p (å­) <span>span (å­™)</span>
 		</p>
 		<p id="c2">
-			p (×Ó) <span>span (Ëï)</span>
+			p (å­) <span>span (å­™)</span>
 		</p>
 	</div>
 
 	<div id="div3" class="descendants" style="width: 500px;">
-		div (µ±Ç°ÔªËØ)
+		div (å½“å‰å…ƒç´ )
 		<p>
-			p (×Ó) <span>span (Ëï)</span>
+			p (å­) <span>span (å­™)</span>
 		</p>
 		<p>
-			p (child) <span>span (Ëï)</span>
+			p (child) <span>span (å­™)</span>
 		</p>
 	</div>
 
 	<div id="div4" class="descendants" style="width: 500px;">
-		div (µ±Ç°ÔªËØ)
+		div (å½“å‰å…ƒç´ )
 		<p>
-			p (child) <span>span (Ëï)</span>
+			p (child) <span>span (å­™)</span>
 		</p>
 	</div>
 </body>

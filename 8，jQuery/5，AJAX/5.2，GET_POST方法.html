@@ -2,29 +2,29 @@
 <html>
 <head>
 <!-- 
-get() ºÍ post() ·½·¨ÓÃÓÚÍ¨¹ı HTTP GET »ò POST ÇëÇó´Ó·şÎñÆ÷ÇëÇóÊı¾İ¡£
+get() å’Œ post() æ–¹æ³•ç”¨äºé€šè¿‡ HTTP GET æˆ– POST è¯·æ±‚ä»æœåŠ¡å™¨è¯·æ±‚æ•°æ®ã€‚
 
-$.get() ·½·¨Í¨¹ı HTTP GET ÇëÇó´Ó·şÎñÆ÷ÉÏÇëÇóÊı¾İ£¬Óï·¨ÈçÏÂ£º
+$.get() æ–¹æ³•é€šè¿‡ HTTP GET è¯·æ±‚ä»æœåŠ¡å™¨ä¸Šè¯·æ±‚æ•°æ®ï¼Œè¯­æ³•å¦‚ä¸‹ï¼š
 $.get(URL,callback);
 
-±ØĞèµÄ URL ²ÎÊı¹æ¶¨Ï£ÍûÇëÇóµÄ URL¡£
-¿ÉÑ¡µÄ callback ²ÎÊıÊÇÇëÇó³É¹¦ºóËùÖ´ĞĞµÄº¯ÊıÃû¡£
+å¿…éœ€çš„ URL å‚æ•°è§„å®šå¸Œæœ›è¯·æ±‚çš„ URLã€‚
+å¯é€‰çš„ callback å‚æ•°æ˜¯è¯·æ±‚æˆåŠŸåæ‰€æ‰§è¡Œçš„å‡½æ•°åã€‚
 
-$.post() ·½·¨Í¨¹ı HTTP POST ÇëÇó´Ó·şÎñÆ÷ÉÏÇëÇóÊı¾İ£¬Óï·¨ÈçÏÂ£º
+$.post() æ–¹æ³•é€šè¿‡ HTTP POST è¯·æ±‚ä»æœåŠ¡å™¨ä¸Šè¯·æ±‚æ•°æ®ï¼Œè¯­æ³•å¦‚ä¸‹ï¼š
 $.post(URL,data,callback);
 
-±ØĞèµÄ URL ²ÎÊı¹æ¶¨Ï£ÍûÇëÇóµÄ URL¡£
-¿ÉÑ¡µÄ data ²ÎÊı¹æ¶¨Á¬Í¬ÇëÇó·¢ËÍµÄÊı¾İ¡£
-¿ÉÑ¡µÄ callback ²ÎÊıÊÇÇëÇó³É¹¦ºóËùÖ´ĞĞµÄº¯ÊıÃû¡£
+å¿…éœ€çš„ URL å‚æ•°è§„å®šå¸Œæœ›è¯·æ±‚çš„ URLã€‚
+å¯é€‰çš„ data å‚æ•°è§„å®šè¿åŒè¯·æ±‚å‘é€çš„æ•°æ®ã€‚
+å¯é€‰çš„ callback å‚æ•°æ˜¯è¯·æ±‚æˆåŠŸåæ‰€æ‰§è¡Œçš„å‡½æ•°åã€‚
 -->
 <script type="text/javascript" src="../jquery-1.11.3.js"></script>
 <script>
 	$(document).ready(function() {
 		
 		$("#change").click(function() {
-			// /ajax/change.do Êµ¼ÊÉÏÊÇ¸ö servlet
+			// /ajax/change.do å®é™…ä¸Šæ˜¯ä¸ª servlet
 			$.get("/ajax/change.do", function(data, status) {
-				$("#div1").html("Êı¾İ£º<br>" + data + " ¡£<br>×´Ì¬£º<br>" + status);
+				$("#div1").html("æ•°æ®ï¼š<br>" + data + " ã€‚<br>çŠ¶æ€ï¼š<br>" + status);
 			});
 		});
 		
@@ -35,7 +35,7 @@ $.post(URL,data,callback);
 				age : $("#age").val()
 			}, 
 			function(data, status) {
-				$("#div2").html("Êı¾İ£º<br>" + data + " ¡£ <br>×´Ì¬£º<br>" + status);
+				$("#div2").html("æ•°æ®ï¼š<br>" + data + " ã€‚ <br>çŠ¶æ€ï¼š<br>" + status);
 			});
 		});
 	});

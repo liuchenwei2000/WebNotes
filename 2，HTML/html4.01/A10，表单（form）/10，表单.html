@@ -1,77 +1,77 @@
-<!-- ���� 
-������ <form> ��ǩ�����塣������һ����������Ԫ�ص�����
-����Ԫ���������û��ڱ����У����磺�ı��������б�����ѡ�򡢸�ѡ��ȵȣ�������Ϣ��Ԫ�ء�
+<!-- 表单 
+表单由 <form> 标签来定义。表单是一个包含表单元素的区域。
+表单元素是允许用户在表单中（比如：文本域、下拉列表、单选框、复选框等等）输入信息的元素。
 -->
 <html>
     <body>
         <form>
-            <!-- ��������±��õ��ı�����ǩ�������ǩ��<input>�����������������������ԣ�type������ġ�������������õ��������������£� -->
-            �û���
+            <!-- 多数情况下被用到的表单标签是输入标签（<input>）。输入类型是由类型属性（type）定义的。大多数经常被用到的输入类型如下： -->
+            用户：
             <!-- 
-                               �ı����ı����ȱʡ������20���ַ�
-            value���ԣ�����ָ��Ĭ��ֵ��
-            disabled���ԣ�����ָ�������ֶβ����á� 
+                               文本域，文本域的缺省宽度是20个字符
+            value属性：用于指定默认值。
+            disabled属性：用于指定输入字段不可用。 
             -->
             <input type="text" name="user" value="admin" disabled="disabled">
             <br>
-            ���룺
-            <!-- ����� -->
+            密码：
+            <!-- 密码框 -->
             <input type="password" name="password">
             <br>
-            <!-- ��ѡ��ť��Radio Buttons����ͬһ��name���Եİ�ť��һ�飬checked ���Ա�ʾĬ��ѡ�� -->
+            <!-- 单选按钮（Radio Buttons），同一个name属性的按钮是一组，checked 属性表示默认选中 -->
             <input type="radio" name="sex" value="male" checked="checked" />
             Male
             <input type="radio" name="sex" value="female" />
             Female
             <br>
-            <!-- ��ѡ��Check Boxes�� -->
+            <!-- 复选框（Check Boxes） -->
             <input type="checkbox" name="bike" checked="checked" />
             I have a bike
             <input type="checkbox" name="car" />
             I have a car
             <br>
-            <!-- ��ť��Button�� -->
+            <!-- 按钮（Button） -->
             <input type="button" value="Click me!">
             <br>
-            ���ţ�
-            <!-- <select> ��ǩ���������б� -->
+            部门：
+            <!-- <select> 标签定义下拉列表 -->
             <select name="dept">
-                <!-- <option>Ԫ��ָ������ѡ�� -->
-                <option value="������">
-                    ������
+                <!-- <option>元素指定下拉选项 -->
+                <option value="技术部">
+                    技术部
                 </option>
-                <option value="���۲�">
-                    ���۲�
+                <option value="销售部">
+                    销售部
                 </option>
-                <!-- selected ���Ա�ʾĬ��ѡ�� -->
-                <option value="����" selected="selected">
-                    ����
+                <!-- selected 属性表示默认选中 -->
+                <option value="财务部" selected="selected">
+                    财务部
                 </option>
             </select>
             <br>
-            ˵����
-            <!-- <textarea> ��ǩ������ı������rows��cols ���Ա�ʾ�С����� -->
+            说明：
+            <!-- <textarea> 标签定义大文本输入框，rows、cols 属性表示行、列数 -->
             <textarea name="note" cols="30" rows="3">
-                ���Ǵ��ı�
+                这是大文本
             </textarea>
             <br>
-            <!-- <fieldset> ��ǩ���������Ŀ� -->
+            <!-- <fieldset> 标签定义带标题的框 -->
             <fieldset>
-                <!-- <legend> ��ǩΪ fieldset Ԫ�ض������ -->
+                <!-- <legend> 标签为 fieldset 元素定义标题 -->
                 <legend>
-                    ������Ϣ
+                    健康信息
                 </legend>
-                ���ߣ�
+                身高：
                 <input type="text" />
-                ���أ�
+                体重：
                 <input type="text" />
             </fieldset>
             <br>
             <input type="radio" name="align" id="left" />
-            <!-- <label> ��ǩΪ input Ԫ�ض����ע�� 
-            label Ԫ�ز������û������κ�����Ч������������Ϊ����û��Ľ��˿����ԡ�������� label Ԫ���ڵ���ı����ͻᴥ���˿ؼ�������˵�����û�ѡ��ñ�ǩʱ��������ͻ��Զ�������ת���ͱ�ǩ��صı����ؼ��ϡ�
+            <!-- <label> 标签为 input 元素定义标注。 
+            label 元素不会向用户呈现任何特殊效果。不过，它为鼠标用户改进了可用性。如果您在 label 元素内点击文本，就会触发此控件。就是说，当用户选择该标签时，浏览器就会自动将焦点转到和标签相关的表单控件上。
             -->
-            <!-- for ����Ӧ�������Ԫ�ص� id ������ͬ�� -->
+            <!-- for 属性应当与相关元素的 id 属性相同。 -->
             <label for="left">
                 Left
             </label>
@@ -82,8 +82,8 @@
         </form>
         <br>
         <select>
-            <!-- <optgroup> ��ǩ����ѡ���顣
-            optgroup Ԫ���������ѡ�����ʹ��һ������ѡ���б�ʱ������ص�ѡ�������ϻ�ʹ�����������ס�
+            <!-- <optgroup> 标签定义选项组。
+            optgroup 元素用于组合选项。当您使用一个长的选项列表时，对相关的选项进行组合会使处理更加容易。
             -->
             <optgroup label="Swedish Cars">
                 <option value="volvo">
@@ -104,28 +104,28 @@
         </select>
 		<br>
 		<div>
-		<!-- ʹ�� multiple ����ʵ�ֶ�ѡ�б� -->
+		<!-- 使用 multiple 属性实现多选列表 -->
 		<select name="dept" multiple="multiple" width="50%">
-                <option value="�ƽ�">
-                    �ƽ�
+                <option value="黄金">
+                    黄金
                 </option>
-                <option value="����">
-                    ����
+                <option value="白银">
+                    白银
                 </option>
-                <option value="��ͭ" selected="selected">
-                    ��ͭ
+                <option value="青铜" selected="selected">
+                    青铜
                 </option>
-				<option value="����">
-                    ����
+				<option value="钢铁">
+                    钢铁
                 </option>
         </select>
 		</div>
-        <!-- ��ɫѡ���� -->
-       	��ɫ<input type="color"><br>
-       	<!-- �ϴ��ļ��ؼ� -->
-		�ļ�<input type="file"><br>
-		<!-- �����ؼ� -->
-		����<input type="date"><br>
+        <!-- 颜色选择器 -->
+       	颜色<input type="color"><br>
+       	<!-- 上传文件控件 -->
+		文件<input type="file"><br>
+		<!-- 日历控件 -->
+		日期<input type="date"><br>
     </body>
 
 </html>

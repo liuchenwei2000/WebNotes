@@ -6,16 +6,16 @@
 	$(document).ready(
 			function() {
 				/*
-				jQuery �ṩ��������ߴ����Ҫ������
+				jQuery 提供多个处理尺寸的重要方法：
 				
-				width()�����û򷵻�Ԫ�صĿ��ȣ��������ڱ߾ࡢ�߿����߾ࣩ��
-				height()�����û򷵻�Ԫ�صĸ߶ȣ��������ڱ߾ࡢ�߿����߾ࣩ��
-				innerWidth()������Ԫ�صĿ��ȣ������ڱ߾ࣩ��
-				innerHeight()������Ԫ�صĸ߶ȣ������ڱ߾ࣩ��
-				outerWidth()������Ԫ�صĿ��ȣ������ڱ߾�ͱ߿򣩡�
-				outerHeight()������Ԫ�صĸ߶ȣ������ڱ߾�ͱ߿򣩡�
-				outerWidth(true)������Ԫ�صĿ��ȣ������ڱ߾ࡢ�߿����߾ࣩ��
-				outerHeight(true)������Ԫ�صĸ߶ȣ������ڱ߾ࡢ�߿����߾ࣩ��
+				width()：设置或返回元素的宽度（不包括内边距、边框或外边距）。
+				height()：设置或返回元素的高度（不包括内边距、边框或外边距）。
+				innerWidth()：返回元素的宽度（包括内边距）。
+				innerHeight()：返回元素的高度（包括内边距）。
+				outerWidth()：返回元素的宽度（包括内边距和边框）。
+				outerHeight()：返回元素的高度（包括内边距和边框）。
+				outerWidth(true)：返回元素的宽度（包括内边距、边框和外边距）。
+				outerHeight(true)：返回元素的高度（包括内边距、边框和外边距）。
 				 */
 				$("#button1").click(
 						function() {
@@ -59,8 +59,8 @@
 	<div id="div1"
 		style="height: 200px; width: 300px; padding: 10px; margin: 3px; border: 1px solid blue; background-color: lightblue;"></div>
 	<br>
-	<button id="button1">��ʾ div �ĳߴ�</button>
-	<button id="button2">���� div �ĳߴ� 500*400</button>
-	<button id="button3">�ĵ���HTML �ĵ����ʹ��ڣ�������ӿڣ��Ŀ��Ⱥ͸߶�</button>
+	<button id="button1">显示 div 的尺寸</button>
+	<button id="button2">设置 div 的尺寸 500*400</button>
+	<button id="button3">文档（HTML 文档）和窗口（浏览器视口）的宽度和高度</button>
 </body>
 </html>
