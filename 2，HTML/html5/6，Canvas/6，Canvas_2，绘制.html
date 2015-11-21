@@ -1,35 +1,35 @@
-<!-- canvas ÔªËØÓÃÓÚÔÚÍøÒ³ÉÏ»æÖÆÍ¼ĞÎ¡£ 
-HTML5 µÄ canvas ±êÇ©Ö»ÊÇÍ¼ĞÎÈİÆ÷£¬±ØĞëÊ¹ÓÃ JavaScript ÔÚÍøÒ³ÉÏ»æÖÆÍ¼Ïñ¡£
-»­²¼ÊÇÒ»¸ö¾ØĞÎÇøÓò£¬¿ÉÒÔ¿ØÖÆÆäÃ¿Ò»ÏñËØ¡£
-canvas ÓµÓĞ¶àÖÖ»æÖÆÂ·¾¶¡¢¾ØĞÎ¡¢Ô²ĞÎ¡¢×Ö·ûÒÔ¼°Ìí¼ÓÍ¼ÏñµÄ·½·¨¡£
+<!-- canvas å…ƒç´ ç”¨äºåœ¨ç½‘é¡µä¸Šç»˜åˆ¶å›¾å½¢ã€‚ 
+HTML5 çš„ canvas æ ‡ç­¾åªæ˜¯å›¾å½¢å®¹å™¨ï¼Œå¿…é¡»ä½¿ç”¨ JavaScript åœ¨ç½‘é¡µä¸Šç»˜åˆ¶å›¾åƒã€‚
+ç”»å¸ƒæ˜¯ä¸€ä¸ªçŸ©å½¢åŒºåŸŸï¼Œå¯ä»¥æ§åˆ¶å…¶æ¯ä¸€åƒç´ ã€‚
+canvas æ‹¥æœ‰å¤šç§ç»˜åˆ¶è·¯å¾„ã€çŸ©å½¢ã€åœ†å½¢ã€å­—ç¬¦ä»¥åŠæ·»åŠ å›¾åƒçš„æ–¹æ³•ã€‚
 -->
 <!DOCTYPE html>
 <html>
 	<body>
-	    <!-- Ìí¼Ó canvas ÔªËØ£¬¹æ¶¨ÔªËØµÄ id¡¢¿í¶ÈºÍ¸ß¶È¡£ -->
+	    <!-- æ·»åŠ  canvas å…ƒç´ ï¼Œè§„å®šå…ƒç´ çš„ idã€å®½åº¦å’Œé«˜åº¦ã€‚ -->
 		<canvas id="myCanvas" width="400" height="400" style="border:1px solid #c3c3c3;">
 			Your browser does not support the canvas element.
 		</canvas>
 		<script>
-			var c = document.getElementById("myCanvas");// »ñÈ¡ canvas ÔªËØ
+			var c = document.getElementById("myCanvas");// è·å– canvas å…ƒç´ 
 			/* 
-			»ñÈ¡ context ¶ÔÏó
-			context ¶ÔÏóÊÇÄÚ½¨µÄ HTML5 ¶ÔÏó£¬ÓµÓĞ¶àÖÖ»æÖÆÂ·¾¶¡¢¾ØĞÎ¡¢Ô²ĞÎ¡¢×Ö·ûÒÔ¼°Ìí¼ÓÍ¼ÏñµÄ·½·¨¡£
-			<canvas> ±êÇ©Ö»ÊÇÍ¼ĞÎÈİÆ÷£¬¾ßÌå»æÖÆ¹¤×÷ÊÇÓÉ context ¶ÔÏóÍê³ÉµÄ¡£
+			è·å– context å¯¹è±¡
+			context å¯¹è±¡æ˜¯å†…å»ºçš„ HTML5 å¯¹è±¡ï¼Œæ‹¥æœ‰å¤šç§ç»˜åˆ¶è·¯å¾„ã€çŸ©å½¢ã€åœ†å½¢ã€å­—ç¬¦ä»¥åŠæ·»åŠ å›¾åƒçš„æ–¹æ³•ã€‚
+			<canvas> æ ‡ç­¾åªæ˜¯å›¾å½¢å®¹å™¨ï¼Œå…·ä½“ç»˜åˆ¶å·¥ä½œæ˜¯ç”± context å¯¹è±¡å®Œæˆçš„ã€‚
 			*/
 			var cxt = c.getContext("2d");
-			// »­ÏßµÄÂß¼­
+			// ç”»çº¿çš„é€»è¾‘
 			cxt.moveTo(10, 10);
 			cxt.lineTo(150, 50);
 			cxt.lineTo(10, 50);
 			cxt.stroke();
-			// »­Ô²ĞÎµÄÂß¼­
+			// ç”»åœ†å½¢çš„é€»è¾‘
 			cxt.fillStyle = "#FF0000";
 			cxt.beginPath();
 			cxt.arc(40, 218, 15, 0, Math.PI * 2, true);
 			cxt.closePath();
 			cxt.fill();
-			// »­Í¼Æ¬µÄÂß¼­
+			// ç”»å›¾ç‰‡çš„é€»è¾‘
 			var img = new Image();
 			img.src = "flower.jpg";
 			cxt.drawImage(img, 150, 200);

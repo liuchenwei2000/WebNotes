@@ -1,22 +1,22 @@
-<!-- ��(class)ѡ����
-��ѡ��������Ϊ ͬһ��(class) �� HTML Ԫ��ָ���ض�����ʽ����ѡ�������Ե���ʹ�ã�Ҳ����������Ԫ�ؽ��ʹ�á�
-ֻ���ʵ��ر���ĵ��󣬲���ʹ����Щѡ����������ʹ��������ѡ����ͨ����Ҫ����һЩ����ͼƻ���
-ҪӦ����ʽ�������Ǿ�����Ƶ�Ԫ�أ���õķ�������ʹ����ѡ������
+<!-- 类(class)选择器
+类选择器可以为 同一类(class) 的 HTML 元素指定特定的样式。该选择器可以单独使用，也可以与其他元素结合使用。
+只有适当地标记文档后，才能使用这些选择器，所以使用这两种选择器通常需要先做一些构想和计划。
+要应用样式而不考虑具体设计的元素，最常用的方法就是使用类选择器。
 -->
 <html>
 <head>
 <style type="text/css">
-/* ��ѡ������ "." �����壬�������ѡ����������ӵ�� center ��� HTML Ԫ�ؾ�Ϊ���С�  */
+/* 类选择器以 "." 来定义，下面的类选择器，所有拥有 center 类的 HTML 元素均为居中。  */
 .centered {
 	text-align: center;
 }
 
-/* �� id һ����class Ҳ�ɱ���������ѡ�������������ѡ����������Ϊ centered ��Ԫ���ڲ��� divԪ�ػ���ҡ�  */
+/* 和 id 一样，class 也可被用作派生选择器，下面的类选择器：类名为 centered 的元素内部的 div元素会居右。  */
 .centered div {
 	text-align: right;
 }
 
-/* ��ѡ�������Խ��Ԫ��ѡ������ʹ�á� */
+/* 类选择器可以结合元素选择器来使用。 */
 h1.important {
 	color: red;
 }

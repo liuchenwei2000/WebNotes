@@ -1,10 +1,10 @@
-<!-- ����ɫ -->
+<!-- 背景色 -->
 <html>
 <head>
 
 <style type="text/css">
 
-/* ����ʹ�� background-color ����ΪԪ�����ñ���ɫ��������Խ����κκϷ�����ɫֵ�� */
+/* 可以使用 background-color 属性为元素设置背景色。这个属性接受任何合法的颜色值。 */
 body {
 	background-color: yellow;
 }
@@ -14,8 +14,8 @@ h1 {
 }
 
 /* 
-background-color ���ܼ̳У���Ĭ��ֵ�� transparent����͸����
-Ҳ����˵�����һ��Ԫ��û��ָ������ɫ����ô��������͸���ģ�����������Ԫ�صı������ܿɼ���
+background-color 不能继承，其默认值是 transparent，即透明。
+也就是说，如果一个元素没有指定背景色，那么背景就是透明的，这样其祖先元素的背景才能可见。
 */
 h2 {
 	background-color: transparent;
@@ -25,7 +25,7 @@ p {
 	background-color: rgb(250, 0, 255);
 }
 
-/* ���ϣ������ɫ��Ԫ���е��ı������������죬ֻ������һЩ�ڱ߾� */
+/* 如果希望背景色从元素中的文本向外少有延伸，只需增加一些内边距 */
 p.no2 {
 	background-color: gray;
 	padding: 10px;
@@ -36,10 +36,10 @@ p.no2 {
 
 <body>
 
-	<h1>���Ǳ��� 1</h1>
-	<h2>���Ǳ��� 2</h2>
-	<p>���Ƕ���</p>
-	<p class="no2">��������������ڱ߾ࡣ</p>
+	<h1>这是标题 1</h1>
+	<h2>这是标题 2</h2>
+	<p>这是段落</p>
+	<p class="no2">这个段落设置了内边距。</p>
 
 </body>
 </html>

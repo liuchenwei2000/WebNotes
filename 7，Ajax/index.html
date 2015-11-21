@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- 演示 Ajax 技术在 HTML 文件中的用法 -->
+<!-- 婕旂ず Ajax 鎶�湳鍦�HTML 鏂囦欢涓殑鐢ㄦ硶 -->
 <html>
     
     <head>
@@ -9,43 +9,43 @@
         </title>
         
         <!--  
-		通过 AJAX，JavaScript 无需等待服务器的响应，而是在等待服务器响应时执行其他脚本，当响应就绪后对响应进行处理。
+		閫氳繃 AJAX锛孞avaScript 鏃犻渶绛夊緟鏈嶅姟鍣ㄧ殑鍝嶅簲锛岃�鏄湪绛夊緟鏈嶅姟鍣ㄥ搷搴旀椂鎵ц鍏朵粬鑴氭湰锛屽綋鍝嶅簲灏辩华鍚庡鍝嶅簲杩涜澶勭悊銆�
         -->
         <script>
             function changeInfo() {
-            	// 1，XMLHttpRequest 对象用于在后台与服务器交换数据，所有现代浏览器均支持该对象。
+            	// 1锛孹MLHttpRequest 瀵硅薄鐢ㄤ簬鍦ㄥ悗鍙颁笌鏈嶅姟鍣ㄤ氦鎹㈡暟鎹紝鎵�湁鐜颁唬娴忚鍣ㄥ潎鏀寔璇ュ璞°�
                 var xmlhttp = new XMLHttpRequest();
-                // 2，当请求被发送到服务器时，客户端需要执行一些基于响应的任务。每当 readyState 改变时，就会触发 onreadystatechange 事件（即调用其对应的函数）。
+                // 2锛屽綋璇锋眰琚彂閫佸埌鏈嶅姟鍣ㄦ椂锛屽鎴风闇�鎵ц涓�簺鍩轰簬鍝嶅簲鐨勪换鍔°�姣忓綋 readyState 鏀瑰彉鏃讹紝灏变細瑙﹀彂 onreadystatechange 浜嬩欢锛堝嵆璋冪敤鍏跺搴旂殑鍑芥暟锛夈�
                 xmlhttp.onreadystatechange = function() {
                 	/*
-                	 * 3，处理感兴趣的事件，onreadystatechange 事件会被触发 5 次（0 - 4），对应着 readyState 的每个变化。
-                	 * readyState 属性存有 XMLHttpRequest 的状态信息：
-                	 * 0: 请求未初始化
-                	 * 1: 服务器连接已建立
-                	 * 2: 请求已接收
-                	 * 3: 请求处理中
-                	 * 4: 请求已完成，且响应已就绪
+                	 * 3锛屽鐞嗘劅鍏磋叮鐨勪簨浠讹紝onreadystatechange 浜嬩欢浼氳瑙﹀彂 5 娆★紙0 - 4锛夛紝瀵瑰簲鐫�readyState 鐨勬瘡涓彉鍖栥�
+                	 * readyState 灞炴�瀛樻湁 XMLHttpRequest 鐨勭姸鎬佷俊鎭細
+                	 * 0: 璇锋眰鏈垵濮嬪寲
+                	 * 1: 鏈嶅姟鍣ㄨ繛鎺ュ凡寤虹珛
+                	 * 2: 璇锋眰宸叉帴鏀�
+                	 * 3: 璇锋眰澶勭悊涓�
+                	 * 4: 璇锋眰宸插畬鎴愶紝涓斿搷搴斿凡灏辩华
                 	 * 
-                	 * status 属性有：
+                	 * status 灞炴�鏈夛細
                 	 * 200: "OK"
-                	 * 404: 未找到页面
+                	 * 404: 鏈壘鍒伴〉闈�
                 	 */
                     if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-                    	// 如需获得来自服务器的响应，可以使用 XMLHttpRequest 对象的 responseText 或 responseXML 属性。
+                    	// 濡傞渶鑾峰緱鏉ヨ嚜鏈嶅姟鍣ㄧ殑鍝嶅簲锛屽彲浠ヤ娇鐢�XMLHttpRequest 瀵硅薄鐨�responseText 鎴�responseXML 灞炴�銆�
                         document.getElementById("myDiv").innerHTML = xmlhttp.responseText;
                     }
                 }
                 
                 /* 
-                 * 4，如需将请求发送到服务器，使用 XMLHttpRequest 对象的 open() 和 send() 方法：
+                 * 4锛屽闇�皢璇锋眰鍙戦�鍒版湇鍔″櫒锛屼娇鐢�XMLHttpRequest 瀵硅薄鐨�open() 鍜�send() 鏂规硶锛�
                  * 
-                 * open(method,url,async)：规定请求的类型、URL 以及是否异步处理请求。
-                 * 							method：请求的类型；GET 或 POST。
-                 * 							url：请求对应的URL（本例对应的是一个servlet url）。
-                 * 							async：true（异步）或 false（同步）。
+                 * open(method,url,async)锛氳瀹氳姹傜殑绫诲瀷銆乁RL 浠ュ強鏄惁寮傛澶勭悊璇锋眰銆�
+                 * 							method锛氳姹傜殑绫诲瀷锛汫ET 鎴�POST銆�
+                 * 							url锛氳姹傚搴旂殑URL锛堟湰渚嬪搴旂殑鏄竴涓猻ervlet url锛夈�
+                 * 							async锛歵rue锛堝紓姝ワ級鎴�false锛堝悓姝ワ級銆�
                  * 
-                 * send(string)：将请求发送到服务器。
-                 * 				string：仅用于 POST 请求。
+                 * send(string)锛氬皢璇锋眰鍙戦�鍒版湇鍔″櫒銆�
+                 * 				string锛氫粎鐢ㄤ簬 POST 璇锋眰銆�
                  */
                 xmlhttp.open("GET", "/ajax/change.do", true);
                 xmlhttp.send();

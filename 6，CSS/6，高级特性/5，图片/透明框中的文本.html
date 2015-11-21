@@ -1,12 +1,12 @@
-<!-- ͸�����е��ı�  -->
+<!-- 透明框中的文本  -->
 <html>
 <head>
 <style type="text/css">
 
 /* 
-���ȣ�����һ�� div Ԫ�� (class="background")�����й̶��ĸ߶ȺͿ��ȡ�����ͼ���Լ��߿�
-Ȼ���ڵ�һ�� div �ڴ�����С�� div (class="transbox")�����й̶��Ŀ��ȡ�����ɫ�ͱ߿򣬲�������͸���ġ�
-��͸�� div �ڲ����� p Ԫ���м�����һЩ�ı���
+首先，创建一个 div 元素 (class="background")，它有固定的高度和宽度、背景图像，以及边框。
+然后在第一个 div 内创建稍小的 div (class="transbox")，它有固定的宽度、背景色和边框，并且它是透明的。
+在透明 div 内部，在 p 元素中加入了一些文本。
 */
 div.background {
 	width: 400px;
@@ -21,7 +21,7 @@ div.transbox {
 	margin: 30px;
 	background-color: #ffffff;
 	border: 1px solid black;
-	/* ͸����div */
+	/* 透明的div */
 	opacity: 0.6;
 }
 

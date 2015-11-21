@@ -1,17 +1,17 @@
-HTML5 µÄĞÂµÄ±íµ¥ÊôĞÔ£¬ÈçÏÂ£º
+HTML5 çš„æ–°çš„è¡¨å•å±æ€§ï¼Œå¦‚ä¸‹ï¼š
 
-ĞÂµÄ form ÊôĞÔ£º
+æ–°çš„ form å±æ€§ï¼š
 autocomplete
 novalidate
 
-ĞÂµÄ input ÊôĞÔ£º
+æ–°çš„ input å±æ€§ï¼š
 autocomplete
 autofocus
 form
 form overrides (formaction, formenctype, formmethod, formnovalidate, formtarget)
-height ºÍ width
+height å’Œ width
 list
-min, max ºÍ step
+min, max å’Œ step
 multiple
 pattern (regexp)
 placeholder

@@ -1,2 +1,2 @@
-1£¬½« echo ÎÄ¼þ¼Ð¿½±´µ½ %TOMCAT_HOME%\webapps\ ÏÂ¡£
-2£¬Æô¶¯ tomcat ºóÊ¹ÓÃ http://localhost/echo ½øÐÐ·ÃÎÊ¡£
+1ï¼Œå°† echo æ–‡ä»¶å¤¹æ‹·è´åˆ° %TOMCAT_HOME%\webapps\ ä¸‹ã€‚
+2ï¼Œå¯åŠ¨ tomcat åŽä½¿ç”¨ http://localhost/echo è¿›è¡Œè®¿é—®ã€‚

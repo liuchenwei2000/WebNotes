@@ -2,18 +2,18 @@
 <html>
 <head>
 <!-- 
-jQuery animate() �������������Զ���Ķ�����
+jQuery animate() 方法允许创建自定义的动画。
 $(selector).animate({params},speed,callback);
 
-����� params ���������γɶ����� CSS ���ԡ�
-��ѡ�� speed �����涨Ч����ʱ����������ȡ����ֵ��"slow"��"fast" ����롣
-��ѡ�� callback �����Ƕ�����ɺ���ִ�еĺ������ơ�
+必需的 params 参数定义形成动画的 CSS 属性。
+可选的 speed 参数规定效果的时长。它可以取以下值："slow"、"fast" 或毫秒。
+可选的 callback 参数是动画完成后所执行的函数名称。
 -->
 <script type="text/javascript" src="../jquery-1.11.3.js"></script>
 <script type="text/javascript">
 	$(document).ready(function() {
 		$("#button1").click(function() {
-			// 1����ʾ animate() �����ļ�Ӧ�ã����� <div> Ԫ���ƶ�����ߣ�ֱ�� left ���Ե��� 250 ����Ϊֹ��
+			// 1，演示 animate() 方法的简单应用；它把 <div> 元素移动到左边，直到 left 属性等于 250 像素为止。
 			$("#div1").animate({
 				left : '250px'
 			});
@@ -21,9 +21,9 @@ $(selector).animate({params},speed,callback);
 
 		$("#button2").click(function() {
 			/*
-			2������������ԣ����ɶ����Ĺ����п�ͬʱʹ�ö�����ԡ�
-			������ animate() ������������������ CSS ���ԣ�������Ҫ��ס����ʹ�� animate() ʱ������ʹ�� Camel ��Ƿ���д���е���������
-			���磬����ʹ��  paddingLeft ������ padding-left��ʹ�� marginRight ������ margin-right���ȵȡ�
+			2，操作多个属性，生成动画的过程中可同时使用多个属性。
+			可以用 animate() 方法来操作几乎所有 CSS 属性，不过需要记住：当使用 animate() 时，必须使用 Camel 标记法书写所有的属性名。
+			比如，必须使用  paddingLeft 而不是 padding-left，使用 marginRight 而不是 margin-right，等等。
 			 */
 			$("#div2").animate({
 				left : '250px',
@@ -34,7 +34,7 @@ $(selector).animate({params},speed,callback);
 		});
 
 		$("#button3").click(function() {
-			// 3��Ҳ���Զ������ֵ����ֵ�����Ԫ�صĵ�ǰֵ������Ҫ��ֵ��ǰ����� += �� -=��
+			// 3，也可以定义相对值（该值相对于元素的当前值）。需要在值的前面加上 += 或 -=：
 			$("#div3").animate({
 				left : '250px',
 				height : '+=150px',
@@ -43,8 +43,8 @@ $(selector).animate({params},speed,callback);
 		});
 
 		$("#button4").click(function() {
-			// Ĭ�ϵأ�jQuery �ṩ��Զ����Ķ��й��ܡ�
-			// ����ζ������ڱ˴�֮���д��� animate() ���ã�jQuery �ᴴ��������Щ�������õ��ڲ����У�Ȼ����һ������Щ animate ���á�
+			// 默认地，jQuery 提供针对动画的队列功能。
+			// 这意味着如果在彼此之后编写多个 animate() 调用，jQuery 会创建包含这些方法调用的内部队列，然后逐一运行这些 animate 调用。
 			var div = $("#div4");
 			div.animate({
 				height : '300px',
@@ -78,22 +78,22 @@ div {
 
 <body>
 
-	<p>Ĭ������£����� HTML Ԫ�ص�λ�ö��Ǿ�̬�ģ������޷��ƶ��������λ�ý��в������ǵ����Ȱ�Ԫ�ص� CSS position
-		��������Ϊ relative��fixed �� absolute��</p>
+	<p>默认情况下，所有 HTML 元素的位置都是静态的，并且无法移动。如需对位置进行操作，记得首先把元素的 CSS position
+		属性设置为 relative、fixed 或 absolute。</p>
 
-	<button id="button1">��Ӧ��</button>
+	<button id="button1">简单应用</button>
 	<p></p>
 	<div id="div1"></div>
 	<p></p>
-	<button id="button2">�����������</button>
+	<button id="button2">操作多个属性</button>
 	<p></p>
 	<div id="div2"></div>
 	<p></p>
-	<button id="button3">ʹ�����ֵ</button>
+	<button id="button3">使用相对值</button>
 	<p></p>
 	<div id="div3"></div>
 	<p></p>
-	<button id="button4">ʹ�ö��й���</button>
+	<button id="button4">使用队列功能</button>
 	<p></p>
 	<div id="div4"></div>
 </body>

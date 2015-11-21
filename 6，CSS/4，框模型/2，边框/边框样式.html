@@ -1,62 +1,62 @@
-<!-- ±ß¿òÑùÊ½ -->
+<!-- è¾¹æ¡†æ ·å¼ -->
 <html>
 <head>
 <style type="text/css">
 /* 
-ÑùÊ½ÊÇ±ß¿ò×îÖØÒªµÄÒ»¸ö·½Ãæ£¬Õâ²»ÊÇÒòÎªÑùÊ½¿ØÖÆ×Å±ß¿òµÄÏÔÊ¾£¬¶øÊÇÒòÎªÈç¹ûÃ»ÓĞÑùÊ½½«¸ù±¾Ã»ÓĞ±ß¿ò¡£
-CSS µÄ border-style ÊôĞÔ¶¨ÒåÁË 10 ¸ö²»Í¬µÄ·Ç inherit ÑùÊ½£¬°üÀ¨ none¡£
+æ ·å¼æ˜¯è¾¹æ¡†æœ€é‡è¦çš„ä¸€ä¸ªæ–¹é¢ï¼Œè¿™ä¸æ˜¯å› ä¸ºæ ·å¼æ§åˆ¶ç€è¾¹æ¡†çš„æ˜¾ç¤ºï¼Œè€Œæ˜¯å› ä¸ºå¦‚æœæ²¡æœ‰æ ·å¼å°†æ ¹æœ¬æ²¡æœ‰è¾¹æ¡†ã€‚
+CSS çš„ border-style å±æ€§å®šä¹‰äº† 10 ä¸ªä¸åŒçš„é inherit æ ·å¼ï¼ŒåŒ…æ‹¬ noneã€‚
 */
 p.none {
-	/* ÎŞ±ß¿ò */
+	/* æ— è¾¹æ¡† */
 	border-style: none;
 }
 
 p.dotted {
-	/* µã×´±ß¿ò */
+	/* ç‚¹çŠ¶è¾¹æ¡† */
 	border-style: dotted;
 }
 
 p.dashed {
-	/* ĞéÏß±ß¿ò */
+	/* è™šçº¿è¾¹æ¡† */
 	border-style: dashed;
 }
 
 p.solid {
-	/* ÊµÏß±ß¿ò */
+	/* å®çº¿è¾¹æ¡† */
 	border-style: solid;
 }
 
 p.double {
-	/* Ë«Ïß±ß¿ò£¬Ë«ÏßµÄ¿í¶ÈµÈÓÚ border-width µÄÖµ */
+	/* åŒçº¿è¾¹æ¡†ï¼ŒåŒçº¿çš„å®½åº¦ç­‰äº border-width çš„å€¼ */
 	border-style: double;
 }
 
 p.groove {
-	/* 3D °¼²Û±ß¿ò£¬ÆäĞ§¹ûÈ¡¾öÓÚ border-color µÄÖµ */
+	/* 3D å‡¹æ§½è¾¹æ¡†ï¼Œå…¶æ•ˆæœå–å†³äº border-color çš„å€¼ */
 	border-style: groove;
 }
 
 p.ridge {
-	/* 3D Â¢×´±ß¿ò£¬ÆäĞ§¹ûÈ¡¾öÓÚ border-color µÄÖµ  */
+	/* 3D å„çŠ¶è¾¹æ¡†ï¼Œå…¶æ•ˆæœå–å†³äº border-color çš„å€¼  */
 	border-style: ridge;
 }
 
 p.inset {
-	/* 3D inset ±ß¿ò£¬ÆäĞ§¹ûÈ¡¾öÓÚ border-color µÄÖµ  */
+	/* 3D inset è¾¹æ¡†ï¼Œå…¶æ•ˆæœå–å†³äº border-color çš„å€¼  */
 	border-style: inset;
 }
 
 p.outset {
-	/* 3D outset ±ß¿ò£¬ÆäĞ§¹ûÈ¡¾öÓÚ border-color µÄÖµ  */
+	/* 3D outset è¾¹æ¡†ï¼Œå…¶æ•ˆæœå–å†³äº border-color çš„å€¼  */
 	border-style: outset;
 }
 
-/* °´ top-right-bottom-left µÄË³Ğò£¬ÎªÃ¿¸ö±ßÉèÖÃ²»Í¬ÑùÊ½ */
+/* æŒ‰ top-right-bottom-left çš„é¡ºåºï¼Œä¸ºæ¯ä¸ªè¾¹è®¾ç½®ä¸åŒæ ·å¼ */
 p.aside {
 	border-style: dotted solid dashed double;
 }
 
-/* °´ µ¥±ß±ß¿òÑùÊ½ÊôĞÔ£¬ÎªÃ¿¸ö±ßÉèÖÃ²»Í¬ÑùÊ½ */
+/* æŒ‰ å•è¾¹è¾¹æ¡†æ ·å¼å±æ€§ï¼Œä¸ºæ¯ä¸ªè¾¹è®¾ç½®ä¸åŒæ ·å¼ */
 p.aside2 {
 	border-top-style: dotted;
 	border-right-style: solid;
@@ -86,9 +86,9 @@ p.aside2 {
 
 	<p class="outset">An outset border</p>
 	
-	<p class="aside">ËÄ±ß±ß¿òµ¥¶ÀÉèÖÃ£¬ top-right-bottom-left Ë³Ğò</p>
+	<p class="aside">å››è¾¹è¾¹æ¡†å•ç‹¬è®¾ç½®ï¼Œ top-right-bottom-left é¡ºåº</p>
 	
-	<p class="aside2">ËÄ±ß±ß¿òµ¥¶ÀÉèÖÃ</p>
+	<p class="aside2">å››è¾¹è¾¹æ¡†å•ç‹¬è®¾ç½®</p>
 </body>
 
 </html>

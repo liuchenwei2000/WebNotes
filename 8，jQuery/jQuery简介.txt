@@ -1,5 +1,5 @@
 
-jQuery ÊÇÒ»¸ö JavaScript º¯Êý¿â¡£
+jQuery æ˜¯ä¸€ä¸ª JavaScript å‡½æ•°åº“ã€‚
 
-jQuery ¿â°üº¬ÒÔÏÂÌØÐÔ£º
-HTML ÔªËØÑ¡È¡¡¢HTML ÔªËØ²Ù×÷¡¢CSS ²Ù×÷¡¢HTML ÊÂ¼þº¯Êý¡¢JavaScript ÌØÐ§ºÍ¶¯»­¡¢HTML DOM ±éÀúºÍÐÞ¸Ä¡¢AJAX¡¢Utilities¡£
+jQuery åº“åŒ…å«ä»¥ä¸‹ç‰¹æ€§ï¼š
+HTML å…ƒç´ é€‰å–ã€HTML å…ƒç´ æ“ä½œã€CSS æ“ä½œã€HTML äº‹ä»¶å‡½æ•°ã€JavaScript ç‰¹æ•ˆå’ŒåŠ¨ç”»ã€HTML DOM éåŽ†å’Œä¿®æ”¹ã€AJAXã€Utilitiesã€‚

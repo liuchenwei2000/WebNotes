@@ -1,10 +1,10 @@
-<!-- CSS α�ࣨPseudo-classes��������ĳЩѡ�������������Ч�� -->
+<!-- CSS 伪类（Pseudo-classes）用于向某些选择器添加特殊的效果 -->
 <html>
 <head>
 <style type="text/css">
 
 /* 
-α����﷨��
+伪类的语法：
 selector : pseudo-class {property: value} 
 */
 a:link {
@@ -12,7 +12,7 @@ a:link {
 }
 
 /*
-CSS ��Ҳ����α�����ʹ�ã�
+CSS 类也可与伪类搭配使用：
 selector.class : pseudo-class {property: value}
 */
 a.red:link {
@@ -20,11 +20,11 @@ a.red:link {
 }
 
 /* 
-���ӵ�����״̬��
-a:link - ��ͨ�ġ�δ�����ʵ�����
-a:visited - �û��ѷ��ʵ�����
-a:hover - ���ָ��λ�����ӵ��Ϸ�
-a:active - ���ӱ������ʱ��
+链接的四种状态：
+a:link - 普通的、未被访问的链接
+a:visited - 用户已访问的链接
+a:hover - 鼠标指针位于链接的上方
+a:active - 链接被点击的时刻
 */
 a:visited {
 	color: blue;
@@ -44,16 +44,16 @@ a:active {
 <body>
 
 	<p>
-		<b><a href="#" target="_blank">����һ�����ӡ�</a></b>
+		<b><a href="#" target="_blank">这是一个链接。</a></b>
 	</p>
 	<p>
-		<b>ע�ͣ�</b>�� CSS �����У�a:hover ����λ�� a:link �� a:visited ֮������������Ч��
+		<b>注释：</b>在 CSS 定义中，a:hover 必须位于 a:link 和 a:visited 之后，这样才能生效！
 	</p>
 	<p>
-		<b>ע�ͣ�</b>�� CSS �����У�a:active ����λ�� a:hover ֮������������Ч��
+		<b>注释：</b>在 CSS 定义中，a:active 必须位于 a:hover 之后，这样才能生效！
 	</p>
 	
-	<a class="red" href="http://www.baidu.com">��Ҳ��һ�����ӡ�</a>
+	<a class="red" href="http://www.baidu.com">这也是一个链接。</a>
 
 </body>
 </html>

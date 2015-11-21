@@ -1,32 +1,32 @@
-<!-- ÔÚ¿Í»§¶Ë´æ´¢Êı¾İ
-HTML5 Ìá¹©ÁËÁ½ÖÖÔÚ¿Í»§¶Ë´æ´¢Êı¾İµÄĞÂ·½·¨£º
-1£¬localStorage - Ã»ÓĞÊ±¼äÏŞÖÆµÄÊı¾İ´æ´¢¡£
-2£¬sessionStorage - Õë¶ÔÒ»¸ö session µÄÊı¾İ´æ´¢¡£
+<!-- åœ¨å®¢æˆ·ç«¯å­˜å‚¨æ•°æ®
+HTML5 æä¾›äº†ä¸¤ç§åœ¨å®¢æˆ·ç«¯å­˜å‚¨æ•°æ®çš„æ–°æ–¹æ³•ï¼š
+1ï¼ŒlocalStorage - æ²¡æœ‰æ—¶é—´é™åˆ¶çš„æ•°æ®å­˜å‚¨ã€‚
+2ï¼ŒsessionStorage - é’ˆå¯¹ä¸€ä¸ª session çš„æ•°æ®å­˜å‚¨ã€‚
 
-Ö®Ç°£¬ÕâĞ©¶¼ÊÇÓÉ cookie Íê³ÉµÄ¡£µ«ÊÇ cookie ²»ÊÊºÏ´óÁ¿Êı¾İµÄ´æ´¢£¬ÒòÎªËüÃÇÓÉÃ¿¸ö¶Ô·şÎñÆ÷µÄÇëÇóÀ´´«µİ£¬ÕâÊ¹µÃ cookie ËÙ¶ÈºÜÂı¶øÇÒĞ§ÂÊÒ²²»¸ß¡£
-ÔÚ HTML5 ÖĞ£¬Êı¾İ²»ÊÇÓÉÃ¿¸ö·şÎñÆ÷ÇëÇó´«µİµÄ£¬¶øÊÇÖ»ÓĞÔÚÇëÇóÊ±Ê¹ÓÃÊı¾İ¡£ËüÊ¹µÃÔÚ²»Ó°ÏìÍøÕ¾ĞÔÄÜµÄÇé¿öÏÂ´æ´¢´óÁ¿Êı¾İ³ÉÎª¿ÉÄÜ¡£
-¶ÔÓÚ²»Í¬µÄÍøÕ¾£¬Êı¾İ´æ´¢ÓÚ²»Í¬µÄÇøÓò£¬²¢ÇÒÒ»¸öÍøÕ¾Ö»ÄÜ·ÃÎÊÆä×ÔÉíµÄÊı¾İ¡£
+ä¹‹å‰ï¼Œè¿™äº›éƒ½æ˜¯ç”± cookie å®Œæˆçš„ã€‚ä½†æ˜¯ cookie ä¸é€‚åˆå¤§é‡æ•°æ®çš„å­˜å‚¨ï¼Œå› ä¸ºå®ƒä»¬ç”±æ¯ä¸ªå¯¹æœåŠ¡å™¨çš„è¯·æ±‚æ¥ä¼ é€’ï¼Œè¿™ä½¿å¾— cookie é€Ÿåº¦å¾ˆæ…¢è€Œä¸”æ•ˆç‡ä¹Ÿä¸é«˜ã€‚
+åœ¨ HTML5 ä¸­ï¼Œæ•°æ®ä¸æ˜¯ç”±æ¯ä¸ªæœåŠ¡å™¨è¯·æ±‚ä¼ é€’çš„ï¼Œè€Œæ˜¯åªæœ‰åœ¨è¯·æ±‚æ—¶ä½¿ç”¨æ•°æ®ã€‚å®ƒä½¿å¾—åœ¨ä¸å½±å“ç½‘ç«™æ€§èƒ½çš„æƒ…å†µä¸‹å­˜å‚¨å¤§é‡æ•°æ®æˆä¸ºå¯èƒ½ã€‚
+å¯¹äºä¸åŒçš„ç½‘ç«™ï¼Œæ•°æ®å­˜å‚¨äºä¸åŒçš„åŒºåŸŸï¼Œå¹¶ä¸”ä¸€ä¸ªç½‘ç«™åªèƒ½è®¿é—®å…¶è‡ªèº«çš„æ•°æ®ã€‚
 
-HTML5 Ê¹ÓÃ JavaScript À´´æ´¢ºÍ·ÃÎÊÊı¾İ¡£
+HTML5 ä½¿ç”¨ JavaScript æ¥å­˜å‚¨å’Œè®¿é—®æ•°æ®ã€‚
 -->
 <!DOCTYPE HTML>
 <html>
 	<body>
 		<script>
-		    // ´´½¨ localStorage ÊôĞÔ£¨sessionStorage Ò²Ò»Ñù£©
+		    // åˆ›å»º localStorage å±æ€§ï¼ˆsessionStorage ä¹Ÿä¸€æ ·ï¼‰
 		    localStorage.lastname = "Liu";
-			// ·ÃÎÊ localStorage ÊôĞÔ£¨sessionStorage Ò²Ò»Ñù£©
+			// è®¿é—® localStorage å±æ€§ï¼ˆsessionStorage ä¹Ÿä¸€æ ·ï¼‰
 			document.write("Last name: " + localStorage.lastname + "<br>");
 			
-		    <!-- localStorage ·½·¨´æ´¢µÄÊı¾İÃ»ÓĞÊ±¼äÏŞÖÆ¡£µÚ¶şÌì¡¢µÚ¶şÖÜ»òÏÂÒ»ÄêÖ®ºó£¬Êı¾İÒÀÈ»¿ÉÓÃ¡£ -->
+		    <!-- localStorage æ–¹æ³•å­˜å‚¨çš„æ•°æ®æ²¡æœ‰æ—¶é—´é™åˆ¶ã€‚ç¬¬äºŒå¤©ã€ç¬¬äºŒå‘¨æˆ–ä¸‹ä¸€å¹´ä¹‹åï¼Œæ•°æ®ä¾ç„¶å¯ç”¨ã€‚ -->
 			if (localStorage.pagecount) {
 				localStorage.pagecount = Number(localStorage.pagecount) + 1;
 			} else {
 				localStorage.pagecount = 1;
 			}
 			document.write("Visits " + localStorage.pagecount + " time(s) total.<br>");
-			<!-- sessionStorage ·½·¨Õë¶ÔÒ»¸ö session ½øĞĞÊı¾İ´æ´¢¡£µ±ÓÃ»§¹Ø±Õä¯ÀÀÆ÷´°¿Úºó£¬Êı¾İ»á±»É¾³ı¡£ -->
-			if (sessionStorage.pagecount) {// ´´½¨ºÍ·ÃÎÊ sessionStorage
+			<!-- sessionStorage æ–¹æ³•é’ˆå¯¹ä¸€ä¸ª session è¿›è¡Œæ•°æ®å­˜å‚¨ã€‚å½“ç”¨æˆ·å…³é—­æµè§ˆå™¨çª—å£åï¼Œæ•°æ®ä¼šè¢«åˆ é™¤ã€‚ -->
+			if (sessionStorage.pagecount) {// åˆ›å»ºå’Œè®¿é—® sessionStorage
 				sessionStorage.pagecount = Number(sessionStorage.pagecount) + 1;
 			} else {
 				sessionStorage.pagecount = 1;
@@ -34,10 +34,10 @@ HTML5 Ê¹ÓÃ JavaScript À´´æ´¢ºÍ·ÃÎÊÊı¾İ¡£
 			document.write("Visits " + sessionStorage.pagecount + " time(s) this session.");
 		</script>
 		<p>
-			Ë¢ĞÂÒ³Ãæ»á¿´µ½¼ÆÊıÆ÷ÔÚÔö³¤¡£
+			åˆ·æ–°é¡µé¢ä¼šçœ‹åˆ°è®¡æ•°å™¨åœ¨å¢é•¿ã€‚
 		</p>
 		<p>
-			Çë¹Ø±Õä¯ÀÀÆ÷´°¿Ú£¬È»ºóÔÙÊÔÒ»´Î£¬localStorage ¼ÆÊıÆ÷»á¼ÌĞø¼ÆÊı£¬sessionStorage ¼ÆÊıÆ÷ÒÑ¾­ÖØÖÃÁË¡£
+			è¯·å…³é—­æµè§ˆå™¨çª—å£ï¼Œç„¶åå†è¯•ä¸€æ¬¡ï¼ŒlocalStorage è®¡æ•°å™¨ä¼šç»§ç»­è®¡æ•°ï¼ŒsessionStorage è®¡æ•°å™¨å·²ç»é‡ç½®äº†ã€‚
 		</p>
 	</body>
 

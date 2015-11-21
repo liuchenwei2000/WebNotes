@@ -5,9 +5,9 @@
 <script type="text/javascript">
 	$(document).ready(function() {
 		/*
-		Í¨¹ı jQuery£¬¿ÉÒÔºÜÈİÒ×µØÉ¾³ıÒÑÓĞµÄ HTML ÔªËØ£¬Ò»°ã¿ÉÊ¹ÓÃÒÔÏÂÁ½¸ö jQuery ·½·¨£º
-		remove()£ºÉ¾³ı±»Ñ¡ÔªËØ£¨¼°Æä×ÓÔªËØ£©£»
-		empty()£º´Ó±»Ñ¡ÔªËØÖĞÉ¾³ı×ÓÔªËØ¡£
+		é€šè¿‡ jQueryï¼Œå¯ä»¥å¾ˆå®¹æ˜“åœ°åˆ é™¤å·²æœ‰çš„ HTML å…ƒç´ ï¼Œä¸€èˆ¬å¯ä½¿ç”¨ä»¥ä¸‹ä¸¤ä¸ª jQuery æ–¹æ³•ï¼š
+		remove()ï¼šåˆ é™¤è¢«é€‰å…ƒç´ ï¼ˆåŠå…¶å­å…ƒç´ ï¼‰ï¼›
+		empty()ï¼šä»è¢«é€‰å…ƒç´ ä¸­åˆ é™¤å­å…ƒç´ ã€‚
 		 */
 		$("#button1").click(function() {
 			$("#div1").remove();
@@ -18,8 +18,8 @@
 		});
 
 		$("#button3").click(function() {
-			// remove() ·½·¨Ò²¿É½ÓÊÜÒ»¸ö²ÎÊı£¬ÔÊĞí¶Ô±»É¾ÔªËØ½øĞĞ¹ıÂË£¬¸Ã²ÎÊı¿ÉÒÔÊÇÈÎºÎ jQuery Ñ¡ÔñÆ÷µÄÓï·¨¡£
-			// ÏÂÃæµÄÀı×ÓÉ¾³ı class="italic" µÄËùÓĞ <p> ÔªËØ£º
+			// remove() æ–¹æ³•ä¹Ÿå¯æ¥å—ä¸€ä¸ªå‚æ•°ï¼Œå…è®¸å¯¹è¢«åˆ å…ƒç´ è¿›è¡Œè¿‡æ»¤ï¼Œè¯¥å‚æ•°å¯ä»¥æ˜¯ä»»ä½• jQuery é€‰æ‹©å™¨çš„è¯­æ³•ã€‚
+			// ä¸‹é¢çš„ä¾‹å­åˆ é™¤ class="italic" çš„æ‰€æœ‰ <p> å…ƒç´ ï¼š
 			$("p").remove(".italic");
 		});
 	});
@@ -41,7 +41,7 @@ div {
 		<p>This is another paragraph in the div.</p>
 	</div>
 	<br>
-	<button id="button1">É¾³ı div ÔªËØ</button>
+	<button id="button1">åˆ é™¤ div å…ƒç´ </button>
 	<p></p>
 	<div id="div2">
 		This is some text in the div.
@@ -49,7 +49,7 @@ div {
 		<p>This is another paragraph in the div.</p>
 	</div>
 	<br>
-	<button id="button2">Çå¿Õ div ÔªËØ</button>
+	<button id="button2">æ¸…ç©º div å…ƒç´ </button>
 	<p></p>
 	<p>This is a paragraph in the div.</p>
 	<p class="italic">
@@ -58,6 +58,6 @@ div {
 	<p class="italic">
 		<i>This is another paragraph in the div.</i>
 	</p>
-	<button id="button3">É¾³ı class="italic" µÄËùÓĞ p ÔªËØ</button>
+	<button id="button3">åˆ é™¤ class="italic" çš„æ‰€æœ‰ p å…ƒç´ </button>
 </body>
 </html>

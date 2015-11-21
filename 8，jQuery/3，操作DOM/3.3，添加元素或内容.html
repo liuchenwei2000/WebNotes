@@ -5,11 +5,11 @@
 <script type="text/javascript">
 	$(document).ready(function() {
 		/*
-		Í¨¹ý jQuery£¬¿ÉÒÔºÜÈÝÒ×µØÌí¼ÓÐÂÔªËØ/ÄÚÈÝ¡£ÓÃÓÚÌí¼ÓÐÂÄÚÈÝµÄËÄ¸ö·½·¨ÓÐ£º
-		append()£ºÔÚ±»Ñ¡ÔªËØµÄ½áÎ²²åÈëÄÚÈÝ£»
-		prepend()£ºÔÚ±»Ñ¡ÔªËØµÄ¿ªÍ·²åÈëÄÚÈÝ£»
-		after()£ºÔÚ±»Ñ¡ÔªËØÖ®ºó²åÈëÄÚÈÝ£»
-		before()£ºÔÚ±»Ñ¡ÔªËØÖ®Ç°²åÈëÄÚÈÝ¡£
+		é€šè¿‡ jQueryï¼Œå¯ä»¥å¾ˆå®¹æ˜“åœ°æ·»åŠ æ–°å…ƒç´ /å†…å®¹ã€‚ç”¨äºŽæ·»åŠ æ–°å†…å®¹çš„å››ä¸ªæ–¹æ³•æœ‰ï¼š
+		append()ï¼šåœ¨è¢«é€‰å…ƒç´ çš„ç»“å°¾æ’å…¥å†…å®¹ï¼›
+		prepend()ï¼šåœ¨è¢«é€‰å…ƒç´ çš„å¼€å¤´æ’å…¥å†…å®¹ï¼›
+		after()ï¼šåœ¨è¢«é€‰å…ƒç´ ä¹‹åŽæ’å…¥å†…å®¹ï¼›
+		before()ï¼šåœ¨è¢«é€‰å…ƒç´ ä¹‹å‰æ’å…¥å†…å®¹ã€‚
 		 */
 		$("#button1").click(function() {
 			$("#p1").append(" <b>Appended text</b>.");
@@ -28,24 +28,24 @@
 		});
 
 		/*
-		Í¨¹ý append() ºÍ prepend() ·½·¨Ìí¼ÓÈô¸ÉÐÂÔªËØ
+		é€šè¿‡ append() å’Œ prepend() æ–¹æ³•æ·»åŠ è‹¥å¹²æ–°å…ƒç´ 
 		
-		ÔÚÉÏÃæµÄÀý×ÓÖÐ£¬Ö»ÔÚ±»Ñ¡ÔªËØµÄ¿ªÍ·/½áÎ²²åÈëÎÄ±¾/HTML¡£´ËÍâ»¹ÄÜ¹»Í¨¹ý²ÎÊý½ÓÊÕÎÞÏÞÊýÁ¿µÄÐÂÔªËØ¡£
-		ÕâÐ©ÐÂÔªËØ¿ÉÒÔÊ¹ÓÃ text/HTML¡¢jQuery »òÕß JavaScript/DOM À´´´½¨¡£È»ºóÍ¨¹ý append() ·½·¨°ÑËüÃÇ×·¼Óµ½ÎÄ±¾ÖÐ¡£
+		åœ¨ä¸Šé¢çš„ä¾‹å­ä¸­ï¼Œåªåœ¨è¢«é€‰å…ƒç´ çš„å¼€å¤´/ç»“å°¾æ’å…¥æ–‡æœ¬/HTMLã€‚æ­¤å¤–è¿˜èƒ½å¤Ÿé€šè¿‡å‚æ•°æŽ¥æ”¶æ— é™æ•°é‡çš„æ–°å…ƒç´ ã€‚
+		è¿™äº›æ–°å…ƒç´ å¯ä»¥ä½¿ç”¨ text/HTMLã€jQuery æˆ–è€… JavaScript/DOM æ¥åˆ›å»ºã€‚ç„¶åŽé€šè¿‡ append() æ–¹æ³•æŠŠå®ƒä»¬è¿½åŠ åˆ°æ–‡æœ¬ä¸­ã€‚
 		 */
 		$("#button5").click(function() {
-			var txt1 = "<p>ÒÔ HTML ´´½¨ÐÂÔªËØ</p>"; // ÒÔ HTML ´´½¨ÐÂÔªËØ
-			var txt2 = $("<p></p>").text("ÒÔ jQuery ´´½¨ÐÂÔªËØ"); // ÒÔ jQuery ´´½¨ÐÂÔªËØ
+			var txt1 = "<p>ä»¥ HTML åˆ›å»ºæ–°å…ƒç´ </p>"; // ä»¥ HTML åˆ›å»ºæ–°å…ƒç´ 
+			var txt2 = $("<p></p>").text("ä»¥ jQuery åˆ›å»ºæ–°å…ƒç´ "); // ä»¥ jQuery åˆ›å»ºæ–°å…ƒç´ 
 			var txt3 = document.createElement("p");
-			txt3.innerHTML = "Í¨¹ý DOM À´´´½¨ÎÄ±¾"; // Í¨¹ý DOM À´´´½¨ÎÄ±¾
+			txt3.innerHTML = "é€šè¿‡ DOM æ¥åˆ›å»ºæ–‡æœ¬"; // é€šè¿‡ DOM æ¥åˆ›å»ºæ–‡æœ¬
 			$("#p3").append(txt1, txt2, txt3);
 		});
 
 		
 		/*
-		after()£ºÔÚ±»Ñ¡ÔªËØÖ®ºó²åÈëÄÚÈÝ¡£
-		before()£ºÔÚ±»Ñ¡ÔªËØÖ®Ç°²åÈëÄÚÈÝ¡£
-		after() ºÍ before() ·½·¨Ò²¿ÉÒÔÏñÉÏÃæÄÇÑùÌí¼ÓÈô¸ÉÐÂÔªËØ¡£
+		after()ï¼šåœ¨è¢«é€‰å…ƒç´ ä¹‹åŽæ’å…¥å†…å®¹ã€‚
+		before()ï¼šåœ¨è¢«é€‰å…ƒç´ ä¹‹å‰æ’å…¥å†…å®¹ã€‚
+		after() å’Œ before() æ–¹æ³•ä¹Ÿå¯ä»¥åƒä¸Šé¢é‚£æ ·æ·»åŠ è‹¥å¹²æ–°å…ƒç´ ã€‚
 		*/
 		$("#button6").click(function() {
 			$("img").before("<b>Before</b>");
@@ -65,8 +65,8 @@
 		<li>List item 2</li>
 		<li>List item 3</li>
 	</ol>
-	<button id="button1">×·¼ÓÎÄ±¾</button>
-	<button id="button2">×·¼ÓÁÐ±íÏî</button>
+	<button id="button1">è¿½åŠ æ–‡æœ¬</button>
+	<button id="button2">è¿½åŠ åˆ—è¡¨é¡¹</button>
 
 	<p id="p2">This is a paragraph.</p>
 	<ol id="ol2">
@@ -74,17 +74,17 @@
 		<li>List item 2</li>
 		<li>List item 3</li>
 	</ol>
-	<button id="button3">Ìí¼ÓÎÄ±¾</button>
-	<button id="button4">Ìí¼ÓÁÐ±íÏî</button>
+	<button id="button3">æ·»åŠ æ–‡æœ¬</button>
+	<button id="button4">æ·»åŠ åˆ—è¡¨é¡¹</button>
 
 	<p id="p3">This is a paragraph.</p>
-	<button id="button5">Ìí¼ÓÈô¸ÉÐÂÔªËØ</button>
+	<button id="button5">æ·»åŠ è‹¥å¹²æ–°å…ƒç´ </button>
 	<br>
 	<br>
 	<img src="cross.png" alt="Logo" />
 	<br>
 	<br>
-	<button id="button6">ÔÚÍ¼Æ¬Ç°ÃæÌí¼ÓÎÄ±¾</button>
-	<button id="button7">ÔÚÍ¼Æ¬ºóÃæÌí¼ÓÎÄ±¾</button>
+	<button id="button6">åœ¨å›¾ç‰‡å‰é¢æ·»åŠ æ–‡æœ¬</button>
+	<button id="button7">åœ¨å›¾ç‰‡åŽé¢æ·»åŠ æ–‡æœ¬</button>
 </body>
 </html>

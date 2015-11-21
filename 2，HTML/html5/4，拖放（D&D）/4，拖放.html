@@ -1,5 +1,5 @@
-<!-- �Ϸţ�D&D����һ�ֳ��������ԣ���ץȡ�����Ժ��ϵ���һ��λ�á�
-�� HTML5 �У��Ϸ��Ǳ�׼��һ���֣��κ�Ԫ�ض��ܹ��Ϸš� -->
+<!-- 拖放（D&D）是一种常见的特性，即抓取对象以后拖到另一个位置。
+在 HTML5 中，拖放是标准的一部分，任何元素都能够拖放。 -->
 <!DOCTYPE HTML>
 <html>
 	<head>
@@ -14,33 +14,33 @@
 	</head>
 	<body>
 		<p>
-			���ͼƬ�Ϸŵ������У�
+			请把图片拖放到矩形中：
 		</p>
-		<!-- 1�����ÿ��Ϸš���Ϊ��ʹԪ�ؿ��϶����� draggable ��������Ϊ true �� -->
-		<!-- 2���϶�ʲô����ondragstart ���Ե�����һ��������drag(event)�����涨�˱��϶������ݡ�-->
+		<!-- 1【设置可拖放】，为了使元素可拖动，把 draggable 属性设置为 true 。 -->
+		<!-- 2【拖动什么】，ondragstart 属性调用了一个函数，drag(event)，它规定了被拖动的数据。-->
 		<img id="drag1" src="logo.gif" draggable="true" ondragstart="drag(event)" />
-		<!-- 3���ŵ��δ�����ondragover �¼��涨�ںδ����ñ��϶������ݡ�-->
-		<!-- 4�����з��á���ondrop �¼������ñ�������ʱ�ᷢ���� -->
+		<!-- 3【放到何处】，ondragover 事件规定在何处放置被拖动的数据。-->
+		<!-- 4【进行放置】，ondrop 事件当放置被拖数据时会发生。 -->
 		<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
 		</div>
 		<br />
 		<script>
 			function allowDrop(ev) {
-			    // Ĭ�ϵأ��޷�������/Ԫ�ط��õ�����Ԫ���С������Ҫ�����������ã�������ֹ��Ԫ�ص�Ĭ�ϴ�����ʽ��
+			    // 默认地，无法将数据/元素放置到其他元素中。如果需要设置允许放置，必须阻止对元素的默认处理方式。
 				ev.preventDefault();
 			}
 
 			function drag(ev) {
-			    // ���ñ������ݵ��������ͺ�ֵ
+			    // 设置被拖数据的数据类型和值
 				ev.dataTransfer.setData("Text", ev.target.id);
 			}
 
 			function drop(ev) {
-			    // ��������������ݵ�Ĭ�ϴ�����drop �¼���Ĭ����Ϊ����������ʽ�򿪣�
+			    // 避免浏览器对数据的默认处理（drop 事件的默认行为是以链接形式打开）
 				ev.preventDefault();
-				// ��ñ��ϵ����ݡ��÷����������� setData() ����������Ϊ��ͬ���͵��κ����ݡ�
+				// 获得被拖的数据。该方法将返回在 setData() 方法中设置为相同类型的任何数据。
 				var data = ev.dataTransfer.getData("Text");
-				// �ѱ���Ԫ��׷�ӵ�����Ԫ�أ�Ŀ��Ԫ�أ���
+				// 把被拖元素追加到放置元素（目标元素）中
 				ev.target.appendChild(document.getElementById(data));
 			}
 		</script>

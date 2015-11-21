@@ -3,24 +3,24 @@
 
 <head>
 <!-- 
-<base> ��ǩΪҳ���ϵ��������ӹ涨Ĭ�ϵ�ַ��Ĭ��Ŀ�ꡣ
+<base> 标签为页面上的所有链接规定默认地址或默认目标。
 
-�������ӵ�ǰ�ĵ��� URL ����ȡ��Ӧ��Ԫ�أ���scheme��host�ȣ�����д��� URL �е�ǰ׺��ʹ�� <base> ��ǩ���Ըı���һ�㡣
-�˺������������ʹ�õ�ǰ�ĵ��� URL����ʹ��ָ���� base URL ���������е���� URL�������а��� <a>��<img>��<link>��<form> ��ǩ�е� URL��
+浏览器会从当前文档的 URL 中提取相应的元素（如scheme、host等）来填写相对 URL 中的前缀，使用 <base> 标签可以改变这一点。
+此后，浏览器将不再使用当前文档的 URL，而使用指定的 base URL 来解析所有的相对 URL。这其中包括 <a>、<img>、<link>、<form> 标签中的 URL。
 
-<base> ��ǩ����λ�� head Ԫ���ڲ���
-href ���� �����裬�涨ҳ��������������ӵĻ�׼ URL��
-target ���� ����ѡ���涨�ںδ���ҳ�������е����ӡ�
+<base> 标签必须位于 head 元素内部。
+href 属性 ：必需，规定页面中所有相对链接的基准 URL。
+target 属性 ：可选，规定在何处打开页面中所有的链接。
 -->
 		<base href="http://www.w3school.com.cn/i/" />
 		<base target="_blank" />
 	</head>
 	<body>
-	    <!-- ���ͼƬ�����·�����Զ�ƴ�� base href ָ��ĵ�ַ -->
+	    <!-- 这个图片的相对路径会自动拼接 base href 指向的地址 -->
 		<img src="eg_smile.gif" />
 		<br />
 		<p>
-			��ע�⣬�����Ѿ�Ϊͼ��涨��һ����Ե�ַ�����������Ѿ��� head ���ֹ涨��һ����׼ URL��������������µ�ַѰ��ͼƬ��
+			请注意，我们已经为图像规定了一个相对地址。由于我们已经在 head 部分规定了一个基准 URL，浏览器将在如下地址寻找图片：
 		</p>
 		<p>
 			"http://www.w3school.com.cn/i/eg_smile.gif"
@@ -33,8 +33,8 @@ target ���� ����ѡ���涨�ںδ���ҳ�������е����ӡ�
 			</a>
 		</p>
 		<p>
-			��ע�⣬���ӻ����´����д򿪣���ʹ������û�� target="_blank" ���ԡ�������Ϊ base Ԫ�ص� target �����Ѿ�������Ϊ
-			"_blank" �ˡ�
+			请注意，链接会在新窗口中打开，即使链接中没有 target="_blank" 属性。这是因为 base 元素的 target 属性已经被设置为
+			"_blank" 了。
 		</p>
 	</body>
 

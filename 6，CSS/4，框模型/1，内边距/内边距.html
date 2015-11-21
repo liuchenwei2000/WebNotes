@@ -1,26 +1,26 @@
-<!-- �ڱ߾� -->
+<!-- 内边距 -->
 <html>
 <head>
 <style type="text/css">
 /* 
-Ԫ�ص��ڱ߾��ڱ߿��������֮�䡣���Ƹ�������򵥵������� padding ���ԡ�
-padding ���Խ��ܳ���ֵ��ٷֱ�ֵ����������ʹ�ø�ֵ��
+元素的内边距在边框和内容区之间。控制该区域最简单的属性是 padding 属性。
+padding 属性接受长度值或百分比值，但不允许使用负值。
 */
 
-/* ���� h1 Ԫ�صĸ��߶��� 10 ���ص��ڱ߾� */
+/* 所有 h1 元素的各边都有 10 像素的内边距 */
 td.test1 {
 	padding: 10px;
 }
 
 /* 
-�����ϡ��ҡ��¡����˳��ֱ����ø��ߵ��ڱ߾࣬���߾�����ʹ�ò�ͬ�ĵ�λ��ٷֱ�ֵ ��
-�ٷ���ֵ��������丸Ԫ�ص� width/height ����ģ���һ������߾�һ���������Ԫ�ص� width/height �ı䣬����Ҳ��ı䡣
+按照上、右、下、左的顺序分别设置各边的内边距，各边均可以使用不同的单位或百分比值 。
+百分数值是相对于其父元素的 width/height 计算的，这一点与外边距一样。如果父元素的 width/height 改变，它们也会改变。
 */
 td.test2 {
 	padding: 10px 0.25em 2ex 20%;
 }
 
-/* ʹ�������ĸ����������ԣ��ֱ������ϡ��ҡ��¡����ڱ߾� */
+/* 使用下面四个单独的属性，分别设置上、右、下、左内边距 */
 td.test3 {
 	padding-top: 10px;
 	padding-right: 0.25em;
@@ -33,18 +33,18 @@ td.test3 {
 <body>
 	<table border="1">
 		<tr>
-			<td class="test1">�������Ԫ��ÿ����ӵ����ȵ��ڱ߾� 10px��</td>
+			<td class="test1">这个表格单元的每个边拥有相等的内边距 10px。</td>
 		</tr>
 	</table>
 	<br />
 	<table border="1">
 		<tr>
-			<td class="test2">�������Ԫ���ϡ��ҡ��¡����ڱ߾�ֱ�Ϊ 10px 0.25em 2ex 20%��</td>
+			<td class="test2">这个表格单元的上、右、下、左内边距分别为 10px 0.25em 2ex 20%。</td>
 		</tr>
 	</table>
 	<table border="1">
 		<tr>
-			<td class="test3">�������Ԫ���ϡ��ҡ��¡����ڱ߾�ֱ�Ϊ 10px 0.25em 2ex 20%��</td>
+			<td class="test3">这个表格单元的上、右、下、左内边距分别为 10px 0.25em 2ex 20%。</td>
 		</tr>
 	</table>
 </body>

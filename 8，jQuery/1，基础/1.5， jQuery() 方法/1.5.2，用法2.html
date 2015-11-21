@@ -2,25 +2,25 @@
 <html>
 <head>
 <!-- 
-2£¬jQuery(html,[ownerDocument])
+2ï¼ŒjQuery(html,[ownerDocument])
 
-jQuery »á¼ì²é²ÎÊý×Ö·û´®ÊÇ·ñÊÇ HTML £¨±ÈÈç£¬×Ö·û´®Ä³Ð©Î»ÖÃ´æÔÚ±êÇ©£©¡£Èç¹û²»ÊÇ£¬Ôò°Ñ×Ö·û´®½âÊÍÎªÑ¡ÔñÆ÷±í´ïÊ½¡£
-Èç¹û×Ö·û´®ÊÇ HTML Æ¬¶Î£¬Ôò jQuery ÊÔÍ¼´´½¨ÓÉ¸Ã HTML Æ¬¶ÎÃèÊöµÄ DOM ÔªËØ£¬È»ºó»á´´½¨²¢·µ»ØÒ»¸öÒýÓÃÕâÐ© DOM ÔªËØµÄ jQuery ¶ÔÏó¡£
+jQuery ä¼šæ£€æŸ¥å‚æ•°å­—ç¬¦ä¸²æ˜¯å¦æ˜¯ HTML ï¼ˆæ¯”å¦‚ï¼Œå­—ç¬¦ä¸²æŸäº›ä½ç½®å­˜åœ¨æ ‡ç­¾ï¼‰ã€‚å¦‚æžœä¸æ˜¯ï¼Œåˆ™æŠŠå­—ç¬¦ä¸²è§£é‡Šä¸ºé€‰æ‹©å™¨è¡¨è¾¾å¼ã€‚
+å¦‚æžœå­—ç¬¦ä¸²æ˜¯ HTML ç‰‡æ®µï¼Œåˆ™ jQuery è¯•å›¾åˆ›å»ºç”±è¯¥ HTML ç‰‡æ®µæè¿°çš„ DOM å…ƒç´ ï¼Œç„¶åŽä¼šåˆ›å»ºå¹¶è¿”å›žä¸€ä¸ªå¼•ç”¨è¿™äº› DOM å…ƒç´ çš„ jQuery å¯¹è±¡ã€‚
 -->
 <script type="text/javascript" src="../jquery-1.11.3.js"></script>
 <script type="text/javascript">
 	$(document).ready(function() {
-		// ÓÃ·¨1£º´´½¨ÐÂµÄÔªËØ¡£jQuery(html,[ownerDocument])
-		// ¿ÉÒÔ´«µÝÒ»¸öÊÖÐ´µÄ HTML ×Ö·û´®£¬»òÕßÓÉÄ³Ð©Ä£°åÒýÇæ»ò²å¼þ´´½¨µÄ HTML ×Ö·û´®£¬Ò²¿ÉÒÔÊÇÍ¨¹ý AJAX ¼ÓÔØ¹ýÀ´µÄ HTML ×Ö·û´®¡£
-		// Õâ¸ö×Ö·û´®¿ÉÒÔ°üº¬Ð±¸Ü (±ÈÈçÒ»¸öÍ¼ÏñµØÖ·)£¬»¹ÓÐ·´Ð±¸Ü¡£µ±´´½¨µ¥¸öÔªËØÊ±£¬ÇëÊ¹ÓÃ±ÕºÏ±êÇ©»ò XHTML ¸ñÊ½¡£
-		// ÀýÈç£¬´´½¨Ò»¸ö span £¬¿ÉÒÔÓÃ $("<span/>") »ò $("<span></span>") £¬µ«²»ÍÆ¼ö $("<span>")¡£
-		// ÔÚ jQuery ÖÐ£¬Õâ¸öÓï·¨µÈÍ¬ÓÚ $(document.createElement("span"))¡£
+		// ç”¨æ³•1ï¼šåˆ›å»ºæ–°çš„å…ƒç´ ã€‚jQuery(html,[ownerDocument])
+		// å¯ä»¥ä¼ é€’ä¸€ä¸ªæ‰‹å†™çš„ HTML å­—ç¬¦ä¸²ï¼Œæˆ–è€…ç”±æŸäº›æ¨¡æ¿å¼•æ“Žæˆ–æ’ä»¶åˆ›å»ºçš„ HTML å­—ç¬¦ä¸²ï¼Œä¹Ÿå¯ä»¥æ˜¯é€šè¿‡ AJAX åŠ è½½è¿‡æ¥çš„ HTML å­—ç¬¦ä¸²ã€‚
+		// è¿™ä¸ªå­—ç¬¦ä¸²å¯ä»¥åŒ…å«æ–œæ  (æ¯”å¦‚ä¸€ä¸ªå›¾åƒåœ°å€)ï¼Œè¿˜æœ‰åæ–œæ ã€‚å½“åˆ›å»ºå•ä¸ªå…ƒç´ æ—¶ï¼Œè¯·ä½¿ç”¨é—­åˆæ ‡ç­¾æˆ– XHTML æ ¼å¼ã€‚
+		// ä¾‹å¦‚ï¼Œåˆ›å»ºä¸€ä¸ª span ï¼Œå¯ä»¥ç”¨ $("<span/>") æˆ– $("<span></span>") ï¼Œä½†ä¸æŽ¨è $("<span>")ã€‚
+		// åœ¨ jQuery ä¸­ï¼Œè¿™ä¸ªè¯­æ³•ç­‰åŒäºŽ $(document.createElement("span"))ã€‚
 		$('<p id="test">My <em>new</em> text</p>').appendTo("body");
 		
-		// ÓÃ·¨2£ºÉèÖÃÊôÐÔºÍÊÂ¼þ¡£jQuery(html,props)
-		// ¿ÉÒÔÏòµÚ¶þ¸ö²ÎÊý´«µÝÒ»¸öÊôÐÔÓ³Éä£¬¸Ã²ÎÊý½ÓÊÜÄÜ¹»´«µÝ¸ø .attr() ·½·¨µÄÊôÐÔµÄ³¬¼¯¡£
-		// ´ËÍâ£¬¿ÉÒÔ´«µÝÈÎÒâµÄÊÂ¼þÀàÐÍ£¬²¢¿ÉÒÔµ÷ÓÃÏÂÃæµÄ jQuery ·½·¨£ºval, css, html, text, data, width, height, or offset¡£
-		// ÏÂÃæµÄÀý×Ó´´½¨Ò»¸ö <input> ÔªËØ£¬Í¬Ê±Éè¶¨ type ÊôÐÔ¡¢ÊôÐÔÖµ£¬ÒÔ¼°Ò»Ð©ÊÂ¼þ¡£
+		// ç”¨æ³•2ï¼šè®¾ç½®å±žæ€§å’Œäº‹ä»¶ã€‚jQuery(html,props)
+		// å¯ä»¥å‘ç¬¬äºŒä¸ªå‚æ•°ä¼ é€’ä¸€ä¸ªå±žæ€§æ˜ å°„ï¼Œè¯¥å‚æ•°æŽ¥å—èƒ½å¤Ÿä¼ é€’ç»™ .attr() æ–¹æ³•çš„å±žæ€§çš„è¶…é›†ã€‚
+		// æ­¤å¤–ï¼Œå¯ä»¥ä¼ é€’ä»»æ„çš„äº‹ä»¶ç±»åž‹ï¼Œå¹¶å¯ä»¥è°ƒç”¨ä¸‹é¢çš„ jQuery æ–¹æ³•ï¼šval, css, html, text, data, width, height, or offsetã€‚
+		// ä¸‹é¢çš„ä¾‹å­åˆ›å»ºä¸€ä¸ª <input> å…ƒç´ ï¼ŒåŒæ—¶è®¾å®š type å±žæ€§ã€å±žæ€§å€¼ï¼Œä»¥åŠä¸€äº›äº‹ä»¶ã€‚
 		$("<input>", {
 			  type: "text",
 			  val: "Test",

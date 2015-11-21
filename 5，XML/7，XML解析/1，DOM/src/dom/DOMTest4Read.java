@@ -13,11 +13,11 @@ import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
 
 /**
- * DOM½âÎöXMLÊ¾Àı
+ * DOMè§£æXMLç¤ºä¾‹
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2014Äê1ÔÂ24ÈÕ
+ * åˆ›å»ºæ—¥æœŸï¼š2014å¹´1æœˆ24æ—¥
  */
 public class DOMTest4Read {
 
@@ -27,21 +27,21 @@ public class DOMTest4Read {
 	public static void main(String[] args) {
 		String xmlFilePath = "files/demo.xml";
 		try {
-			// 1£¬½¨Á¢ DocumentBuilderFactory
+			// 1ï¼Œå»ºç«‹ DocumentBuilderFactory
 			DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-			// 2£¬½¨Á¢ DocumentBuilder
+			// 2ï¼Œå»ºç«‹ DocumentBuilder
 			DocumentBuilder builder = factory.newDocumentBuilder();
-			// 3£¬½¨Á¢ Document
+			// 3ï¼Œå»ºç«‹ Document
 			Document document = builder.parse(new File(xmlFilePath));
-			// 4£¬½¨Á¢ NodeList
+			// 4ï¼Œå»ºç«‹ NodeList
 			NodeList books = document.getElementsByTagName("book");
-			// 5£¬¾ªĞÑXMLĞÅÏ¢¶ÁÈ¡
+			// 5ï¼ŒæƒŠé†’XMLä¿¡æ¯è¯»å–
 			for (int i = 0; i < books.getLength(); i++) {
 				Element book = (Element)books.item(i);
 				NodeList name = book.getElementsByTagName("name");
 				NodeList author = book.getElementsByTagName("author");
-				// ÔÚDOM½âÎöÖĞ£¬Ã¿Ò»¸ö½ÚµãÖĞµÄÄÚÈİÊµ¼ÊÉÏ¶¼ÊÇÒ»¸öµ¥¶ÀµÄÎÄ±¾½Úµã
-				// È¡µÃ name ½ÚµãÏÂµÄµÚÒ»¸ö×Ó½ÚµãµÄµÚÒ»¸öÎÄ±¾½Úµã£¬²¢Í¨¹ıgetNodeValueÈ¡µÃÁË½ÚµãÄÚÈİ
+				// åœ¨DOMè§£æä¸­ï¼Œæ¯ä¸€ä¸ªèŠ‚ç‚¹ä¸­çš„å†…å®¹å®é™…ä¸Šéƒ½æ˜¯ä¸€ä¸ªå•ç‹¬çš„æ–‡æœ¬èŠ‚ç‚¹
+				// å–å¾— name èŠ‚ç‚¹ä¸‹çš„ç¬¬ä¸€ä¸ªå­èŠ‚ç‚¹çš„ç¬¬ä¸€ä¸ªæ–‡æœ¬èŠ‚ç‚¹ï¼Œå¹¶é€šè¿‡getNodeValueå–å¾—äº†èŠ‚ç‚¹å†…å®¹
 				System.out.println("name:" + name.item(0).getFirstChild().getNodeValue());
 				System.out.println("author:" + author.item(0).getFirstChild().getNodeValue());
 			}

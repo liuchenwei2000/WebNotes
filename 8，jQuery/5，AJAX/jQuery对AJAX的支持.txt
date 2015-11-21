@@ -1,6 +1,6 @@
 
-jQuery �ṩ����� AJAX �йصķ�����ͨ����Щ����������ʹ�� HTTP Get �� HTTP Post ��Զ�̷������������ı���HTML��XML �� JSON��ͬʱ�ܹ�����Щ�ⲿ����ֱ��������ҳ�ı�ѡԪ���С�
-���û�� jQuery��AJAX ��̻�����Щ�Ѷȵġ���д����� AJAX ���벢�����ף���Ϊ��ͬ��������� AJAX ��ʵ�ֲ�����ͬ������ζ�ű����д����Ĵ������������в��ԡ�
-������jQuery �Ŷ�Ϊ���ǽ����������⣬����ֻ��Ҫһ�м򵥵Ĵ��룬�Ϳ���ʵ�� AJAX ���ܡ�
+jQuery 提供多个与 AJAX 有关的方法。通过这些方法，可以使用 HTTP Get 和 HTTP Post 从远程服务器上请求文本、HTML、XML 或 JSON，同时能够把这些外部数据直接载入网页的被选元素中。
+如果没有 jQuery，AJAX 编程还是有些难度的。编写常规的 AJAX 代码并不容易，因为不同的浏览器对 AJAX 的实现并不相同。这意味着必须编写额外的代码对浏览器进行测试。
+不过，jQuery 团队为我们解决了这个难题，我们只需要一行简单的代码，就可以实现 AJAX 功能。
 
-���������� html �ļ���Ҫ�� Web �������вſ����������С�
+本例的所有 html 文件需要在 Web 服务器中才可以正常运行。

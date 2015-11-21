@@ -17,11 +17,11 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
 /**
- * DOMÊä³öXMLÊ¾Àı
+ * DOMè¾“å‡ºXMLç¤ºä¾‹
  * 
- * @author Áõ³¿Î°
+ * @author åˆ˜æ™¨ä¼Ÿ
  * 
- * ´´½¨ÈÕÆÚ£º2014Äê1ÔÂ24ÈÕ
+ * åˆ›å»ºæ—¥æœŸï¼š2014å¹´1æœˆ24æ—¥
  */
 public class DOMTest4Write {
 
@@ -31,30 +31,30 @@ public class DOMTest4Write {
 	public static void main(String[] args) {
 		String xmlFilePath = "files/output.xml";
 		try {
-			// 1£¬½¨Á¢ DocumentBuilderFactory
+			// 1ï¼Œå»ºç«‹ DocumentBuilderFactory
 			DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-			// 2£¬½¨Á¢ DocumentBuilder
+			// 2ï¼Œå»ºç«‹ DocumentBuilder
 			DocumentBuilder builder = factory.newDocumentBuilder();
-			// 3£¬½¨Á¢¿ÕµÄ Document
+			// 3ï¼Œå»ºç«‹ç©ºçš„ Document
 			Document document = builder.newDocument();
-			// 4£¬½¨Á¢¸÷¸ö²Ù×÷½Úµã
+			// 4ï¼Œå»ºç«‹å„ä¸ªæ“ä½œèŠ‚ç‚¹
 			Element books = document.createElement("books");
 			Element book = document.createElement("book");
 			Element name = document.createElement("name");
 			Element author = document.createElement("author");
-			// 5£¬ÉèÖÃ½ÚµãµÄÎÄ±¾ÄÚÈİ
+			// 5ï¼Œè®¾ç½®èŠ‚ç‚¹çš„æ–‡æœ¬å†…å®¹
 			name.appendChild(document.createTextNode("Thinking in Java"));
 			author.appendChild(document.createTextNode("Eckl Bruce"));
-			// 6£¬×éÖ¯¸÷¸ö½ÚµãµÄ¹ØÏµ
+			// 6ï¼Œç»„ç»‡å„ä¸ªèŠ‚ç‚¹çš„å…³ç³»
 			book.appendChild(name);
 			book.appendChild(author);
 			books.appendChild(book);
-			// 7£¬½«¸ù½Úµã°ó¶¨µ½ Document ¶ÔÏóÉÏ
+			// 7ï¼Œå°†æ ¹èŠ‚ç‚¹ç»‘å®šåˆ° Document å¯¹è±¡ä¸Š
 			document.appendChild(books);
-			// 8£¬Êä³öµ½Ó²ÅÌ
+			// 8ï¼Œè¾“å‡ºåˆ°ç¡¬ç›˜
 			TransformerFactory transformerFactory = TransformerFactory.newInstance();
 			Transformer transformer = transformerFactory.newTransformer();
-			transformer.setOutputProperty(OutputKeys.ENCODING, "GB2312");// ÉèÖÃ±àÂë·½Ê½
+			transformer.setOutputProperty(OutputKeys.ENCODING, "GB2312");// è®¾ç½®ç¼–ç æ–¹å¼
 			
 			transformer.transform(new DOMSource(document), new StreamResult(new File(xmlFilePath)));
 		} catch (Exception e) {
