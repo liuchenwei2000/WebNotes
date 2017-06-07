@@ -1,1 +1,0 @@
-<body> 标签中的背景颜色（bgcolor）、背景（background）和文本（text）属性在最新的 HTML 标准（HTML4 和 XHTML）中已被废弃。W3C 在他们的推荐标准中已删除这些属性。应该使用层叠样式表（CSS）来定义 HTML 元素的布局和显示属性。
